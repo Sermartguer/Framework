@@ -63,12 +63,12 @@
                         <minusSign>-</minusSign>
                         <monetarySeparator>,</monetarySeparator>
                         <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
+                        <perMill>ï</perMill>
                         <percent>%</percent>
                         <serialVersionOnStream>3</serialVersionOnStream>
                         <zeroDigit>0</zeroDigit>
                         <NaN>?</NaN>
-                        <currencySymbol>€</currencySymbol>
+                        <currencySymbol>ï¿½</currencySymbol>
                         <exponentialSeparator>E</exponentialSeparator>
                         <infinity>?</infinity>
                         <intlCurrencySymbol>EUR</intlCurrencySymbol>
@@ -94,7 +94,7 @@
                   </ampms>
                   <eras>
                     <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
+                    <string>anno Dï¿½mini</string>
                   </eras>
                   <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
                   <locale reference="../../../../../../java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
@@ -133,79 +133,79 @@
                     <string>dom</string>
                     <string>lun</string>
                     <string>mar</string>
-                    <string>mié</string>
+                    <string>miï¿½</string>
                     <string>jue</string>
                     <string>vie</string>
-                    <string>sáb</string>
+                    <string>sï¿½b</string>
                   </shortWeekdays>
                   <weekdays>
                     <string></string>
                     <string>domingo</string>
                     <string>lunes</string>
                     <string>martes</string>
-                    <string>miércoles</string>
+                    <string>miï¿½rcoles</string>
                     <string>jueves</string>
                     <string>viernes</string>
-                    <string>sábado</string>
+                    <string>sï¿½bado</string>
                   </weekdays>
                   <zoneStrings>
                     <string-array>
                       <string>America/Los_Angeles</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>PST</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>America/Denver</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>MST</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>America/Phoenix</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>PNT</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>America/Chicago</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -214,7 +214,7 @@
                     </string-array>
                     <string-array>
                       <string>CST</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -223,7 +223,7 @@
                     </string-array>
                     <string-array>
                       <string>America/New_York</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -232,7 +232,7 @@
                     </string-array>
                     <string-array>
                       <string>EST</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -241,7 +241,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Indianapolis</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -250,7 +250,7 @@
                     </string-array>
                     <string-array>
                       <string>IET</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -259,7 +259,7 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Honolulu</string>
-                      <string>Hora estándar de Hawaii</string>
+                      <string>Hora estï¿½ndar de Hawaii</string>
                       <string>HST</string>
                       <string>Hora de verano de Hawaii</string>
                       <string>HDT</string>
@@ -268,7 +268,7 @@
                     </string-array>
                     <string-array>
                       <string>HST</string>
-                      <string>Hora estándar de Hawaii</string>
+                      <string>Hora estï¿½ndar de Hawaii</string>
                       <string>HST</string>
                       <string>Hora de verano de Hawaii</string>
                       <string>HDT</string>
@@ -277,7 +277,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Anchorage</string>
-                      <string>Hora estándar de Alaska</string>
+                      <string>Hora estï¿½ndar de Alaska</string>
                       <string>AKST</string>
                       <string>Hora de verano de Alaska</string>
                       <string>AKDT</string>
@@ -286,7 +286,7 @@
                     </string-array>
                     <string-array>
                       <string>AST</string>
-                      <string>Hora estándar de Alaska</string>
+                      <string>Hora estï¿½ndar de Alaska</string>
                       <string>AKST</string>
                       <string>Hora de verano de Alaska</string>
                       <string>AKDT</string>
@@ -295,16 +295,16 @@
                     </string-array>
                     <string-array>
                       <string>America/Halifax</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Sitka</string>
-                      <string>Hora estándar de Alaska</string>
+                      <string>Hora estï¿½ndar de Alaska</string>
                       <string>AKST</string>
                       <string>Hora de verano de Alaska</string>
                       <string>AKDT</string>
@@ -313,7 +313,7 @@
                     </string-array>
                     <string-array>
                       <string>America/St_Johns</string>
-                      <string>Hora estándar de Terranova</string>
+                      <string>Hora estï¿½ndar de Terranova</string>
                       <string>NST</string>
                       <string>Hora de verano de Terranova</string>
                       <string>NDT</string>
@@ -322,7 +322,7 @@
                     </string-array>
                     <string-array>
                       <string>CNT</string>
-                      <string>Hora estándar de Terranova</string>
+                      <string>Hora estï¿½ndar de Terranova</string>
                       <string>NST</string>
                       <string>Hora de verano de Terranova</string>
                       <string>NDT</string>
@@ -367,7 +367,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Jerusalem</string>
-                      <string>Hora estándar de Israel</string>
+                      <string>Hora estï¿½ndar de Israel</string>
                       <string>IST</string>
                       <string>Hora de verano de Israel</string>
                       <string>IDT</string>
@@ -376,20 +376,20 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Tokyo</string>
-                      <string>Hora estándar de Japón</string>
+                      <string>Hora estï¿½ndar de Japï¿½n</string>
                       <string>JST</string>
-                      <string>Hora de verano de Japón</string>
+                      <string>Hora de verano de Japï¿½n</string>
                       <string>JDT</string>
-                      <string>Hora de Japón</string>
+                      <string>Hora de Japï¿½n</string>
                       <string>JT</string>
                     </string-array>
                     <string-array>
                       <string>JST</string>
-                      <string>Hora estándar de Japón</string>
+                      <string>Hora estï¿½ndar de Japï¿½n</string>
                       <string>JST</string>
-                      <string>Hora de verano de Japón</string>
+                      <string>Hora de verano de Japï¿½n</string>
                       <string>JDT</string>
-                      <string>Hora de Japón</string>
+                      <string>Hora de Japï¿½n</string>
                       <string>JT</string>
                     </string-array>
                     <string-array>
@@ -403,7 +403,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Shanghai</string>
-                      <string>Hora estándar de China</string>
+                      <string>Hora estï¿½ndar de China</string>
                       <string>CST</string>
                       <string>Hora de verano de China</string>
                       <string>CDT</string>
@@ -412,7 +412,7 @@
                     </string-array>
                     <string-array>
                       <string>CTT</string>
-                      <string>Hora estándar de China</string>
+                      <string>Hora estï¿½ndar de China</string>
                       <string>CST</string>
                       <string>Hora de verano de China</string>
                       <string>CDT</string>
@@ -421,7 +421,7 @@
                     </string-array>
                     <string-array>
                       <string>ACT</string>
-                      <string>Hora estándar Central (territorio del Norte)</string>
+                      <string>Hora estï¿½ndar Central (territorio del Norte)</string>
                       <string>ACST</string>
                       <string>Hora de verano Central (territorio del Norte)</string>
                       <string>ACDT</string>
@@ -430,7 +430,7 @@
                     </string-array>
                     <string-array>
                       <string>AET</string>
-                      <string>Hora estándar Oriental (Nueva Gales del Sur)</string>
+                      <string>Hora estï¿½ndar Oriental (Nueva Gales del Sur)</string>
                       <string>AEST</string>
                       <string>Hora de verano Oriental (Nueva Gales del Sur)</string>
                       <string>AEDT</string>
@@ -475,11 +475,11 @@
                     </string-array>
                     <string-array>
                       <string>Africa/Addis_Ababa</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
@@ -493,20 +493,20 @@
                     </string-array>
                     <string-array>
                       <string>Africa/Asmara</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Asmera</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
@@ -520,11 +520,11 @@
                     </string-array>
                     <string-array>
                       <string>Africa/Bangui</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
@@ -547,29 +547,29 @@
                     </string-array>
                     <string-array>
                       <string>Africa/Blantyre</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
-                      <string>Hora de verano de África Central</string>
+                      <string>Hora de verano de ï¿½frica Central</string>
                       <string>CAST</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Brazzaville</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Bujumbura</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
-                      <string>Hora de verano de África Central</string>
+                      <string>Hora de verano de ï¿½frica Central</string>
                       <string>CAST</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
                     </string-array>
                     <string-array>
@@ -610,29 +610,29 @@
                     </string-array>
                     <string-array>
                       <string>Africa/Dar_es_Salaam</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Djibouti</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Douala</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
@@ -655,92 +655,92 @@
                     </string-array>
                     <string-array>
                       <string>Africa/Gaborone</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
-                      <string>Hora de verano de África Central</string>
+                      <string>Hora de verano de ï¿½frica Central</string>
                       <string>CAST</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Harare</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
-                      <string>Hora de verano de África Central</string>
+                      <string>Hora de verano de ï¿½frica Central</string>
                       <string>CAST</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Johannesburg</string>
-                      <string>Hora estándar de Sudáfrica</string>
+                      <string>Hora estï¿½ndar de Sudï¿½frica</string>
                       <string>SAST</string>
-                      <string>Hora de verano de Sudáfrica</string>
+                      <string>Hora de verano de Sudï¿½frica</string>
                       <string>SAST</string>
-                      <string>Hora de Sudáfrica</string>
+                      <string>Hora de Sudï¿½frica</string>
                       <string>SAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Juba</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Kampala</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Khartoum</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Kigali</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
-                      <string>Hora de verano de África Central</string>
+                      <string>Hora de verano de ï¿½frica Central</string>
                       <string>CAST</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Kinshasa</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Lagos</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Libreville</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
@@ -754,74 +754,74 @@
                     </string-array>
                     <string-array>
                       <string>Africa/Luanda</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Lubumbashi</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
-                      <string>Hora de verano de África Central</string>
+                      <string>Hora de verano de ï¿½frica Central</string>
                       <string>CAST</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Lusaka</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
-                      <string>Hora de verano de África Central</string>
+                      <string>Hora de verano de ï¿½frica Central</string>
                       <string>CAST</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Malabo</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Maputo</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
-                      <string>Hora de verano de África Central</string>
+                      <string>Hora de verano de ï¿½frica Central</string>
                       <string>CAST</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Maseru</string>
-                      <string>Hora estándar de Sudáfrica</string>
+                      <string>Hora estï¿½ndar de Sudï¿½frica</string>
                       <string>SAST</string>
-                      <string>Hora de verano de Sudáfrica</string>
+                      <string>Hora de verano de Sudï¿½frica</string>
                       <string>SAST</string>
-                      <string>Hora de Sudáfrica</string>
+                      <string>Hora de Sudï¿½frica</string>
                       <string>SAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Mbabane</string>
-                      <string>Hora estándar de Sudáfrica</string>
+                      <string>Hora estï¿½ndar de Sudï¿½frica</string>
                       <string>SAST</string>
-                      <string>Hora de verano de Sudáfrica</string>
+                      <string>Hora de verano de Sudï¿½frica</string>
                       <string>SAST</string>
-                      <string>Hora de Sudáfrica</string>
+                      <string>Hora de Sudï¿½frica</string>
                       <string>SAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Mogadishu</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
@@ -835,29 +835,29 @@
                     </string-array>
                     <string-array>
                       <string>Africa/Nairobi</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Ndjamena</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
                       <string>Africa/Niamey</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
@@ -880,11 +880,11 @@
                     </string-array>
                     <string-array>
                       <string>Africa/Porto-Novo</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
@@ -925,16 +925,16 @@
                     </string-array>
                     <string-array>
                       <string>Africa/Windhoek</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
-                      <string>Hora de verano de África Occidental</string>
+                      <string>Hora de verano de ï¿½frica Occidental</string>
                       <string>WAST</string>
-                      <string>Hora de África Occidental</string>
+                      <string>Hora de ï¿½frica Occidental</string>
                       <string>WAT</string>
                     </string-array>
                     <string-array>
                       <string>America/Adak</string>
-                      <string>Hora estándar de Hawaii</string>
+                      <string>Hora estï¿½ndar de Hawaii</string>
                       <string>HST</string>
                       <string>Hora de verano de Hawaii</string>
                       <string>HDT</string>
@@ -943,20 +943,20 @@
                     </string-array>
                     <string-array>
                       <string>America/Anguilla</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Antigua</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -1087,11 +1087,11 @@
                     </string-array>
                     <string-array>
                       <string>America/Aruba</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -1105,7 +1105,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Atikokan</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1114,7 +1114,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Atka</string>
-                      <string>Hora estándar de Hawaii</string>
+                      <string>Hora estï¿½ndar de Hawaii</string>
                       <string>HST</string>
                       <string>Hora de verano de Hawaii</string>
                       <string>HDT</string>
@@ -1132,7 +1132,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Bahia_Banderas</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1141,11 +1141,11 @@
                     </string-array>
                     <string-array>
                       <string>America/Barbados</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -1159,7 +1159,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Belize</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1168,20 +1168,20 @@
                     </string-array>
                     <string-array>
                       <string>America/Blanc-Sablon</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Boa_Vista</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                       <string>Hora de verano de Amazonia</string>
                       <string>AMST</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                     </string-array>
                     <string-array>
@@ -1195,11 +1195,11 @@
                     </string-array>
                     <string-array>
                       <string>America/Boise</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
@@ -1213,25 +1213,25 @@
                     </string-array>
                     <string-array>
                       <string>America/Cambridge_Bay</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>America/Campo_Grande</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                       <string>Hora de verano de Amazonia</string>
                       <string>AMST</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                     </string-array>
                     <string-array>
                       <string>America/Cancun</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1267,7 +1267,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Cayman</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1276,25 +1276,25 @@
                     </string-array>
                     <string-array>
                       <string>America/Chihuahua</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>America/Creston</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>America/Coral_Harbour</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1312,7 +1312,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Costa_Rica</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1321,20 +1321,20 @@
                     </string-array>
                     <string-array>
                       <string>America/Cuiaba</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                       <string>Hora de verano de Amazonia</string>
                       <string>AMST</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                     </string-array>
                     <string-array>
                       <string>America/Curacao</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -1348,25 +1348,25 @@
                     </string-array>
                     <string-array>
                       <string>America/Dawson</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>America/Dawson_Creek</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>America/Detroit</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1375,20 +1375,20 @@
                     </string-array>
                     <string-array>
                       <string>America/Dominica</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Edmonton</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
@@ -1402,7 +1402,7 @@
                     </string-array>
                     <string-array>
                       <string>America/El_Salvador</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1411,25 +1411,25 @@
                     </string-array>
                     <string-array>
                       <string>America/Ensenada</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>America/Fort_Nelson</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>America/Fort_Wayne</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1447,11 +1447,11 @@
                     </string-array>
                     <string-array>
                       <string>America/Glace_Bay</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -1465,43 +1465,43 @@
                     </string-array>
                     <string-array>
                       <string>America/Goose_Bay</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Grand_Turk</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Grenada</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Guadeloupe</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Guatemala</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1528,7 +1528,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Havana</string>
-                      <string>Hora estándar de Cuba</string>
+                      <string>Hora estï¿½ndar de Cuba</string>
                       <string>CST</string>
                       <string>Hora de verano de Cuba</string>
                       <string>CDT</string>
@@ -1537,16 +1537,16 @@
                     </string-array>
                     <string-array>
                       <string>America/Hermosillo</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>America/Indiana/Indianapolis</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1555,7 +1555,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Indiana/Knox</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1564,7 +1564,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Indiana/Marengo</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1573,7 +1573,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Indiana/Petersburg</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1582,7 +1582,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Indiana/Tell_City</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1591,7 +1591,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Indiana/Vevay</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1600,7 +1600,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Indiana/Vincennes</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1609,7 +1609,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Indiana/Winamac</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1618,16 +1618,16 @@
                     </string-array>
                     <string-array>
                       <string>America/Inuvik</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>America/Iqaluit</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1636,7 +1636,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Jamaica</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1654,7 +1654,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Juneau</string>
-                      <string>Hora estándar de Alaska</string>
+                      <string>Hora estï¿½ndar de Alaska</string>
                       <string>AKST</string>
                       <string>Hora de verano de Alaska</string>
                       <string>AKDT</string>
@@ -1663,7 +1663,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Kentucky/Louisville</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1672,7 +1672,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Kentucky/Monticello</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1681,7 +1681,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Knox_IN</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1690,11 +1690,11 @@
                     </string-array>
                     <string-array>
                       <string>America/Kralendijk</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -1708,16 +1708,16 @@
                     </string-array>
                     <string-array>
                       <string>America/Lima</string>
-                      <string>Hora de Perú</string>
+                      <string>Hora de Perï¿½</string>
                       <string>PET</string>
-                      <string>Hora de verano de Perú</string>
+                      <string>Hora de verano de Perï¿½</string>
                       <string>PEST</string>
-                      <string>Hora de Perú</string>
+                      <string>Hora de Perï¿½</string>
                       <string>PET</string>
                     </string-array>
                     <string-array>
                       <string>America/Louisville</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1726,11 +1726,11 @@
                     </string-array>
                     <string-array>
                       <string>America/Lower_Princes</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -1744,7 +1744,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Managua</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1753,34 +1753,34 @@
                     </string-array>
                     <string-array>
                       <string>America/Manaus</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                       <string>Hora de verano de Amazonia</string>
                       <string>AMST</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                     </string-array>
                     <string-array>
                       <string>America/Marigot</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Martinique</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Matamoros</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1789,11 +1789,11 @@
                     </string-array>
                     <string-array>
                       <string>America/Mazatlan</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
@@ -1807,7 +1807,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Menominee</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1816,7 +1816,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Merida</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1825,16 +1825,16 @@
                     </string-array>
                     <string-array>
                       <string>America/Metlakatla</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>America/Mexico_City</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1843,20 +1843,20 @@
                     </string-array>
                     <string-array>
                       <string>America/Miquelon</string>
-                      <string>Hora estándar de Pierre &amp; Miquelon</string>
+                      <string>Hora estï¿½ndar de Pierre &amp; Miquelon</string>
                       <string>PMST</string>
                       <string>Hora de verano de Pierre &amp; Miquelon</string>
                       <string>PMDT</string>
-                      <string>Hora de San Pedro y Miquelón</string>
+                      <string>Hora de San Pedro y Miquelï¿½n</string>
                       <string>PMT</string>
                     </string-array>
                     <string-array>
                       <string>America/Moncton</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -1870,7 +1870,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Monterrey</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1879,7 +1879,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Montreal</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1888,16 +1888,16 @@
                     </string-array>
                     <string-array>
                       <string>America/Montserrat</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Nassau</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1906,7 +1906,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Nipigon</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1915,7 +1915,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Nome</string>
-                      <string>Hora estándar de Alaska</string>
+                      <string>Hora estï¿½ndar de Alaska</string>
                       <string>AKST</string>
                       <string>Hora de verano de Alaska</string>
                       <string>AKDT</string>
@@ -1933,7 +1933,7 @@
                     </string-array>
                     <string-array>
                       <string>America/North_Dakota/Beulah</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1942,7 +1942,7 @@
                     </string-array>
                     <string-array>
                       <string>America/North_Dakota/Center</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1951,7 +1951,7 @@
                     </string-array>
                     <string-array>
                       <string>America/North_Dakota/New_Salem</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -1960,16 +1960,16 @@
                     </string-array>
                     <string-array>
                       <string>America/Ojinaga</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>America/Panama</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1978,7 +1978,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Pangnirtung</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -1996,7 +1996,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Port-au-Prince</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -2005,11 +2005,11 @@
                     </string-array>
                     <string-array>
                       <string>America/Port_of_Spain</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -2023,25 +2023,25 @@
                     </string-array>
                     <string-array>
                       <string>America/Porto_Velho</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                       <string>Hora de verano de Amazonia</string>
                       <string>AMST</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                     </string-array>
                     <string-array>
                       <string>America/Puerto_Rico</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Rainy_River</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -2050,7 +2050,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Rankin_Inlet</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -2068,7 +2068,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Regina</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -2077,7 +2077,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Resolute</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -2104,11 +2104,11 @@
                     </string-array>
                     <string-array>
                       <string>America/Santa_Isabel</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
@@ -2131,11 +2131,11 @@
                     </string-array>
                     <string-array>
                       <string>America/Santo_Domingo</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -2158,61 +2158,61 @@
                     </string-array>
                     <string-array>
                       <string>America/Shiprock</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>America/St_Barthelemy</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/St_Kitts</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/St_Lucia</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/St_Thomas</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/St_Vincent</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Swift_Current</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -2221,7 +2221,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Tegucigalpa</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -2230,16 +2230,16 @@
                     </string-array>
                     <string-array>
                       <string>America/Thule</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Thunder_Bay</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -2248,16 +2248,16 @@
                     </string-array>
                     <string-array>
                       <string>America/Tijuana</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>America/Toronto</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -2266,43 +2266,43 @@
                     </string-array>
                     <string-array>
                       <string>America/Tortola</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Vancouver</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>America/Virgin</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>America/Whitehorse</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>America/Winnipeg</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -2311,7 +2311,7 @@
                     </string-array>
                     <string-array>
                       <string>America/Yakutat</string>
-                      <string>Hora estándar de Alaska</string>
+                      <string>Hora estï¿½ndar de Alaska</string>
                       <string>AKST</string>
                       <string>Hora de verano de Alaska</string>
                       <string>AKDT</string>
@@ -2320,16 +2320,16 @@
                     </string-array>
                     <string-array>
                       <string>America/Yellowknife</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>Antarctica/Casey</string>
-                      <string>Hora estándar Occidental (Australia)</string>
+                      <string>Hora estï¿½ndar Occidental (Australia)</string>
                       <string>AWST</string>
                       <string>Hora de verano Occidental (Australia)</string>
                       <string>AWDT</string>
@@ -2374,7 +2374,7 @@
                     </string-array>
                     <string-array>
                       <string>Antarctica/McMurdo</string>
-                      <string>Hora estándar de Nueva Zelanda</string>
+                      <string>Hora estï¿½ndar de Nueva Zelanda</string>
                       <string>NZST</string>
                       <string>Hora de verano de Nueva Zelanda</string>
                       <string>NZDT</string>
@@ -2401,7 +2401,7 @@
                     </string-array>
                     <string-array>
                       <string>Antarctica/South_Pole</string>
-                      <string>Hora estándar de Nueva Zelanda</string>
+                      <string>Hora estï¿½ndar de Nueva Zelanda</string>
                       <string>NZST</string>
                       <string>Hora de verano de Nueva Zelanda</string>
                       <string>NZDT</string>
@@ -2446,7 +2446,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Aden</string>
-                      <string>Hora estándar de Arabia</string>
+                      <string>Hora estï¿½ndar de Arabia</string>
                       <string>AST</string>
                       <string>Hora de verano de Arabia</string>
                       <string>ADT</string>
@@ -2500,25 +2500,25 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Ashgabat</string>
-                      <string>Hora de Turkmenistán</string>
+                      <string>Hora de Turkmenistï¿½n</string>
                       <string>TMT</string>
-                      <string>Hora de verano de Turkmenistán</string>
+                      <string>Hora de verano de Turkmenistï¿½n</string>
                       <string>TMST</string>
-                      <string>Hora de Turkmenistán</string>
+                      <string>Hora de Turkmenistï¿½n</string>
                       <string>TMT</string>
                     </string-array>
                     <string-array>
                       <string>Asia/Ashkhabad</string>
-                      <string>Hora de Turkmenistán</string>
+                      <string>Hora de Turkmenistï¿½n</string>
                       <string>TMT</string>
-                      <string>Hora de verano de Turkmenistán</string>
+                      <string>Hora de verano de Turkmenistï¿½n</string>
                       <string>TMST</string>
-                      <string>Hora de Turkmenistán</string>
+                      <string>Hora de Turkmenistï¿½n</string>
                       <string>TMT</string>
                     </string-array>
                     <string-array>
                       <string>Asia/Baghdad</string>
-                      <string>Hora estándar de Arabia</string>
+                      <string>Hora estï¿½ndar de Arabia</string>
                       <string>AST</string>
                       <string>Hora de verano de Arabia</string>
                       <string>ADT</string>
@@ -2527,7 +2527,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Bahrain</string>
-                      <string>Hora estándar de Arabia</string>
+                      <string>Hora estï¿½ndar de Arabia</string>
                       <string>AST</string>
                       <string>Hora de verano de Arabia</string>
                       <string>ADT</string>
@@ -2536,11 +2536,11 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Baku</string>
-                      <string>Hora de Azerbaiyán</string>
+                      <string>Hora de Azerbaiyï¿½n</string>
                       <string>AZT</string>
-                      <string>Hora de verano de Azerbaiyán</string>
+                      <string>Hora de verano de Azerbaiyï¿½n</string>
                       <string>AZST</string>
-                      <string>Hora de Azerbaiyán</string>
+                      <string>Hora de Azerbaiyï¿½n</string>
                       <string>AZT</string>
                     </string-array>
                     <string-array>
@@ -2563,11 +2563,11 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Bishkek</string>
-                      <string>Hora de Kirguizistán</string>
+                      <string>Hora de Kirguizistï¿½n</string>
                       <string>KGT</string>
-                      <string>Hora de verano de Kirguizistán</string>
+                      <string>Hora de verano de Kirguizistï¿½n</string>
                       <string>KGST</string>
-                      <string>Hora de Kirguizistán</string>
+                      <string>Hora de Kirguizistï¿½n</string>
                       <string>KGT</string>
                     </string-array>
                     <string-array>
@@ -2581,7 +2581,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Calcutta</string>
-                      <string>Hora estándar de India</string>
+                      <string>Hora estï¿½ndar de India</string>
                       <string>IST</string>
                       <string>Hora de verano de India</string>
                       <string>IDT</string>
@@ -2608,7 +2608,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Chongqing</string>
-                      <string>Hora estándar de China</string>
+                      <string>Hora estï¿½ndar de China</string>
                       <string>CST</string>
                       <string>Hora de verano de China</string>
                       <string>CDT</string>
@@ -2617,7 +2617,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Chungking</string>
-                      <string>Hora estándar de China</string>
+                      <string>Hora estï¿½ndar de China</string>
                       <string>CST</string>
                       <string>Hora de verano de China</string>
                       <string>CDT</string>
@@ -2626,7 +2626,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Colombo</string>
-                      <string>Hora estándar de India</string>
+                      <string>Hora estï¿½ndar de India</string>
                       <string>IST</string>
                       <string>Hora de verano de India</string>
                       <string>IDT</string>
@@ -2671,7 +2671,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Dubai</string>
-                      <string>Hora estándar del Golfo</string>
+                      <string>Hora estï¿½ndar del Golfo</string>
                       <string>GST</string>
                       <string>Hora de verano del Golfo</string>
                       <string>GDT</string>
@@ -2680,11 +2680,11 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Dushanbe</string>
-                      <string>Hora de Tajikistán</string>
+                      <string>Hora de Tajikistï¿½n</string>
                       <string>TJT</string>
-                      <string>Hora de verano de Tajikistán</string>
+                      <string>Hora de verano de Tajikistï¿½n</string>
                       <string>TJST</string>
-                      <string>Hora de Tajikistán</string>
+                      <string>Hora de Tajikistï¿½n</string>
                       <string>TJT</string>
                     </string-array>
                     <string-array>
@@ -2698,7 +2698,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Harbin</string>
-                      <string>Hora estándar de China</string>
+                      <string>Hora estï¿½ndar de China</string>
                       <string>CST</string>
                       <string>Hora de verano de China</string>
                       <string>CDT</string>
@@ -2779,11 +2779,11 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Kabul</string>
-                      <string>Hora de Afganistán</string>
+                      <string>Hora de Afganistï¿½n</string>
                       <string>AFT</string>
-                      <string>Hora de verano de Afganistán</string>
+                      <string>Hora de verano de Afganistï¿½n</string>
                       <string>AFST</string>
-                      <string>Hora de Afganistán</string>
+                      <string>Hora de Afganistï¿½n</string>
                       <string>AFT</string>
                     </string-array>
                     <string-array>
@@ -2797,16 +2797,16 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Karachi</string>
-                      <string>Hora de Pakistán</string>
+                      <string>Hora de Pakistï¿½n</string>
                       <string>PKT</string>
-                      <string>Hora de verano de Pakistán</string>
+                      <string>Hora de verano de Pakistï¿½n</string>
                       <string>PKST</string>
-                      <string>Hora de Pakistán</string>
+                      <string>Hora de Pakistï¿½n</string>
                       <string>PKT</string>
                     </string-array>
                     <string-array>
                       <string>Asia/Kashgar</string>
-                      <string>Hora estándar de China</string>
+                      <string>Hora estï¿½ndar de China</string>
                       <string>XJT</string>
                       <string>Hora de verano de China</string>
                       <string>XJDT</string>
@@ -2842,7 +2842,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Kolkata</string>
-                      <string>Hora estándar de India</string>
+                      <string>Hora estï¿½ndar de India</string>
                       <string>IST</string>
                       <string>Hora de verano de India</string>
                       <string>IDT</string>
@@ -2878,7 +2878,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Kuwait</string>
-                      <string>Hora estándar de Arabia</string>
+                      <string>Hora estï¿½ndar de Arabia</string>
                       <string>AST</string>
                       <string>Hora de verano de Arabia</string>
                       <string>ADT</string>
@@ -2887,7 +2887,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Macao</string>
-                      <string>Hora estándar de China</string>
+                      <string>Hora estï¿½ndar de China</string>
                       <string>CST</string>
                       <string>Hora de verano de China</string>
                       <string>CDT</string>
@@ -2896,7 +2896,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Macau</string>
-                      <string>Hora estándar de China</string>
+                      <string>Hora estï¿½ndar de China</string>
                       <string>CST</string>
                       <string>Hora de verano de China</string>
                       <string>CDT</string>
@@ -2905,11 +2905,11 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Magadan</string>
-                      <string>Hora de Magadán</string>
+                      <string>Hora de Magadï¿½n</string>
                       <string>MAGT</string>
-                      <string>Hora de verano de Magadán</string>
+                      <string>Hora de verano de Magadï¿½n</string>
                       <string>MAGST</string>
-                      <string>Hora de Magadán</string>
+                      <string>Hora de Magadï¿½n</string>
                       <string>MAGT</string>
                     </string-array>
                     <string-array>
@@ -2932,7 +2932,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Muscat</string>
-                      <string>Hora estándar del Golfo</string>
+                      <string>Hora estï¿½ndar del Golfo</string>
                       <string>GST</string>
                       <string>Hora de verano del Golfo</string>
                       <string>GDT</string>
@@ -3004,7 +3004,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Pyongyang</string>
-                      <string>Hora estándar de Corea</string>
+                      <string>Hora estï¿½ndar de Corea</string>
                       <string>KST</string>
                       <string>Hora de verano de Corea</string>
                       <string>KDT</string>
@@ -3013,7 +3013,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Qatar</string>
-                      <string>Hora estándar de Arabia</string>
+                      <string>Hora estï¿½ndar de Arabia</string>
                       <string>AST</string>
                       <string>Hora de verano de Arabia</string>
                       <string>ADT</string>
@@ -3040,7 +3040,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Riyadh</string>
-                      <string>Hora estándar de Arabia</string>
+                      <string>Hora estï¿½ndar de Arabia</string>
                       <string>AST</string>
                       <string>Hora de verano de Arabia</string>
                       <string>ADT</string>
@@ -3067,16 +3067,16 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Samarkand</string>
-                      <string>Hora de Uzbekistán</string>
+                      <string>Hora de Uzbekistï¿½n</string>
                       <string>UZT</string>
-                      <string>Hora de verano de Uzbekistán</string>
+                      <string>Hora de verano de Uzbekistï¿½n</string>
                       <string>UZST</string>
-                      <string>Hora de Uzbekistán</string>
+                      <string>Hora de Uzbekistï¿½n</string>
                       <string>UZT</string>
                     </string-array>
                     <string-array>
                       <string>Asia/Seoul</string>
-                      <string>Hora estándar de Corea</string>
+                      <string>Hora estï¿½ndar de Corea</string>
                       <string>KST</string>
                       <string>Hora de verano de Corea</string>
                       <string>KDT</string>
@@ -3103,7 +3103,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Taipei</string>
-                      <string>Hora estándar de China</string>
+                      <string>Hora estï¿½ndar de China</string>
                       <string>CST</string>
                       <string>Hora de verano de China</string>
                       <string>CDT</string>
@@ -3112,7 +3112,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Tel_Aviv</string>
-                      <string>Hora estándar de Israel</string>
+                      <string>Hora estï¿½ndar de Israel</string>
                       <string>IST</string>
                       <string>Hora de verano de Israel</string>
                       <string>IDT</string>
@@ -3121,11 +3121,11 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Tashkent</string>
-                      <string>Hora de Uzbekistán</string>
+                      <string>Hora de Uzbekistï¿½n</string>
                       <string>UZT</string>
-                      <string>Hora de verano de Uzbekistán</string>
+                      <string>Hora de verano de Uzbekistï¿½n</string>
                       <string>UZST</string>
-                      <string>Hora de Uzbekistán</string>
+                      <string>Hora de Uzbekistï¿½n</string>
                       <string>UZT</string>
                     </string-array>
                     <string-array>
@@ -3139,29 +3139,29 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Tehran</string>
-                      <string>Hora estándar de Irán</string>
+                      <string>Hora estï¿½ndar de Irï¿½n</string>
                       <string>IRST</string>
-                      <string>Hora de verano de Irán</string>
+                      <string>Hora de verano de Irï¿½n</string>
                       <string>IRDT</string>
-                      <string>Hora de Irán</string>
+                      <string>Hora de Irï¿½n</string>
                       <string>IRT</string>
                     </string-array>
                     <string-array>
                       <string>Asia/Thimbu</string>
-                      <string>Hora de Bután</string>
+                      <string>Hora de Butï¿½n</string>
                       <string>BTT</string>
-                      <string>Hora de verano de Bután</string>
+                      <string>Hora de verano de Butï¿½n</string>
                       <string>BTST</string>
-                      <string>Hora de Bután</string>
+                      <string>Hora de Butï¿½n</string>
                       <string>BTT</string>
                     </string-array>
                     <string-array>
                       <string>Asia/Thimphu</string>
-                      <string>Hora de Bután</string>
+                      <string>Hora de Butï¿½n</string>
                       <string>BTT</string>
-                      <string>Hora de verano de Bután</string>
+                      <string>Hora de verano de Butï¿½n</string>
                       <string>BTST</string>
-                      <string>Hora de Bután</string>
+                      <string>Hora de Butï¿½n</string>
                       <string>BTT</string>
                     </string-array>
                     <string-array>
@@ -3193,7 +3193,7 @@
                     </string-array>
                     <string-array>
                       <string>Asia/Urumqi</string>
-                      <string>Hora estándar de China</string>
+                      <string>Hora estï¿½ndar de China</string>
                       <string>XJT</string>
                       <string>Hora de verano de China</string>
                       <string>XJDT</string>
@@ -3265,11 +3265,11 @@
                     </string-array>
                     <string-array>
                       <string>Atlantic/Bermuda</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -3337,7 +3337,7 @@
                     </string-array>
                     <string-array>
                       <string>Atlantic/South_Georgia</string>
-                      <string>Hora estándar de Georgia del Sur</string>
+                      <string>Hora estï¿½ndar de Georgia del Sur</string>
                       <string>GST</string>
                       <string>Hora de verano de Georgia del Sur</string>
                       <string>GDT</string>
@@ -3364,7 +3364,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/ACT</string>
-                      <string>Hora estándar Oriental (Nueva Gales del Sur)</string>
+                      <string>Hora estï¿½ndar Oriental (Nueva Gales del Sur)</string>
                       <string>AEST</string>
                       <string>Hora de verano Oriental (Nueva Gales del Sur)</string>
                       <string>AEDT</string>
@@ -3373,7 +3373,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Adelaide</string>
-                      <string>Hora estándar Central (Sur de Australia)</string>
+                      <string>Hora estï¿½ndar Central (Sur de Australia)</string>
                       <string>ACST</string>
                       <string>Hora de verano Central (Sur de Australia)</string>
                       <string>ACDT</string>
@@ -3382,16 +3382,16 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Brisbane</string>
-                      <string>Hora estándar del Este (Queensland)</string>
+                      <string>Hora estï¿½ndar del Este (Queensland)</string>
                       <string>AEST</string>
-                      <string>Hora estándar de verano del Este (Queensland)</string>
+                      <string>Hora estï¿½ndar de verano del Este (Queensland)</string>
                       <string>AEDT</string>
                       <string>Hora Oriental (Queensland)</string>
                       <string>AET</string>
                     </string-array>
                     <string-array>
                       <string>Australia/Broken_Hill</string>
-                      <string>Hora estándar Central (Sur de Australia/Nueva Gales del Sur)</string>
+                      <string>Hora estï¿½ndar Central (Sur de Australia/Nueva Gales del Sur)</string>
                       <string>ACST</string>
                       <string>Hora de verano Central (Sur de Australia/Nueva Gales del Sur)</string>
                       <string>ACDT</string>
@@ -3400,7 +3400,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Canberra</string>
-                      <string>Hora estándar Oriental (Nueva Gales del Sur)</string>
+                      <string>Hora estï¿½ndar Oriental (Nueva Gales del Sur)</string>
                       <string>AEST</string>
                       <string>Hora de verano Oriental (Nueva Gales del Sur)</string>
                       <string>AEDT</string>
@@ -3409,7 +3409,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Currie</string>
-                      <string>Hora estándar Oriental (Nueva Gales del Sur)</string>
+                      <string>Hora estï¿½ndar Oriental (Nueva Gales del Sur)</string>
                       <string>AEST</string>
                       <string>Hora de verano Oriental (Nueva Gales del Sur)</string>
                       <string>AEDT</string>
@@ -3418,7 +3418,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Darwin</string>
-                      <string>Hora estándar Central (territorio del Norte)</string>
+                      <string>Hora estï¿½ndar Central (territorio del Norte)</string>
                       <string>ACST</string>
                       <string>Hora de verano Central (territorio del Norte)</string>
                       <string>ACDT</string>
@@ -3427,16 +3427,16 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Eucla</string>
-                      <string>Hora estándar de Australia Central y Occidental</string>
+                      <string>Hora estï¿½ndar de Australia Central y Occidental</string>
                       <string>ACWST</string>
-                      <string>Hora estándar de verano de Australia Central y Occidental</string>
+                      <string>Hora estï¿½ndar de verano de Australia Central y Occidental</string>
                       <string>ACWDT</string>
                       <string>Hora de Australia Central y Occidental</string>
                       <string>ACWT</string>
                     </string-array>
                     <string-array>
                       <string>Australia/Hobart</string>
-                      <string>Hora estándar del Este (Tasmania)</string>
+                      <string>Hora estï¿½ndar del Este (Tasmania)</string>
                       <string>AEST</string>
                       <string>Hora de verano del Este (Tasmania)</string>
                       <string>AEDT</string>
@@ -3445,7 +3445,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/LHI</string>
-                      <string>Hora estándar de Lord Howe</string>
+                      <string>Hora estï¿½ndar de Lord Howe</string>
                       <string>LHST</string>
                       <string>Hora de verano de Lord Howe</string>
                       <string>LHDT</string>
@@ -3454,16 +3454,16 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Lindeman</string>
-                      <string>Hora estándar del Este (Queensland)</string>
+                      <string>Hora estï¿½ndar del Este (Queensland)</string>
                       <string>AEST</string>
-                      <string>Hora estándar de verano del Este (Queensland)</string>
+                      <string>Hora estï¿½ndar de verano del Este (Queensland)</string>
                       <string>AEDT</string>
                       <string>Hora Oriental (Queensland)</string>
                       <string>AET</string>
                     </string-array>
                     <string-array>
                       <string>Australia/Lord_Howe</string>
-                      <string>Hora estándar de Lord Howe</string>
+                      <string>Hora estï¿½ndar de Lord Howe</string>
                       <string>LHST</string>
                       <string>Hora de verano de Lord Howe</string>
                       <string>LHDT</string>
@@ -3472,7 +3472,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Melbourne</string>
-                      <string>Hora estándar del Este (Victoria)</string>
+                      <string>Hora estï¿½ndar del Este (Victoria)</string>
                       <string>AEST</string>
                       <string>Hora de verano del Este (Victoria)</string>
                       <string>AEDT</string>
@@ -3481,7 +3481,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/North</string>
-                      <string>Hora estándar Central (territorio del Norte)</string>
+                      <string>Hora estï¿½ndar Central (territorio del Norte)</string>
                       <string>ACST</string>
                       <string>Hora de verano Central (territorio del Norte)</string>
                       <string>ACDT</string>
@@ -3490,7 +3490,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/NSW</string>
-                      <string>Hora estándar Oriental (Nueva Gales del Sur)</string>
+                      <string>Hora estï¿½ndar Oriental (Nueva Gales del Sur)</string>
                       <string>AEST</string>
                       <string>Hora de verano Oriental (Nueva Gales del Sur)</string>
                       <string>AEDT</string>
@@ -3499,7 +3499,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Perth</string>
-                      <string>Hora estándar Occidental (Australia)</string>
+                      <string>Hora estï¿½ndar Occidental (Australia)</string>
                       <string>AWST</string>
                       <string>Hora de verano Occidental (Australia)</string>
                       <string>AWDT</string>
@@ -3508,16 +3508,16 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Queensland</string>
-                      <string>Hora estándar del Este (Queensland)</string>
+                      <string>Hora estï¿½ndar del Este (Queensland)</string>
                       <string>AEST</string>
-                      <string>Hora estándar de verano del Este (Queensland)</string>
+                      <string>Hora estï¿½ndar de verano del Este (Queensland)</string>
                       <string>AEDT</string>
                       <string>Hora Oriental (Queensland)</string>
                       <string>AET</string>
                     </string-array>
                     <string-array>
                       <string>Australia/South</string>
-                      <string>Hora estándar Central (Sur de Australia)</string>
+                      <string>Hora estï¿½ndar Central (Sur de Australia)</string>
                       <string>ACST</string>
                       <string>Hora de verano Central (Sur de Australia)</string>
                       <string>ACDT</string>
@@ -3526,7 +3526,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Sydney</string>
-                      <string>Hora estándar Oriental (Nueva Gales del Sur)</string>
+                      <string>Hora estï¿½ndar Oriental (Nueva Gales del Sur)</string>
                       <string>AEST</string>
                       <string>Hora de verano Oriental (Nueva Gales del Sur)</string>
                       <string>AEDT</string>
@@ -3535,7 +3535,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Tasmania</string>
-                      <string>Hora estándar del Este (Tasmania)</string>
+                      <string>Hora estï¿½ndar del Este (Tasmania)</string>
                       <string>AEST</string>
                       <string>Hora de verano del Este (Tasmania)</string>
                       <string>AEDT</string>
@@ -3544,7 +3544,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Victoria</string>
-                      <string>Hora estándar del Este (Victoria)</string>
+                      <string>Hora estï¿½ndar del Este (Victoria)</string>
                       <string>AEST</string>
                       <string>Hora de verano del Este (Victoria)</string>
                       <string>AEDT</string>
@@ -3553,7 +3553,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/West</string>
-                      <string>Hora estándar Occidental (Australia)</string>
+                      <string>Hora estï¿½ndar Occidental (Australia)</string>
                       <string>AWST</string>
                       <string>Hora de verano Occidental (Australia)</string>
                       <string>AWDT</string>
@@ -3562,7 +3562,7 @@
                     </string-array>
                     <string-array>
                       <string>Australia/Yancowinna</string>
-                      <string>Hora estándar Central (Sur de Australia/Nueva Gales del Sur)</string>
+                      <string>Hora estï¿½ndar Central (Sur de Australia/Nueva Gales del Sur)</string>
                       <string>ACST</string>
                       <string>Hora de verano Central (Sur de Australia/Nueva Gales del Sur)</string>
                       <string>ACDT</string>
@@ -3616,25 +3616,25 @@
                     </string-array>
                     <string-array>
                       <string>Brazil/West</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                       <string>Hora de verano de Amazonia</string>
                       <string>AMST</string>
-                      <string>Hora estándar de Amazonia</string>
+                      <string>Hora estï¿½ndar de Amazonia</string>
                       <string>AMT</string>
                     </string-array>
                     <string-array>
                       <string>Canada/Atlantic</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>Canada/Central</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -3643,7 +3643,7 @@
                     </string-array>
                     <string-array>
                       <string>Canada/East-Saskatchewan</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -3652,7 +3652,7 @@
                     </string-array>
                     <string-array>
                       <string>Canada/Eastern</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -3661,16 +3661,16 @@
                     </string-array>
                     <string-array>
                       <string>Canada/Mountain</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>Canada/Newfoundland</string>
-                      <string>Hora estándar de Terranova</string>
+                      <string>Hora estï¿½ndar de Terranova</string>
                       <string>NST</string>
                       <string>Hora de verano de Terranova</string>
                       <string>NDT</string>
@@ -3679,25 +3679,25 @@
                     </string-array>
                     <string-array>
                       <string>Canada/Pacific</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>Canada/Yukon</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>Canada/Saskatchewan</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -3706,11 +3706,11 @@
                     </string-array>
                     <string-array>
                       <string>CAT</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
-                      <string>Hora de verano de África Central</string>
+                      <string>Hora de verano de ï¿½frica Central</string>
                       <string>CAST</string>
-                      <string>Hora de África Central</string>
+                      <string>Hora de ï¿½frica Central</string>
                       <string>CAT</string>
                     </string-array>
                     <string-array>
@@ -3742,7 +3742,7 @@
                     </string-array>
                     <string-array>
                       <string>CST6CDT</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -3751,7 +3751,7 @@
                     </string-array>
                     <string-array>
                       <string>Cuba</string>
-                      <string>Hora estándar de Cuba</string>
+                      <string>Hora estï¿½ndar de Cuba</string>
                       <string>CST</string>
                       <string>Hora de verano de Cuba</string>
                       <string>CDT</string>
@@ -3760,11 +3760,11 @@
                     </string-array>
                     <string-array>
                       <string>EAT</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
@@ -3796,7 +3796,7 @@
                     </string-array>
                     <string-array>
                       <string>EST5EDT</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -3879,9 +3879,9 @@
                       <string>Europe/Belfast</string>
                       <string>Hora del Meridiano de Greenwich</string>
                       <string>GMT</string>
-                      <string>Hora de verano de Gran Bretaña</string>
+                      <string>Hora de verano de Gran Bretaï¿½a</string>
                       <string>BST</string>
-                      <string>Hora de Gran Bretaña</string>
+                      <string>Hora de Gran Bretaï¿½a</string>
                       <string>BT</string>
                     </string-array>
                     <string-array>
@@ -3978,9 +3978,9 @@
                       <string>Europe/Guernsey</string>
                       <string>Hora del Meridiano de Greenwich</string>
                       <string>GMT</string>
-                      <string>Hora de verano de Gran Bretaña</string>
+                      <string>Hora de verano de Gran Bretaï¿½a</string>
                       <string>BST</string>
-                      <string>Hora de Gran Bretaña</string>
+                      <string>Hora de Gran Bretaï¿½a</string>
                       <string>BT</string>
                     </string-array>
                     <string-array>
@@ -3996,9 +3996,9 @@
                       <string>Europe/Isle_of_Man</string>
                       <string>Hora del Meridiano de Greenwich</string>
                       <string>GMT</string>
-                      <string>Hora de verano de Gran Bretaña</string>
+                      <string>Hora de verano de Gran Bretaï¿½a</string>
                       <string>BST</string>
-                      <string>Hora de Gran Bretaña</string>
+                      <string>Hora de Gran Bretaï¿½a</string>
                       <string>BT</string>
                     </string-array>
                     <string-array>
@@ -4014,9 +4014,9 @@
                       <string>Europe/Jersey</string>
                       <string>Hora del Meridiano de Greenwich</string>
                       <string>GMT</string>
-                      <string>Hora de verano de Gran Bretaña</string>
+                      <string>Hora de verano de Gran Bretaï¿½a</string>
                       <string>BST</string>
-                      <string>Hora de Gran Bretaña</string>
+                      <string>Hora de Gran Bretaï¿½a</string>
                       <string>BT</string>
                     </string-array>
                     <string-array>
@@ -4059,9 +4059,9 @@
                       <string>Europe/London</string>
                       <string>Hora del Meridiano de Greenwich</string>
                       <string>GMT</string>
-                      <string>Hora de verano de Gran Bretaña</string>
+                      <string>Hora de verano de Gran Bretaï¿½a</string>
                       <string>BST</string>
-                      <string>Hora de Gran Bretaña</string>
+                      <string>Hora de Gran Bretaï¿½a</string>
                       <string>BT</string>
                     </string-array>
                     <string-array>
@@ -4102,11 +4102,11 @@
                     </string-array>
                     <string-array>
                       <string>Europe/Minsk</string>
-                      <string>Hora estándar de Moscú</string>
+                      <string>Hora estï¿½ndar de Moscï¿½</string>
                       <string>MSK</string>
-                      <string>Hora de verano de Moscú</string>
+                      <string>Hora de verano de Moscï¿½</string>
                       <string>MSD</string>
-                      <string>Hora de Moscú</string>
+                      <string>Hora de Moscï¿½</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
@@ -4120,11 +4120,11 @@
                     </string-array>
                     <string-array>
                       <string>Europe/Moscow</string>
-                      <string>Hora estándar de Moscú</string>
+                      <string>Hora estï¿½ndar de Moscï¿½</string>
                       <string>MSK</string>
-                      <string>Hora de verano de Moscú</string>
+                      <string>Hora de verano de Moscï¿½</string>
                       <string>MSD</string>
-                      <string>Hora de Moscú</string>
+                      <string>Hora de Moscï¿½</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
@@ -4210,11 +4210,11 @@
                     </string-array>
                     <string-array>
                       <string>Europe/Simferopol</string>
-                      <string>Hora estándar de Moscú</string>
+                      <string>Hora estï¿½ndar de Moscï¿½</string>
                       <string>MSK</string>
-                      <string>Hora de verano de Moscú</string>
+                      <string>Hora de verano de Moscï¿½</string>
                       <string>MSD</string>
-                      <string>Hora de Moscú</string>
+                      <string>Hora de Moscï¿½</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
@@ -4318,11 +4318,11 @@
                     </string-array>
                     <string-array>
                       <string>Europe/Volgograd</string>
-                      <string>Hora estándar de Moscú</string>
+                      <string>Hora estï¿½ndar de Moscï¿½</string>
                       <string>MSK</string>
-                      <string>Hora de verano de Moscú</string>
+                      <string>Hora de verano de Moscï¿½</string>
                       <string>MSD</string>
-                      <string>Hora de Moscú</string>
+                      <string>Hora de Moscï¿½</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
@@ -4365,18 +4365,18 @@
                       <string>GB</string>
                       <string>Hora del Meridiano de Greenwich</string>
                       <string>GMT</string>
-                      <string>Hora de verano de Gran Bretaña</string>
+                      <string>Hora de verano de Gran Bretaï¿½a</string>
                       <string>BST</string>
-                      <string>Hora de Gran Bretaña</string>
+                      <string>Hora de Gran Bretaï¿½a</string>
                       <string>BT</string>
                     </string-array>
                     <string-array>
                       <string>GB-Eire</string>
                       <string>Hora del Meridiano de Greenwich</string>
                       <string>GMT</string>
-                      <string>Hora de verano de Gran Bretaña</string>
+                      <string>Hora de verano de Gran Bretaï¿½a</string>
                       <string>BST</string>
-                      <string>Hora de Gran Bretaña</string>
+                      <string>Hora de Gran Bretaï¿½a</string>
                       <string>BT</string>
                     </string-array>
                     <string-array>
@@ -4408,16 +4408,16 @@
                     </string-array>
                     <string-array>
                       <string>Iran</string>
-                      <string>Hora estándar de Irán</string>
+                      <string>Hora estï¿½ndar de Irï¿½n</string>
                       <string>IRST</string>
-                      <string>Hora de verano de Irán</string>
+                      <string>Hora de verano de Irï¿½n</string>
                       <string>IRDT</string>
-                      <string>Hora de Irán</string>
+                      <string>Hora de Irï¿½n</string>
                       <string>IRT</string>
                     </string-array>
                     <string-array>
                       <string>IST</string>
-                      <string>Hora estándar de India</string>
+                      <string>Hora estï¿½ndar de India</string>
                       <string>IST</string>
                       <string>Hora de verano de India</string>
                       <string>IDT</string>
@@ -4426,20 +4426,20 @@
                     </string-array>
                     <string-array>
                       <string>Indian/Antananarivo</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
                       <string>Indian/Chagos</string>
-                      <string>Hora del Territorio del Océano Índico</string>
+                      <string>Hora del Territorio del Ocï¿½ano ï¿½ndico</string>
                       <string>IOT</string>
-                      <string>Hora de verano del Territorio del Océano Índico</string>
+                      <string>Hora de verano del Territorio del Ocï¿½ano ï¿½ndico</string>
                       <string>IOST</string>
-                      <string>Hora del Territorio del Océano Índico</string>
+                      <string>Hora del Territorio del Ocï¿½ano ï¿½ndico</string>
                       <string>IOT</string>
                     </string-array>
                     <string-array>
@@ -4462,20 +4462,20 @@
                     </string-array>
                     <string-array>
                       <string>Indian/Comoro</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
                       <string>Indian/Kerguelen</string>
-                      <string>Hora de los Territorios Franceses del Sur y de la Antártida</string>
+                      <string>Hora de los Territorios Franceses del Sur y de la Antï¿½rtida</string>
                       <string>TFT</string>
-                      <string>Hora de verano de los Territorios Franceses del Sur y de la Antártida</string>
+                      <string>Hora de verano de los Territorios Franceses del Sur y de la Antï¿½rtida</string>
                       <string>TFST</string>
-                      <string>Hora de los Territorios Franceses del Sur y de la Antártida</string>
+                      <string>Hora de los Territorios Franceses del Sur y de la Antï¿½rtida</string>
                       <string>TFT</string>
                     </string-array>
                     <string-array>
@@ -4507,25 +4507,25 @@
                     </string-array>
                     <string-array>
                       <string>Indian/Mayotte</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
-                      <string>Hora de verano de África Oriental</string>
+                      <string>Hora de verano de ï¿½frica Oriental</string>
                       <string>EAST</string>
-                      <string>Hora de África Oriental</string>
+                      <string>Hora de ï¿½frica Oriental</string>
                       <string>EAT</string>
                     </string-array>
                     <string-array>
                       <string>Indian/Reunion</string>
-                      <string>Hora de Reunión</string>
+                      <string>Hora de Reuniï¿½n</string>
                       <string>RET</string>
-                      <string>Hora de verano de Reunión</string>
+                      <string>Hora de verano de Reuniï¿½n</string>
                       <string>REST</string>
-                      <string>Hora de Reunión</string>
+                      <string>Hora de Reuniï¿½n</string>
                       <string>RET</string>
                     </string-array>
                     <string-array>
                       <string>Israel</string>
-                      <string>Hora estándar de Israel</string>
+                      <string>Hora estï¿½ndar de Israel</string>
                       <string>IST</string>
                       <string>Hora de verano de Israel</string>
                       <string>IDT</string>
@@ -4534,7 +4534,7 @@
                     </string-array>
                     <string-array>
                       <string>Jamaica</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -4543,11 +4543,11 @@
                     </string-array>
                     <string-array>
                       <string>Japan</string>
-                      <string>Hora estándar de Japón</string>
+                      <string>Hora estï¿½ndar de Japï¿½n</string>
                       <string>JST</string>
-                      <string>Hora de verano de Japón</string>
+                      <string>Hora de verano de Japï¿½n</string>
                       <string>JDT</string>
-                      <string>Hora de Japón</string>
+                      <string>Hora de Japï¿½n</string>
                       <string>JT</string>
                     </string-array>
                     <string-array>
@@ -4579,25 +4579,25 @@
                     </string-array>
                     <string-array>
                       <string>Mexico/BajaNorte</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>Mexico/BajaSur</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>Mexico/General</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -4615,20 +4615,20 @@
                     </string-array>
                     <string-array>
                       <string>MST7MDT</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>Navajo</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
@@ -4642,7 +4642,7 @@
                     </string-array>
                     <string-array>
                       <string>NST</string>
-                      <string>Hora estándar de Nueva Zelanda</string>
+                      <string>Hora estï¿½ndar de Nueva Zelanda</string>
                       <string>NZST</string>
                       <string>Hora de verano de Nueva Zelanda</string>
                       <string>NZDT</string>
@@ -4651,7 +4651,7 @@
                     </string-array>
                     <string-array>
                       <string>NZ</string>
-                      <string>Hora estándar de Nueva Zelanda</string>
+                      <string>Hora estï¿½ndar de Nueva Zelanda</string>
                       <string>NZST</string>
                       <string>Hora de verano de Nueva Zelanda</string>
                       <string>NZDT</string>
@@ -4660,7 +4660,7 @@
                     </string-array>
                     <string-array>
                       <string>NZ-CHAT</string>
-                      <string>Hora estándar de Chatham</string>
+                      <string>Hora estï¿½ndar de Chatham</string>
                       <string>CHAST</string>
                       <string>Hora de verano de Chatham</string>
                       <string>CHADT</string>
@@ -4669,11 +4669,11 @@
                     </string-array>
                     <string-array>
                       <string>PLT</string>
-                      <string>Hora de Pakistán</string>
+                      <string>Hora de Pakistï¿½n</string>
                       <string>PKT</string>
-                      <string>Hora de verano de Pakistán</string>
+                      <string>Hora de verano de Pakistï¿½n</string>
                       <string>PKST</string>
-                      <string>Hora de Pakistán</string>
+                      <string>Hora de Pakistï¿½n</string>
                       <string>PKT</string>
                     </string-array>
                     <string-array>
@@ -4687,11 +4687,11 @@
                     </string-array>
                     <string-array>
                       <string>PRT</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
@@ -4705,7 +4705,7 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Auckland</string>
-                      <string>Hora estándar de Nueva Zelanda</string>
+                      <string>Hora estï¿½ndar de Nueva Zelanda</string>
                       <string>NZST</string>
                       <string>Hora de verano de Nueva Zelanda</string>
                       <string>NZDT</string>
@@ -4723,7 +4723,7 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Chatham</string>
-                      <string>Hora estándar de Chatham</string>
+                      <string>Hora estï¿½ndar de Chatham</string>
                       <string>CHAST</string>
                       <string>Hora de verano de Chatham</string>
                       <string>CHADT</string>
@@ -4795,11 +4795,11 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Galapagos</string>
-                      <string>Hora de Galápagos</string>
+                      <string>Hora de Galï¿½pagos</string>
                       <string>GALT</string>
-                      <string>Hora de verano de Galápagos</string>
+                      <string>Hora de verano de Galï¿½pagos</string>
                       <string>GALST</string>
-                      <string>Hora de Galápagos</string>
+                      <string>Hora de Galï¿½pagos</string>
                       <string>GALT</string>
                     </string-array>
                     <string-array>
@@ -4822,7 +4822,7 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Guam</string>
-                      <string>Hora estándar de Chamorro</string>
+                      <string>Hora estï¿½ndar de Chamorro</string>
                       <string>ChST</string>
                       <string>Hora de verano de Chamorro</string>
                       <string>ChDT</string>
@@ -4831,7 +4831,7 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Johnston</string>
-                      <string>Hora estándar de Hawaii</string>
+                      <string>Hora estï¿½ndar de Hawaii</string>
                       <string>HST</string>
                       <string>Hora de verano de Hawaii</string>
                       <string>HDT</string>
@@ -4885,7 +4885,7 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Midway</string>
-                      <string>Hora estándar de Samoa</string>
+                      <string>Hora estï¿½ndar de Samoa</string>
                       <string>SST</string>
                       <string>Hora de verano de Samoa</string>
                       <string>SDT</string>
@@ -4930,7 +4930,7 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Pago_Pago</string>
-                      <string>Hora estándar de Samoa</string>
+                      <string>Hora estï¿½ndar de Samoa</string>
                       <string>SST</string>
                       <string>Hora de verano de Samoa</string>
                       <string>SDT</string>
@@ -4948,7 +4948,7 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Pitcairn</string>
-                      <string>Hora estándar de Pitcairn</string>
+                      <string>Hora estï¿½ndar de Pitcairn</string>
                       <string>PST</string>
                       <string>Hora de verano de Pitcairn</string>
                       <string>PDT</string>
@@ -4975,11 +4975,11 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Port_Moresby</string>
-                      <string>Hora de Papúa-Nueva Guinea</string>
+                      <string>Hora de Papï¿½a-Nueva Guinea</string>
                       <string>PGT</string>
-                      <string>Hora de verano de Papúa-Nueva Guinea</string>
+                      <string>Hora de verano de Papï¿½a-Nueva Guinea</string>
                       <string>PGST</string>
-                      <string>Hora de Papúa-Nueva Guinea</string>
+                      <string>Hora de Papï¿½a-Nueva Guinea</string>
                       <string>PGT</string>
                     </string-array>
                     <string-array>
@@ -4993,7 +4993,7 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Saipan</string>
-                      <string>Hora estándar de Chamorro</string>
+                      <string>Hora estï¿½ndar de Chamorro</string>
                       <string>ChST</string>
                       <string>Hora de verano de Chamorro</string>
                       <string>ChDT</string>
@@ -5002,7 +5002,7 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Samoa</string>
-                      <string>Hora estándar de Samoa</string>
+                      <string>Hora estï¿½ndar de Samoa</string>
                       <string>SST</string>
                       <string>Hora de verano de Samoa</string>
                       <string>SDT</string>
@@ -5011,11 +5011,11 @@
                     </string-array>
                     <string-array>
                       <string>Pacific/Tahiti</string>
-                      <string>Hora de Tahití</string>
+                      <string>Hora de Tahitï¿½</string>
                       <string>TAHT</string>
-                      <string>Hora de verano de Tahití</string>
+                      <string>Hora de verano de Tahitï¿½</string>
                       <string>TAHST</string>
-                      <string>Hora de Tahití</string>
+                      <string>Hora de Tahitï¿½</string>
                       <string>TAHT</string>
                     </string-array>
                     <string-array>
@@ -5083,7 +5083,7 @@
                     </string-array>
                     <string-array>
                       <string>PRC</string>
-                      <string>Hora estándar de China</string>
+                      <string>Hora estï¿½ndar de China</string>
                       <string>CST</string>
                       <string>Hora de verano de China</string>
                       <string>CDT</string>
@@ -5092,16 +5092,16 @@
                     </string-array>
                     <string-array>
                       <string>PST8PDT</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>ROK</string>
-                      <string>Hora estándar de Corea</string>
+                      <string>Hora estï¿½ndar de Corea</string>
                       <string>KST</string>
                       <string>Hora de verano de Corea</string>
                       <string>KDT</string>
@@ -5128,25 +5128,25 @@
                     </string-array>
                     <string-array>
                       <string>SystemV/AST4</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>SystemV/AST4ADT</string>
-                      <string>Hora estándar Atlántico</string>
+                      <string>Hora estï¿½ndar Atlï¿½ntico</string>
                       <string>AST</string>
-                      <string>Hora de verano Atlántico</string>
+                      <string>Hora de verano Atlï¿½ntico</string>
                       <string>ADT</string>
-                      <string>Hora del Atlántico</string>
+                      <string>Hora del Atlï¿½ntico</string>
                       <string>AT</string>
                     </string-array>
                     <string-array>
                       <string>SystemV/CST6</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -5155,7 +5155,7 @@
                     </string-array>
                     <string-array>
                       <string>SystemV/CST6CDT</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -5164,7 +5164,7 @@
                     </string-array>
                     <string-array>
                       <string>SystemV/EST5</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -5173,7 +5173,7 @@
                     </string-array>
                     <string-array>
                       <string>SystemV/EST5EDT</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -5182,7 +5182,7 @@
                     </string-array>
                     <string-array>
                       <string>SystemV/HST10</string>
-                      <string>Hora estándar de Hawaii</string>
+                      <string>Hora estï¿½ndar de Hawaii</string>
                       <string>HST</string>
                       <string>Hora de verano de Hawaii</string>
                       <string>HDT</string>
@@ -5191,43 +5191,43 @@
                     </string-array>
                     <string-array>
                       <string>SystemV/MST7</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>SystemV/MST7MDT</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>SystemV/PST8</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>SystemV/PST8PDT</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>SystemV/YST9</string>
-                      <string>Hora estándar de Alaska</string>
+                      <string>Hora estï¿½ndar de Alaska</string>
                       <string>AKST</string>
                       <string>Hora de verano de Alaska</string>
                       <string>AKDT</string>
@@ -5236,7 +5236,7 @@
                     </string-array>
                     <string-array>
                       <string>SystemV/YST9YDT</string>
-                      <string>Hora estándar de Alaska</string>
+                      <string>Hora estï¿½ndar de Alaska</string>
                       <string>AKST</string>
                       <string>Hora de verano de Alaska</string>
                       <string>AKDT</string>
@@ -5272,7 +5272,7 @@
                     </string-array>
                     <string-array>
                       <string>US/Alaska</string>
-                      <string>Hora estándar de Alaska</string>
+                      <string>Hora estï¿½ndar de Alaska</string>
                       <string>AKST</string>
                       <string>Hora de verano de Alaska</string>
                       <string>AKDT</string>
@@ -5281,7 +5281,7 @@
                     </string-array>
                     <string-array>
                       <string>US/Aleutian</string>
-                      <string>Hora estándar de Hawaii</string>
+                      <string>Hora estï¿½ndar de Hawaii</string>
                       <string>HST</string>
                       <string>Hora de verano de Hawaii</string>
                       <string>HDT</string>
@@ -5290,16 +5290,16 @@
                     </string-array>
                     <string-array>
                       <string>US/Arizona</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>US/Central</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -5308,7 +5308,7 @@
                     </string-array>
                     <string-array>
                       <string>US/Eastern</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -5317,7 +5317,7 @@
                     </string-array>
                     <string-array>
                       <string>US/Hawaii</string>
-                      <string>Hora estándar de Hawaii</string>
+                      <string>Hora estï¿½ndar de Hawaii</string>
                       <string>HST</string>
                       <string>Hora de verano de Hawaii</string>
                       <string>HDT</string>
@@ -5326,7 +5326,7 @@
                     </string-array>
                     <string-array>
                       <string>US/Indiana-Starke</string>
-                      <string>Hora estándar Central</string>
+                      <string>Hora estï¿½ndar Central</string>
                       <string>CST</string>
                       <string>Hora de verano Central</string>
                       <string>CDT</string>
@@ -5335,7 +5335,7 @@
                     </string-array>
                     <string-array>
                       <string>US/East-Indiana</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -5344,7 +5344,7 @@
                     </string-array>
                     <string-array>
                       <string>US/Michigan</string>
-                      <string>Hora estándar Oriental</string>
+                      <string>Hora estï¿½ndar Oriental</string>
                       <string>EST</string>
                       <string>Hora de verano Oriental</string>
                       <string>EDT</string>
@@ -5353,34 +5353,34 @@
                     </string-array>
                     <string-array>
                       <string>US/Mountain</string>
-                      <string>Hora estándar de las Rocosas</string>
+                      <string>Hora estï¿½ndar de las Rocosas</string>
                       <string>MST</string>
                       <string>Hora de verano de las Rocosas</string>
                       <string>MDT</string>
-                      <string>Hora de las Montañas Rocosas</string>
+                      <string>Hora de las Montaï¿½as Rocosas</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
                       <string>US/Pacific</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>US/Pacific-New</string>
-                      <string>Hora estándar del Pacífico</string>
+                      <string>Hora estï¿½ndar del Pacï¿½fico</string>
                       <string>PST</string>
-                      <string>Hora de verano del Pacífico</string>
+                      <string>Hora de verano del Pacï¿½fico</string>
                       <string>PDT</string>
-                      <string>Hora del Pacífico</string>
+                      <string>Hora del Pacï¿½fico</string>
                       <string>PT</string>
                     </string-array>
                     <string-array>
                       <string>US/Samoa</string>
-                      <string>Hora estándar de Samoa</string>
+                      <string>Hora estï¿½ndar de Samoa</string>
                       <string>SST</string>
                       <string>Hora de verano de Samoa</string>
                       <string>SDT</string>
@@ -5407,11 +5407,11 @@
                     </string-array>
                     <string-array>
                       <string>W-SU</string>
-                      <string>Hora estándar de Moscú</string>
+                      <string>Hora estï¿½ndar de Moscï¿½</string>
                       <string>MSK</string>
-                      <string>Hora de verano de Moscú</string>
+                      <string>Hora de verano de Moscï¿½</string>
                       <string>MSD</string>
-                      <string>Hora de Moscú</string>
+                      <string>Hora de Moscï¿½</string>
                       <string>MT</string>
                     </string-array>
                     <string-array>
@@ -5511,12 +5511,12 @@
                         <minusSign>-</minusSign>
                         <monetarySeparator>,</monetarySeparator>
                         <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
+                        <perMill>ï</perMill>
                         <percent>%</percent>
                         <serialVersionOnStream>3</serialVersionOnStream>
                         <zeroDigit>0</zeroDigit>
                         <NaN>?</NaN>
-                        <currencySymbol>€</currencySymbol>
+                        <currencySymbol>ï¿½</currencySymbol>
                         <exponentialSeparator>E</exponentialSeparator>
                         <infinity>?</infinity>
                         <intlCurrencySymbol>EUR</intlCurrencySymbol>
@@ -5542,7 +5542,7 @@
                   </ampms>
                   <eras>
                     <string>antes de Cristo</string>
-                    <string>anno Dómini</string>
+                    <string>anno Dï¿½mini</string>
                   </eras>
                   <localPatternChars>GyMdkHmsSEDFwWahKzZ</localPatternChars>
                   <locale reference="../../../../../../../../../usern/f__nac/formato/java.text.DateFormat/default/numberFormat/java.text.DecimalFormat/default/symbols/java.text.DecimalFormatSymbols/default/locale"/>
@@ -5581,20 +5581,20 @@
                     <string>dom</string>
                     <string>lun</string>
                     <string>mar</string>
-                    <string>mié</string>
+                    <string>miï¿½</string>
                     <string>jue</string>
                     <string>vie</string>
-                    <string>sáb</string>
+                    <string>sï¿½b</string>
                   </shortWeekdays>
                   <weekdays>
                     <string></string>
                     <string>domingo</string>
                     <string>lunes</string>
                     <string>martes</string>
-                    <string>miércoles</string>
+                    <string>miï¿½rcoles</string>
                     <string>jueves</string>
                     <string>viernes</string>
-                    <string>sábado</string>
+                    <string>sï¿½bado</string>
                   </weekdays>
                   <zoneStrings reference="../../../../../../../../../usern/f__nac/formato/java.text.SimpleDateFormat/default/formatData/java.text.DateFormatSymbols/default/zoneStrings"/>
                 </default>

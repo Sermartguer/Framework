@@ -6,10 +6,12 @@ import Users.Modules.User.Classes.Singleton;
 
 public class Files_Settings {
 public static void open_auto_admin(){
+	Open_Admin.openjson_admin();
 	Open_Admin.openxml_admin();
 	Open_Admin.opentxt_admin();
 }
 public static void save_auto_admin(){
+	Save_Admin.savejson_admin();
 	Save_Admin.savexml_admin();
 	Save_Admin.savetxt_admin();
 }

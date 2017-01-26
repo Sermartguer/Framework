@@ -10,7 +10,6 @@ public abstract class usu implements Comparable<usu>,Serializable{
 private String nom="";
 @XStreamAlias("dni")
 private String dni="";
-@XStreamAlias("f_nac")
 private fecha f_nac;
 @XStreamAlias("edad")
 private int edad=0;

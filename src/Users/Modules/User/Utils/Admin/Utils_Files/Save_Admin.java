@@ -1,5 +1,6 @@
 package Users.Modules.User.Utils.Admin.Utils_Files;
 
+import java.awt.HeadlessException;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -34,38 +35,39 @@ public class Save_Admin {
 	
 	//AUTO
 	public static void savejson_admin() {
-		 String PATH = null;
-	      try {
-	          XStream xstreamjson = new XStream(new JettisonMappedXmlDriver());
-	          xstreamjson.setMode(XStream.NO_REFERENCES);
-	          xstreamjson.alias("userad", userad.class);
-	          
-	         System.out.println("hola");
-	          PATH = new java.io.File(".").getCanonicalPath()
-	            		+ "/src/Users/Modules/User/Utils/Admin/Files/json/admin.json";
-	                
-	                //xstreamjson.toXML(Singleton.useradmin, new FileOutputStream(PATH)); //NO VA
-	                
-	               /* // TAMPOC VA
-	                StringBuffer json = new StringBuffer();
-	                for (int i = 0; i < Singleton.useradmin.size(); i++) {
-	                    json.append(xstreamjson.toXML(Singleton.useradmin.get(i)));
-	                }
-	                FileWriter fileXml = new FileWriter(PATH);
-	                fileXml.write(json.toString());
-	                fileXml.close();*/
-	                
-	              /*  Gson gson = new Gson();
-		            String json = gson.toJson(Singleton.useradmin);
+		String PATH = null;
+	     
+        try {
+            PATH = new java.io.File(".").getCanonicalPath()
+                    + "/src/Users/Modules/User/Utils/Admin/Files/json/admin.json";
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        if (Singleton.useradmin.size() > 0) {
+	        try {
+	        	XStream xstreamjson = new XStream(new JettisonMappedXmlDriver());
+		          xstreamjson.setMode(XStream.NO_REFERENCES);
+		          xstreamjson.alias("Admin", userad.class);
+		          System.out.println("1");
+		          	Gson gson = new Gson();
+			          System.out.println("2");
+		            //String json = gson.toJson(Singleton.useradmin);
+			          System.out.println("3");
 		            FileWriter fileXml = new FileWriter(PATH);
-	                fileXml.write(json.toString());
-	                fileXml.close();*/
-	                
-	                JOptionPane.showMessageDialog(null, Singleton.language.getProperty("sucsess_json"), "JSON", JOptionPane.INFORMATION_MESSAGE);
-	          
-      } catch (Exception e) {
-      	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_json_save"), "Error", JOptionPane.ERROR_MESSAGE);
-      }
+			          System.out.println("4");
+	                fileXml.write(Singleton.useradmin.toString());
+			          System.out.println("5");
+	                fileXml.close(); 
+		          
+	        } catch (Exception e) {
+		    	JOptionPane.showMessageDialog(null,  Singleton.language.getProperty("err_json_save"), "Error", JOptionPane.ERROR_MESSAGE);
+	        }
+        } else {
+            File path = new File(PATH);
+
+            path.delete();
+        }
 	}
 	public static void savexml_admin() {
         String PATH=null;

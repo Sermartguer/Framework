@@ -7,7 +7,7 @@
       <day>17</day>
       <month>4</month>
       <year>1998</year>
-      <fechas>17/4/1998</fechas>
+      <fecha>17/4/1998</fecha>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
@@ -5444,14 +5444,14 @@
       <param>dd/mm/yyyy</param>
     </f__nac>
     <edad>18</edad>
-    <sexo>Hombre</sexo>
+    <sexo>Man</sexo>
     <email>sergiete193@gmail.com</email>
     <username>sermarguer</username>
     <fant>
       <day>17</day>
       <month>4</month>
       <year>2014</year>
-      <fechas>17/4/2014</fechas>
+      <fecha>17/4/2014</fecha>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
@@ -5617,7 +5617,7 @@
       <day>17</day>
       <month>4</month>
       <year>1998</year>
-      <fechas>17/4/1998</fechas>
+      <fecha>17/4/1998</fecha>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
@@ -5770,14 +5770,14 @@
       <param>dd/mm/yyyy</param>
     </f__nac>
     <edad>18</edad>
-    <sexo>Hombre</sexo>
+    <sexo>Man</sexo>
     <email>sergiete193@gmail.com</email>
     <username>sermarguer</username>
     <fant>
       <day>17</day>
       <month>4</month>
       <year>2014</year>
-      <fechas>17/4/2014</fechas>
+      <fecha>17/4/2014</fecha>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
@@ -5943,7 +5943,7 @@
       <day>17</day>
       <month>4</month>
       <year>1998</year>
-      <fechas>17/4/1998</fechas>
+      <fecha>17/4/1998</fecha>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
@@ -11380,14 +11380,14 @@
       <param>dd/mm/yyyy</param>
     </f__nac>
     <edad>18</edad>
-    <sexo>Hombre</sexo>
+    <sexo>Man</sexo>
     <email>sergiete193@gmail.com</email>
     <username>sermarguer</username>
     <fant>
       <day>17</day>
       <month>4</month>
       <year>2014</year>
-      <fechas>17/4/2014</fechas>
+      <fecha>17/4/2014</fecha>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>

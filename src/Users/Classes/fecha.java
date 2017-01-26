@@ -9,15 +9,15 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 import java.text.SimpleDateFormat;
 import java.io.Serializable;
 import java.text.ParseException;
-@XStreamAlias("fecha")
+
 public class fecha implements Serializable{
-	@XStreamAlias("day")
+
 	private int day;
-	@XStreamAlias("month")
+
 	private int month;
-	@XStreamAlias("year")
+
 	private int year;
-	@XStreamAlias("fechas")
+
 	private String fecha;
 	private SimpleDateFormat formato=new SimpleDateFormat("dd/MM/yyyy");
 	private String param="";

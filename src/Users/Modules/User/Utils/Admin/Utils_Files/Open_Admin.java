@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
@@ -15,7 +17,9 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
+import com.google.gson.JsonIOException;
 import com.google.gson.JsonParser;
+import com.google.gson.JsonSyntaxException;
 import com.google.gson.stream.JsonReader;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.annotations.Annotations;
@@ -24,44 +28,41 @@ import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 import Users.Main.menu4;
 import Users.Modules.User.Classes.Singleton;
 import Users.Modules.User.Classes.userad;
+import Users.Modules.User.Classes.usu;
 
 public class Open_Admin {
 	
 	//AUTO
 	public static ArrayList<userad> openjson_admin() {
-    	String PATH = null;
-    	userad a1=null;
-    	
+		String PATH = null;
+	      
+        try {
+            PATH = new java.io.File(".").getCanonicalPath()
+                    + "/src/Users/Modules/User/Utils/Admin/Files/Admin/json/admin.json";
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        //if (Singleton.useradmin.size() > 0) {
 	        try {
-	        	  XStream xstream = new XStream(new JettisonMappedXmlDriver());
-		          xstream.setMode(XStream.NO_REFERENCES);
-				  xstream.alias("Userad", userad.class);
-				  
-				  PATH = new java.io.File(".").getCanonicalPath()+ "/src/Users/Modules/User/Utils/Admin/Files/json/admin.json";
-		               
-		                Singleton.useradmin.clear();
-		                
-		                //AlistEF.efi = (ArrayList<empleafijo>)xstream.fromXML(new FileReader(PATH)); //NO VA
-		                /* TAMPOC VA
-		                for (int i = 0; i < size; i++) {
-		                	e1 = (empleafijo)xstream.fromXML(new FileReader(PATH));    
-		                	AlistEF.efi.add(e1);
-		                }*/
-		                JsonReader lector = new JsonReader(new FileReader(PATH));
-		                JsonParser parseador = new JsonParser();
-		                JsonElement raiz = parseador.parse(lector);
-		            		  
-		            	Gson json = new Gson();
-		            	JsonArray lista = raiz.getAsJsonArray();
-		            	for (JsonElement elemento : lista) {
-		            		a1 = json.fromJson(elemento, userad.class);
-		            		Singleton.useradmin.add(a1);
-		            	}
-		           
-	
+		          XStream xstreamjson = new XStream(new JettisonMappedXmlDriver());
+		          xstreamjson.setMode(XStream.NO_REFERENCES);
+		          xstreamjson.alias("Client", userad.class);
+		          
+		          Gson gson = new Gson();
+			      String json = gson.toJson(Singleton.useradmin);
+			      FileWriter fileXml = new FileWriter(PATH);
+		          fileXml.write(json.toString());
+		          fileXml.close(); 
+		          
 	        } catch (Exception e) {
 	        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_json"), "Error", JOptionPane.ERROR_MESSAGE);
 	        }
+        //} else {
+            File path = new File(PATH);
+
+            path.delete();
+       // }
 	        return Singleton.useradmin;
 	    
         

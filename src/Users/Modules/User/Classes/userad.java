@@ -16,7 +16,6 @@ private String sexo="";
 private String email="";
 @XStreamAlias("username")
 private String username="";
-@XStreamAlias("fant")
 private fecha fant;
 @XStreamAlias("antiguitat")
 private int antiguitat=0;

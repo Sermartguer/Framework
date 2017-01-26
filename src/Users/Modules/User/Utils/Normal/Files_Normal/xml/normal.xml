@@ -7,7 +7,7 @@
       <day>17</day>
       <month>4</month>
       <year>1998</year>
-      <fechas>17/4/1998</fechas>
+      <fecha>17/4/1998</fecha>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
@@ -5455,7 +5455,7 @@
       <day>17</day>
       <month>4</month>
       <year>1998</year>
-      <fechas>17/4/1998</fechas>
+      <fecha>17/4/1998</fecha>
       <formato serialization="custom">
         <java.text.DateFormat>
           <default>
