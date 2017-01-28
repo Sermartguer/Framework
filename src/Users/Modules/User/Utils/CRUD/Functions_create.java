@@ -17,8 +17,11 @@ public class Functions_create {
 		int location = -1;
 		if (Singleton.config.getdummies()==false){
 		a1 = fnes_users4.ask_adminDNI();
-		
+		if (Singleton.useradmin==null){
+			System.out.println("Esta buit");
+		}else{
 		location = fnes_find.find_admin(a1);
+		}
 		}
 		if (location != -1) {
 			JOptionPane.showMessageDialog(null, Singleton.language.getProperty("error_create"), "ERROR", JOptionPane.ERROR_MESSAGE);

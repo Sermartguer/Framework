@@ -80,7 +80,11 @@ public static String vDNIauto(){
 	dniauto=numeros+letra;
 	res=validate.DNI(dniauto);
 	a1 = fnes_users_dummies.ask_adminDNI_dummies(dniauto);
+	if (Singleton.useradmin==null){
+		System.out.println("Esta buit");
+	}else{
 	location = fnes_find.find_admin(a1);
+	}
 	if (location != 1){
 		correct=true;
 	}

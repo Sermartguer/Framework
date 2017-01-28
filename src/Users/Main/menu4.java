@@ -1,5 +1,7 @@
 package Users.Main;
 
+import java.util.ArrayList;
+
 import javax.swing.JOptionPane;
 import Users.Utils.*;
 import Users.Modules.User.Classes.Singleton;
@@ -23,7 +25,12 @@ public class menu4 {
 		String coin = "euro", date = "dd/mm/yyyy", decimal = ".0", file = "XML";
 		boolean continu = false,dummies=true;
 		// Operations
+		
+
 		Functions_open_auto.open();
+		if (Singleton.useradmin==null){
+			System.out.println("Ye loco");
+		}
 		Singleton.config = new setting(Singleton.language.getIdioma(), decimal, date, coin, file, dummies);
 		String[] options_users = {Singleton.language.getProperty("client"),Singleton.language.getProperty("normal"),Singleton.language.getProperty("admin"),Singleton.language.getProperty("return")};
 		String[] options = {Singleton.language.getProperty("userm"),Singleton.language.getProperty("config"),Singleton.language.getProperty("exit")};
