@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import Users.Utils.*;
 import Users.Modules.User.Classes.Singleton;
+import Users.Modules.User.Classes.userad;
+import Users.Modules.User.Classes.usercl;
+import Users.Modules.User.Classes.usern;
 import Users.Modules.User.Utils.Admin.Utils_Files.Files_Settings;
 import Users.Modules.User.Utils.CRUD.Functions_create;
 import Users.Modules.User.Utils.CRUD.Functions_delete;
@@ -25,12 +28,16 @@ public class menu4 {
 		String coin = "euro", date = "dd/mm/yyyy", decimal = ".0", file = "XML";
 		boolean continu = false,dummies=true;
 		// Operations
-		
 
+		Singleton.useradmin = new ArrayList <userad> ();
+		Singleton.userclient = new ArrayList <usercl> ();
+		Singleton.userregister = new ArrayList <usern> ();
 		Functions_open_auto.open();
 		if (Singleton.useradmin==null){
 			System.out.println("Ye loco");
+		}else{
 		}
+		
 		Singleton.config = new setting(Singleton.language.getIdioma(), decimal, date, coin, file, dummies);
 		String[] options_users = {Singleton.language.getProperty("client"),Singleton.language.getProperty("normal"),Singleton.language.getProperty("admin"),Singleton.language.getProperty("return")};
 		String[] options = {Singleton.language.getProperty("userm"),Singleton.language.getProperty("config"),Singleton.language.getProperty("exit")};

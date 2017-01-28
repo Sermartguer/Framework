@@ -29,6 +29,8 @@ public class Functions_create {
 			
 			if (Singleton.config.getdummies()==true){
 				a1 = (userad) fnes_users_dummies.create_users(2);
+				
+				System.out.println(a1.toString());
 			}else if (Singleton.config.getdummies()==false){
 				a1 = (userad) fnes_users4.create_users(2);
 			}

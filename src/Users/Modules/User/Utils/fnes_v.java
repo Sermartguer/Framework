@@ -68,9 +68,9 @@ public static String vDNIauto(){
 	
 	do{
 		
-		Random rnd = new Random(); 
-		rnd.setSeed(System.currentTimeMillis()); 
-		int al6 = 10000000 + rnd.nextInt(90000000); 
+	Random rnd = new Random(); 
+	rnd.setSeed(System.currentTimeMillis()); 
+	int al6 = 10000000 + rnd.nextInt(90000000); 
 	System.out.println(al6);
 	String letras = "TRWAGMYFPDXBNJZSQVHLCKE"; 
 	int index = al6 - (Math.abs(al6/23)*23);
