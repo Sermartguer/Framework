@@ -11,5 +11,5 @@ public class Singleton {
 	public static ArrayList <usern> userregister;
 	public static String DNI;
 	public static setting config=null;
-	public static lenguage language=new lenguage("English");
+	//public static lenguage language=new lenguage("English");
 }

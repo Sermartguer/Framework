@@ -69,8 +69,8 @@ public class fnes_users_dummies {
 			String nom = fnes_v.vauto(0);
 			String dni = fnes_v.vDNIauto();
 			String sex = fnes_v.vSEXdummies();
-			email = "sergiete193@gmail.com";
-			username = "sermarguer";
+			email = fnes_v.vauto(1);
+			username = fnes_v.vauto(2);
 			fnac= new fecha("17/04/1998","dd/mm/yyyy");
 			edad = func_fech.vEDAD(fnac);
 			fant =new fecha("17/04/2014","dd/mm/yyyy");

@@ -27,6 +27,7 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.annotations.Annotations;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 
+import Users.Classes.lenguage;
 import Users.Modules.User.Classes.Singleton;
 import Users.Modules.User.Classes.userad;
 
@@ -61,7 +62,7 @@ public class Save_Admin {
 	                fileXml.close(); 
 		          
 	        } catch (Exception e) {
-		    	JOptionPane.showMessageDialog(null,  Singleton.language.getProperty("err_json_save"), "Error", JOptionPane.ERROR_MESSAGE);
+		    	JOptionPane.showMessageDialog(null,  lenguage.getInstance().getProperty("err_json_save"), "Error", JOptionPane.ERROR_MESSAGE);
 	        }
         } else {
             File path = new File(PATH);
@@ -99,7 +100,7 @@ public class Save_Admin {
 	            OS.close();
 	            
 		    }catch (Exception e){
-		    	JOptionPane.showMessageDialog(null,  Singleton.language.getProperty("err_xml_save"), "Error", JOptionPane.ERROR_MESSAGE);
+		    	JOptionPane.showMessageDialog(null,  lenguage.getInstance().getProperty("err_xml_save"), "Error", JOptionPane.ERROR_MESSAGE);
 		    }
         } else {
             File path = new File(PATH);
@@ -129,7 +130,7 @@ public class Save_Admin {
 				OOS.close();
 	            
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null,  Singleton.language.getProperty("err_txt_save"), "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null,  lenguage.getInstance().getProperty("err_txt_save"), "Error", JOptionPane.ERROR_MESSAGE);
 	        }
         } else {
             File path = new File(PATH);
@@ -162,10 +163,10 @@ public class Save_Admin {
 	                fileXml.write(json.toString());
 	                fileXml.close(); 
 	                
-	                JOptionPane.showMessageDialog(null,  Singleton.language.getProperty("sucsess_json"), "JSON", JOptionPane.INFORMATION_MESSAGE);
+	                JOptionPane.showMessageDialog(null,  lenguage.getInstance().getProperty("sucsess_json"), "JSON", JOptionPane.INFORMATION_MESSAGE);
 	          }
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_json_save"), "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_json_save"), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 	public static void savexml_admin_ondemmand() {
@@ -198,10 +199,10 @@ public class Save_Admin {
                 fileXml.close();
                 OSW.close();
                 OS.close();
-                JOptionPane.showMessageDialog(null, Singleton.language.getProperty("sucsess_xml"), "XML", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("sucsess_xml"), "XML", JOptionPane.INFORMATION_MESSAGE);
             }
 	    }catch (Exception e){
-	    	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_xml_save"), "XML", JOptionPane.ERROR_MESSAGE);
+	    	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_xml_save"), "XML", JOptionPane.ERROR_MESSAGE);
 	    } 
     }
 	 public static void savetxt_admin_ondemmand() {
@@ -224,10 +225,10 @@ public class Save_Admin {
 					ObjectOutputStream OOS=new ObjectOutputStream(FOS);
 					OOS.writeObject(Singleton.useradmin);
 					OOS.close();
-	                JOptionPane.showMessageDialog(null, Singleton.language.getProperty("sucsess_txt"), "TXT", JOptionPane.INFORMATION_MESSAGE);
+	                JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("sucsess_txt"), "TXT", JOptionPane.INFORMATION_MESSAGE);
 	            }
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_txt_save"), "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_txt_save"), "Error", JOptionPane.ERROR_MESSAGE);
 	        }
 	    }
 		

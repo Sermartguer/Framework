@@ -25,6 +25,7 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.annotations.Annotations;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 
+import Users.Classes.lenguage;
 import Users.Main.menu4;
 import Users.Modules.User.Classes.Singleton;
 import Users.Modules.User.Classes.userad;
@@ -56,7 +57,7 @@ public class Open_Admin {
 		          fileXml.close(); 
 		          
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_json"), "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_json"), "Error", JOptionPane.ERROR_MESSAGE);
 	        }
         //} else {
             File path = new File(PATH);
@@ -79,7 +80,7 @@ public class Open_Admin {
             Singleton.useradmin = (ArrayList <userad>)xstream.fromXML(new FileReader(PATH));
             
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_xml"), "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_xml"), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 	
@@ -97,7 +98,7 @@ public class Open_Admin {
     		OIS.close();
             
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_txt"), "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_txt"), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 	
@@ -141,7 +142,7 @@ public class Open_Admin {
 	            	}
 	          } 
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_json"), "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_json"), "Error", JOptionPane.ERROR_MESSAGE);
         }
         return Singleton.useradmin;
     }
@@ -164,7 +165,7 @@ public class Open_Admin {
             }
             
         } catch (Exception e1) {
-        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_xml"), "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_xml"), "Error", JOptionPane.ERROR_MESSAGE);
         }
         return Singleton.useradmin;
     }
@@ -189,7 +190,7 @@ public class Open_Admin {
     			oi.close();
             }
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_txt"), "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_txt"), "Error", JOptionPane.ERROR_MESSAGE);
         }
     	return Singleton.useradmin;
     }

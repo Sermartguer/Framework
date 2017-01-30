@@ -20,6 +20,7 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.annotations.Annotations;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 
+import Users.Classes.lenguage;
 import Users.Modules.User.Classes.Singleton;
 import Users.Modules.User.Classes.userad;
 import Users.Modules.User.Classes.usercl;
@@ -57,7 +58,7 @@ public class Open_Client {
 		           
 	
 	        } catch (Exception e) {
-	        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_json"), "Error", JOptionPane.ERROR_MESSAGE);
+	        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_json"), "Error", JOptionPane.ERROR_MESSAGE);
 	        }
 	        return Singleton.userclient;
 	    
@@ -75,7 +76,7 @@ public class Open_Client {
             Singleton.userclient = (ArrayList <usercl>)xstream.fromXML(new FileReader(PATH));
             
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_xml"), "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_xml"), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 	public static void opentxt_client() {
@@ -92,7 +93,7 @@ public class Open_Client {
     		OIS.close();
             
         } catch (Exception e) {
-        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_txt"), "Error", JOptionPane.ERROR_MESSAGE);
+        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_txt"), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 	
@@ -137,7 +138,7 @@ public class Open_Client {
 			            	}
 			          } 
 		        } catch (Exception e) {
-		        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_json"), "Error", JOptionPane.ERROR_MESSAGE);
+		        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_json"), "Error", JOptionPane.ERROR_MESSAGE);
 		        }
 		        return Singleton.userclient;
 		    }
@@ -160,7 +161,7 @@ public class Open_Client {
 		            }
 		            
 		        } catch (Exception e1) {
-		        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_xml"), "Error", JOptionPane.ERROR_MESSAGE);
+		        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_xml"), "Error", JOptionPane.ERROR_MESSAGE);
 		        }
 		        return Singleton.userclient;
 		    }
@@ -184,7 +185,7 @@ public class Open_Client {
 		    			oi.close();
 		            }
 		        } catch (Exception e) {
-		        	JOptionPane.showMessageDialog(null, Singleton.language.getProperty("err_txt"), "Error", JOptionPane.ERROR_MESSAGE);
+		        	JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("err_txt"), "Error", JOptionPane.ERROR_MESSAGE);
 		        }
 		    	return Singleton.userclient;
 		    }

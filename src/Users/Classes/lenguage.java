@@ -4,10 +4,13 @@ import java.util.Properties;
 
 public class lenguage extends Properties{
 private static final long serialVersionUID = 1L;
-private String idioma="";
+private String idioma="";	
+private static lenguage instance;
 
-public lenguage (String idioma){
-	this.idioma=idioma;
+
+public lenguage (){
+	idioma=setting.getInstance().getlang();
+	//this.idioma=idioma;
     switch(idioma){
     case "English":
         getProperties("english.properties");
@@ -41,6 +44,12 @@ public void setIdioma(String idioma) {
     default:
         getProperties("english.properties");
 	}
+}
+public static lenguage getInstance () {
+	if (instance==null){
+		instance = new lenguage();
+	}
+	return instance;
 }
 
 public void getProperties(String idioma) {

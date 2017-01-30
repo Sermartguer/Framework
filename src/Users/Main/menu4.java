@@ -25,39 +25,30 @@ public class menu4 {
 	public static void main(String[] args) {
 		// Variables
 		int operator = 0, ops = 0, operator_users = 0,settin=0;
-		String coin = "euro", date = "dd/mm/yyyy", decimal = ".0", file = "XML";
-		boolean continu = false,dummies=true;
+		//String coin = "euro", date = "dd/mm/yyyy", decimal = ".0", file = "XML";
+		boolean continu = false;
 		// Operations
-
-		Singleton.useradmin = new ArrayList <userad> ();
-		Singleton.userclient = new ArrayList <usercl> ();
-		Singleton.userregister = new ArrayList <usern> ();
-		Functions_open_auto.open();
-		if (Singleton.useradmin==null){
-			System.out.println("Ye loco");
-		}else{
-		}
+		setting.getInstance();
 		
-		Singleton.config = new setting(Singleton.language.getIdioma(), decimal, date, coin, file, dummies);
-		String[] options_users = {Singleton.language.getProperty("client"),Singleton.language.getProperty("normal"),Singleton.language.getProperty("admin"),Singleton.language.getProperty("return")};
-		String[] options = {Singleton.language.getProperty("userm"),Singleton.language.getProperty("config"),Singleton.language.getProperty("exit")};
-		String[] op = { Singleton.language.getProperty("create"),Singleton.language.getProperty("print_data"),Singleton.language.getProperty("change_data"),Singleton.language.getProperty("delete"),Singleton.language.getProperty("order"),
-				"Open", "Save", Singleton.language.getProperty("exit") };
-		String[] opsettin = {Singleton.language.getProperty("date"),Singleton.language.getProperty("coin"),Singleton.language.getProperty("decimals"),Singleton.language.getProperty("lang"),"Dummies",Singleton.language.getProperty("files"),Singleton.language.getProperty("return") };
+		
 		do {
-			operator = functions.menuo(options, Singleton.language.getProperty("choose_an_option"),Singleton.language.getProperty("userm"));
+			String[] options_users = {lenguage.getInstance().getProperty("client"),lenguage.getInstance().getProperty("normal"),lenguage.getInstance().getProperty("admin"),lenguage.getInstance().getProperty("return")};
+			String[] options = {lenguage.getInstance().getProperty("userm"),lenguage.getInstance().getProperty("config"),lenguage.getInstance().getProperty("exit")};
+			String[] op = { lenguage.getInstance().getProperty("create"),lenguage.getInstance().getProperty("print_data"),lenguage.getInstance().getProperty("change_data"),lenguage.getInstance().getProperty("delete"),lenguage.getInstance().getProperty("order"),
+					"Open", "Save", lenguage.getInstance().getProperty("exit") };
+			operator = functions.menuo(options, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("userm"));
 			if (operator == -1) {
 				System.exit(0);
 			}
 			switch (operator) {
 			case 0:
 				do {
-					operator_users = functions.menuo(options_users, Singleton.language.getProperty("choose_an_option"),Singleton.language.getProperty("userm"));
+					operator_users = functions.menuo(options_users, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("userm"));
 					switch (operator_users) {
 					case 0:
 						do {
 							//////////////////////// CLIENT	////////////////////////
-							ops = functions.menuo(op, Singleton.language.getProperty("choose_an_option"),Singleton.language.getProperty("client"));
+							ops = functions.menuo(op, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("client"));
 							if (ops == -1) {
 								System.exit(0);
 							}
@@ -96,7 +87,7 @@ public class menu4 {
 					case 1:
 						//////////////////////// NORMAL//////////////////////////
 						do {
-							ops = functions.menuo(op, Singleton.language.getProperty("choose_an_option"),Singleton.language.getProperty("normal"));
+							ops = functions.menuo(op, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("normal"));
 							if (ops == -1) {
 								System.exit(0);
 							}
@@ -135,7 +126,7 @@ public class menu4 {
 					case 2:
 						////////////////////////	ADMIN	////////////////////////
 						do {
-							ops = functions.menuo(op, Singleton.language.getProperty("choose_an_option"),Singleton.language.getProperty("admin"));
+							ops = functions.menuo(op, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("admin"));
 							if (ops == -1) {
 								System.exit(0);
 							}
@@ -180,7 +171,8 @@ public class menu4 {
 				break;
 			case 1:
 				do {
-					settin = functions.menuo(opsettin, Singleton.language.getProperty("choose_an_option"),Singleton.language.getProperty("config"));
+					String[] opsettin = {lenguage.getInstance().getProperty("date"),lenguage.getInstance().getProperty("coin"),lenguage.getInstance().getProperty("decimals"),lenguage.getInstance().getProperty("lang"),"Dummies",lenguage.getInstance().getProperty("files"),lenguage.getInstance().getProperty("return") };
+					settin = functions.menuo(opsettin, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("config"));
 					switch (settin) {
 					case 0:
 						settings.settingfecha();
@@ -207,8 +199,8 @@ public class menu4 {
 				} while (continu == false);
 				break;
 			case 2:
+				JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("goodbye"), lenguage.getInstance().getProperty("exit"),JOptionPane.INFORMATION_MESSAGE);
 				Functions_save_auto.save();
-				JOptionPane.showMessageDialog(null, Singleton.language.getProperty("oodbye"), Singleton.language.getProperty("exit"),JOptionPane.INFORMATION_MESSAGE);
 				System.exit(0);
 				break;
 			}
