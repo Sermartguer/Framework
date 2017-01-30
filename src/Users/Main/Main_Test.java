@@ -1,4 +1,6 @@
 package Users.Main;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.Date;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -11,58 +13,42 @@ import java.util.Random;
 import java.util.Scanner;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 import Users.Classes.fecha;
 public class Main_Test {
-	private static final char[] LETRAS_NIF = { 'T', 'R', 'W', 'A', 'G', 'M',
-            'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H',
-            'L', 'C', 'K', 'E' };
-    
-    public static String generaNif (String seed) {
-        if (seed != null) {
-            try {
-                Integer.parseInt(seed);
-            } catch (NumberFormatException ex) {
-                return "KO";
-            }
-        } else {
-            seed = "";
-        }
-        String numeroDNI = String.valueOf(Math.random()).concat(seed);
-        String fullDNI = numeroDNI.substring(numeroDNI.length() - 8);
 
-        int dniInt = Integer.valueOf(fullDNI);
-        fullDNI = fullDNI + LETRAS_NIF[dniInt % 23];
-        return fullDNI;
-    }
-    public static String calculaLetra(String nif) {
-        if (nif.length() != 8) {
-            return ("Nif Inválido");
-        }
-        return generaNif(nif).substring(8);
-    }
-
-    public static String validaNif(String nif) {
-        if (nif.substring(0, 8).length() == 8) {
-            return nif.equalsIgnoreCase(generaNif(nif.substring(0, 8))) ? "OK"
-                    : "KO";
-        } else {
-            return ("Nif Inválido");
-        }
-    }			   
 	public static void main(String[] args) {
 	
-		Random rnd = new Random(); 
+		/*JFrame frame = new JFrame("ExETesT");
+	    frame.setVisible(true);
+	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    frame.setSize(400,350);
+	    JPanel panel = new JPanel ();
+	    frame.add(panel);
+	    JButton button = new JButton("Click me");
+	    panel.add(button);
+	    button.addActionListener(new Action());*/
 
+	
+
+	            String[] names = {"Abraham", "Adán", "Agapito", "Cristobal", "Alex", "Cristian", "Custodio", "David", "Danilo", "Dani"};
+	            String[] names2 = {"Ylos", "zzzzz", "sdsd", "OK"};
+	            String[] names3 = {"Hei", "ok", "jadd", "så drar vi", "det var det"};
+
+	            int random = (int) (Math.random()*names.length);
+	           //int random2 = (int) (Math.random()*names2.length);
+	           //int random3 = (int) (Math.random()*names3.length);
+
+	            System.out.println("Your clan name is: "  + names[random]);
+
+
+	        
+	    }
 		
-		rnd.setSeed(System.currentTimeMillis()); 
-
-		
-		int al6 = 10000000 + rnd.nextInt(90000000); 
-
-		System.out.println("Aleatorio de 6 cifras : " + al6); 
-		} 
 	
 }
 

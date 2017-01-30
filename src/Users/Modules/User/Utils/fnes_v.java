@@ -30,6 +30,27 @@ public class fnes_v {
 		}while (res==false);
 		return nom;
 	}
+	public static String vauto(int opcio){
+		String nom="";
+		if (opcio==0){
+		 String[] names = {"Abraham", "Adán", "Agapito", "Cristobal", "Alex", "Cristian", "Custodio", "David", "Danilo", "Dani"};
+		 int random = (int) (Math.random()*names.length);
+	         nom=names[random];
+	         return nom;
+		}if (opcio==1){
+         String[] names = {"sergiete193@gmail.com", "69rftl+d5fhnyw2rcjbw@sharklasers.com", "69rg6v+46z461gld7zgtxh9wg@sharklasers.com", "69rg9h+9e8opsaahfsufc@sharklasers.com"};
+         int random = (int) (Math.random()*names.length);
+          nom=names[random];
+          return nom;
+		}if(opcio==2){
+         String[] names = {"nailsarkle", "gizalips", "periwinkleminus", "cavernousgentle", "nurturingvalue"};
+         int random = (int) (Math.random()*names.length);
+          nom=names[random];
+          return nom;
+		}
+		return "";
+         
+	}
 	
 	public static String vUSERNAME(String nom){
 		boolean res=false;

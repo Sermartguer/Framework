@@ -23,9 +23,9 @@ public class fnes_users_dummies {
 			int edad = 0;
 			// Operacions
 			
-			String nom = "Sergio";
+			String nom = fnes_v.vauto(0);
 			String dni = fnes_v.vDNIauto();
-			fnac= new fecha("17/04/1998",Singleton.config.getffecha());
+			fnac= new fecha("17/04/1998","dd/mm/yyyy");
 			edad = func_fech.vEDAD(fnac);
 			int n_comp=20;
 			int descuentos = 20;
@@ -42,9 +42,9 @@ public class fnes_users_dummies {
 			int points=0;
 			// Operacions
 			
-			String nom = "Sergio";
+			String nom = fnes_v.vauto(0);
 			String dni =fnes_v.vDNIauto();
-			fnac= new fecha("17/04/1998",Singleton.config.getffecha());
+			fnac= new fecha("17/04/1998","dd/mm/yyyy");
 			edad = func_fech.vEDAD(fnac);
 			int n_com=20;
 			karma=func_plus.karma(n_com);
@@ -66,14 +66,14 @@ public class fnes_users_dummies {
 			String alta = "";
 			int sou=0;
 			// OPERACIONS
-			String nom = "Sergio";
+			String nom = fnes_v.vauto(0);
 			String dni = fnes_v.vDNIauto();
 			String sex = fnes_v.vSEXdummies();
 			email = "sergiete193@gmail.com";
 			username = "sermarguer";
-			fnac= new fecha("17/04/1998",Singleton.config.getffecha());
+			fnac= new fecha("17/04/1998","dd/mm/yyyy");
 			edad = func_fech.vEDAD(fnac);
-			fant =new fecha("17/04/2014",Singleton.config.getffecha());
+			fant =new fecha("17/04/2014","dd/mm/yyyy");
 			antiguitat = func_fech.vANTIGUITAT(fant, fnac);
 			salary=500;
 			apto = func_fech.Apto(fnac, fant);
