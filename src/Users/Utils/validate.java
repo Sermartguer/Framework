@@ -2,6 +2,8 @@ package Users.Utils;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import Users.Classes.lenguage;
+import Users.Classes.setting;
 import Users.Modules.User.Classes.Singleton;
 
 
@@ -127,8 +129,8 @@ public class validate {
 	}
 	
 	public static boolean SEX (String sex){
-		System.out.println(Singleton.language.getIdioma());
-		String idioma=Singleton.language.getIdioma();
+		System.out.println(setting.getInstance().getlang());
+		String idioma=lenguage.getInstance().getIdioma();
 		if(idioma=="English"){
 			Pattern pattern=Pattern.compile(pSEXe);
 			Matcher matcher=pattern.matcher(sex);
@@ -143,7 +145,8 @@ public class validate {
 				return true;
 			}
 			return false; 
-		}else if(idioma=="Spanish"){
+		}else if(idioma.equals("Spanish")){
+			System.out.println("Spanish ");
 		Pattern pattern=Pattern.compile(pSEX);
 		Matcher matcher=pattern.matcher(sex);
 		if(matcher.matches()){

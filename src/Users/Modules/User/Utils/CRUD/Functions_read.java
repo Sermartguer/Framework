@@ -3,6 +3,7 @@ package Users.Modules.User.Utils.CRUD;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
+import Users.Classes.lenguage;
 import Users.Modules.User.Classes.Singleton;
 import Users.Modules.User.Classes.userad;
 import Users.Modules.User.Classes.usercl;
@@ -15,11 +16,11 @@ public class Functions_read {
 	public static void read_admin (){
 		userad a1=null;
 		int menu = 0, location = -1;
-		String [] menu_print = { Singleton.language.getProperty("read_all"), Singleton.language.getProperty("read_search")};
+		String [] menu_print = { lenguage.getInstance().getProperty("read_all"), lenguage.getInstance().getProperty("read_search")};
 		if(Singleton.useradmin.isEmpty()){
-			JOptionPane.showMessageDialog(null,Singleton.language.getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
 		}else{
-			menu = functions.menuo(menu_print, Singleton.language.getProperty("read_message"), Singleton.language.getProperty("read_title"));
+			menu = functions.menuo(menu_print, lenguage.getInstance().getProperty("read_message"), lenguage.getInstance().getProperty("read_title"));
 			switch (menu){
 				case 0:
 					for (int i = 0; i <Singleton.useradmin.size();i++){
@@ -46,12 +47,12 @@ public class Functions_read {
 	public static void read_client (){
 		usercl c1=null;
 		int menu = 0, location = -1;
-		String [] menu_print = {  Singleton.language.getProperty("read_all"), Singleton.language.getProperty("read_search") };
+		String [] menu_print = {  lenguage.getInstance().getProperty("read_all"), lenguage.getInstance().getProperty("read_search") };
 
 		if(Singleton.userclient.isEmpty()){
-			JOptionPane.showMessageDialog(null,Singleton.language.getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
 			}else{
-				menu = functions.menuo(menu_print, Singleton.language.getProperty("read_message"), Singleton.language.getProperty("read_title"));
+				menu = functions.menuo(menu_print, lenguage.getInstance().getProperty("read_message"), lenguage.getInstance().getProperty("read_title"));
 			switch (menu){
 				case 0:
 					for (int i = 0; i <Singleton.userclient.size();i++){
@@ -78,12 +79,12 @@ public class Functions_read {
 	public static void read_usern (){
 		usern u1=null;
 		int menu = 0, location = -1;
-		String [] menu_print = {  Singleton.language.getProperty("read_all"), Singleton.language.getProperty("read_search") };
+		String [] menu_print = {  lenguage.getInstance().getProperty("read_all"), lenguage.getInstance().getProperty("read_search") };
 
 		if(Singleton.userregister.isEmpty()){
-			JOptionPane.showMessageDialog(null,Singleton.language.getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
 			}else{
-				menu = functions.menuo(menu_print, Singleton.language.getProperty("read_message"), Singleton.language.getProperty("read_title"));
+				menu = functions.menuo(menu_print, lenguage.getInstance().getProperty("read_message"), lenguage.getInstance().getProperty("read_title"));
 			switch (menu){
 				case 0:
 					for (int i = 0; i <Singleton.userregister.size();i++){

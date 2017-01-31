@@ -1,6 +1,7 @@
 package Users.Utils;
 import javax.swing.JOptionPane;
 
+import Users.Classes.lenguage;
 import Users.Modules.User.Classes.Singleton;
 
 public class functions {
@@ -18,7 +19,7 @@ public class functions {
 			try{
 				s=JOptionPane.showInputDialog(null, message, title,JOptionPane.QUESTION_MESSAGE);
 				if(s==null){
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("int1"),Singleton.language.getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("int1"),lenguage.getInstance().getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
 					correct = false;
 				}else {
 					a = Integer.parseInt(s);
@@ -27,7 +28,7 @@ public class functions {
 			}catch(Exception e){
 				
 				
-				JOptionPane.showMessageDialog(null,Singleton.language.getProperty("int1"),"ERROR",JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("int1"),"ERROR",JOptionPane.ERROR_MESSAGE);
 				correct = false;
 			}
 		}while(correct==false);
@@ -46,14 +47,14 @@ public static float vfloat( String message, String title ){
 			try{
 				s=JOptionPane.showInputDialog(null, message, title,JOptionPane.QUESTION_MESSAGE);
 				if(s==null){
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("float1"),Singleton.language.getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("float1"),lenguage.getInstance().getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
 					correct = false;
 				}else {
 					f = Float.parseFloat(s);
 					correct = true;
 				}
 			}catch(Exception e){
-				JOptionPane.showMessageDialog(null,Singleton.language.getProperty("float1"), "ERROR",JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("float1"), "ERROR",JOptionPane.ERROR_MESSAGE);
 				correct = false;
 			}
 		}while(correct==false);
@@ -71,14 +72,14 @@ public static char vchar(String message, String title){
 				try{
 					s=JOptionPane.showInputDialog(null, message, title,JOptionPane.QUESTION_MESSAGE);
 					if(s==null){
-						JOptionPane.showMessageDialog(null,Singleton.language.getProperty("char1"),Singleton.language.getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
+						JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("char1"),lenguage.getInstance().getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
 						correct = false;
 					}else {
 						c=s.charAt(0);
 						correct = true;
 					}
 				}catch(Exception e){
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("char1"), "ERROR",JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("char1"), "ERROR",JOptionPane.ERROR_MESSAGE);
 					correct = false;
 				}
 			}while(correct==false);
@@ -96,15 +97,15 @@ public static String vString(String message, String title){
 					s = JOptionPane.showInputDialog(null, message, title,JOptionPane.QUESTION_MESSAGE);
 					correct = true;
 					if (s==null){
-						JOptionPane.showMessageDialog(null,Singleton.language.getProperty("string1"),Singleton.language.getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
+						JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("string1"),lenguage.getInstance().getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
 						correct = false;
 					}
 					if(s.equals("")){
-						JOptionPane.showMessageDialog(null,Singleton.language.getProperty("string2"),"ERROR",JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("string2"),"ERROR",JOptionPane.ERROR_MESSAGE);
 						correct = false;
 					}
 				}catch(Exception e){
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("string1"), "ERROR",JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("string1"), "ERROR",JOptionPane.ERROR_MESSAGE);
 					correct = false;
 				}
 			}while(correct==false);

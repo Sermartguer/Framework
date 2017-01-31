@@ -5,6 +5,8 @@ import java.io.Serializable;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 import Users.Classes.fecha;
+import Users.Classes.lenguage;
+import Users.Classes.setting;
 @XStreamAlias("usern")
 public class usern extends usu implements Serializable{
 	@XStreamAlias("points")
@@ -55,16 +57,16 @@ public String toString (String DNI) {
 }
 
 public String toString(){
-	String date=Singleton.config.getffecha();
-	String decimal= Singleton.config.getdecimal();
+	String date=setting.getInstance().getffecha();
+
 	String cad="";
-	cad = cad + ("\n" + Singleton.language.getProperty("tname")+this.getnom());
+	cad = cad + ("\n" + lenguage.getInstance().getProperty("tname")+this.getnom());
 	cad = cad + ("\n" + "Dni: "+this.getdni());
-	cad = cad + ("\n" + Singleton.language.getProperty("tfnac")+this.getf_nac().toString(date));
-	cad = cad + ("\n" + Singleton.language.getProperty("tage")+this.getedad());
-	cad = cad + ("\n" + Singleton.language.getProperty("tn_com")+this.getn_com());
+	cad = cad + ("\n" + lenguage.getInstance().getProperty("tfnac")+this.getf_nac().toString(date));
+	cad = cad + ("\n" + lenguage.getInstance().getProperty("tage")+this.getedad());
+	cad = cad + ("\n" + lenguage.getInstance().getProperty("tn_com")+this.getn_com());
 	cad = cad + ("\n" + "Karma: "+this.getkarma());
-	cad = cad + ("\n" + Singleton.language.getProperty("tpoints")+this.getpunts());
+	cad = cad + ("\n" + lenguage.getInstance().getProperty("tpoints")+this.getpunts());
 
 
 	return cad;

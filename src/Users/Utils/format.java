@@ -5,6 +5,7 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
 
+import Users.Classes.setting;
 import Users.Modules.User.Classes.Singleton;
 
 public class format {
@@ -12,14 +13,15 @@ public class format {
 	
 /*///////////////////////////COINS//////////////////////*/
 	public static String coins(double moneda) throws ParseException{
-		String co=Singleton.config.getcoin();
-		String decimal=Singleton.config.getdecimal();
-		
-		if (co=="dollar"){
+		String co=setting.getInstance().getcoin();
+		String decimal=setting.getInstance().getdecimal();
+		System.out.println(moneda);
+		System.out.println(co);
+		if (co.equals("dollar")){
 			moneda = moneda*1.0844f;
-		}else if(co=="libra"){
+		}else if(co.equals("libra")){
 			moneda = moneda*0.72686f;
-		}else if(co=="euro"){
+		}else if(co.equals("euro")){
 			moneda = moneda*1f;
 		}
 		
@@ -33,18 +35,23 @@ public class format {
 		value=Double.valueOf(nformat.format(moneda));
 		numbera=nformat.format (moneda);
 		Double moned = nformat.parse( numbera ).doubleValue();		
-		if (co=="dollar"){
+		
+		
+		System.out.println(co);
+		if (co.equals("dollar")){
 			coinformat="$";
 			finalvalue=Double.toString(moned);
 			finalvalue=finalvalue+coinformat;
 			return finalvalue;
-		}else if(co=="libra"){
+		}else if(co.equals("libra")){
 			coinformat="L";
 			finalvalue=Double.toString(moned);
 			finalvalue=finalvalue+coinformat;
 			return finalvalue;
-		}else if(co=="euro"){
-			coinformat="ï¿½";
+		}
+		if(co.equals("euro")){
+			System.out.println("entre aci");
+			coinformat="€";
 			finalvalue=Double.toString(moned);
 			finalvalue=finalvalue+coinformat;
 			return finalvalue;

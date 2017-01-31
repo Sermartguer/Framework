@@ -7,6 +7,7 @@ import java.time.format.DateTimeFormatter;
 import javax.swing.JOptionPane;
 
 import Users.Classes.fecha;
+import Users.Classes.lenguage;
 import Users.Classes.setting;
 import Users.Modules.User.Classes.Singleton;
 import Users.Modules.User.Classes.usu;
@@ -32,13 +33,13 @@ public class func_fech {
 		if (y == 0) {
 			er = "";
 		} else if (y == 1) {
-			er = Singleton.language.getProperty("error_edad");
+			er = lenguage.getInstance().getProperty("error_edad");
 		}
 
 		if (x == 0) {
-			dem = Singleton.language.getProperty("fecha_nac") + tipo;
+			dem =lenguage.getInstance().getProperty("fecha_nac") + tipo;
 		} else if (x == 1) {
-			dem = Singleton.language.getProperty("fecha_cont") + tipo;
+			dem = lenguage.getInstance().getProperty("fecha_cont") + tipo;
 		}
 
 		// DEMANA EL STRING Y VALIDA EL FORMATO
@@ -49,14 +50,14 @@ public class func_fech {
 				val = validate.validarFechFormat(s, tyfecha);
 				
 				if (val == false)
-					cad = cad + ("\n" + Singleton.language.getProperty("error_formato"));
+					cad = cad + ("\n" + lenguage.getInstance().getProperty("error_formato"));
 			} while (val == false);
 
 			// ES CREA EL OBJECTE Y EL VALIDA LA FECHA
 			fec = new fecha(s, type);
 			correcto = fec.VFecha(s, type);
 			if (correcto == true)
-				JOptionPane.showMessageDialog(null, Singleton.language.getProperty("error_fecha"), Singleton.language.getProperty("warning"), JOptionPane.WARNING_MESSAGE);
+				JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("error_fecha"), lenguage.getInstance().getProperty("warning"), JOptionPane.WARNING_MESSAGE);
 		} while (correcto == true);
 		return fec;
 	}
@@ -220,33 +221,34 @@ public class func_fech {
 		String fecha="";
 		// OPERATIONS
 	
-		
+		System.out.println(setting.getInstance().getffecha());
 		String introducefecha=((fecha) fnac).getFecha();
 		ArrayFecha = introducefecha.split("/");
 		int day=Integer.parseInt(ArrayFecha [0]);
 		int month=Integer.parseInt(ArrayFecha [1]);
 		int year=Integer.parseInt(ArrayFecha [2]);
 		
-		if(Singleton.config.getffecha()=="dd/mm/yyyy"){
+		if(setting.getInstance().getffecha().equals("dd/mm/yyyy")){
+			System.out.println("Entre");
 			fecha=day+"/"+month+"/"+year;
 			pa="d/M/yyyy";
-		}else if(Singleton.config.getffecha()=="dd-mm-yyyy"){
+		}else if(setting.getInstance().getffecha().equals("dd-mm-yyyy")){
 			fecha=day+"-"+month+"-"+year;
 			System.out.println("fecha "+fecha);
 			pa="d-M-yyyy";
-		}else if(Singleton.config.getffecha()=="yyyy/mm/dd"){
+		}else if(setting.getInstance().getffecha().equals("yyyy/mm/dd")){
 			fecha=year+"/"+month+"/"+day;
 			pa="yyyy/M/d";
-		}else if(Singleton.config.getffecha()=="yyyy-mm-dd"){
+		}else if(setting.getInstance().getffecha().equals("yyyy-mm-dd")){
 			fecha=year+"-"+month+"-"+day;
 			pa="yyyy-M-d";
 		}		
-		
+		System.out.println("pa "+pa);
+
 		Str= fecha;
 		CharSequence cs=Str;
 		
 		do {
-			
 		
 			DateTimeFormatter fmt = DateTimeFormatter.ofPattern(pa);
 			LocalDate fechaNac = LocalDate.parse(cs, fmt);
@@ -283,18 +285,17 @@ public class func_fech {
 		int day=Integer.parseInt(ArrayFecha [0]);
 		int month=Integer.parseInt(ArrayFecha [1]);
 		int year=Integer.parseInt(ArrayFecha [2]);
-		System.out.println("aa"+Singleton.config.getffecha());
-		if(Singleton.config.getffecha()=="dd/mm/yyyy"){
+		if(setting.getInstance().getffecha().equals("dd/mm/yyyy")){
 			fecha=day+"/"+month+"/"+year;
 			pa="d/M/yyyy";
-		}else if(Singleton.config.getffecha()=="dd-mm-yyyy"){
+		}else if(setting.getInstance().getffecha().equals("dd-mm-yyyy")){
 			fecha=day+"-"+month+"-"+year;
 			System.out.println("fecha "+fecha);
 			pa="d-M-yyyy";
-		}else if(Singleton.config.getffecha()=="yyyy/mm/dd"){
+		}else if(setting.getInstance().getffecha().equals("yyyy/mm/dd")){
 			fecha=year+"/"+month+"/"+day;
 			pa="yyyy/M/d";
-		}else if(Singleton.config.getffecha()=="yyyy-mm-dd"){
+		}else if(setting.getInstance().getffecha().equals("yyyy-mm-dd")){
 			fecha=year+"-"+month+"-"+day;
 			pa="yyyy-M-d";
 		}		

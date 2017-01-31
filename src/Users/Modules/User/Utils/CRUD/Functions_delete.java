@@ -2,6 +2,7 @@ package Users.Modules.User.Utils.CRUD;
 
 import javax.swing.JOptionPane;
 
+import Users.Classes.lenguage;
 import Users.Main.menu4;
 import Users.Modules.User.Classes.Singleton;
 import Users.Modules.User.Classes.userad;
@@ -16,11 +17,11 @@ public class Functions_delete {
 		userad a1=null;
 		int location = -1;
 		int menu = 0;
-		String [] menu_print = { Singleton.language.getProperty("read_all"), Singleton.language.getProperty("read_search")};
+		String [] menu_print = { lenguage.getInstance().getProperty("read_all"), lenguage.getInstance().getProperty("read_search")};
 		if(Singleton.useradmin.isEmpty()){
 			JOptionPane.showMessageDialog(null, "No hi han dades, per favor crea un usuari", "ERROR", JOptionPane.ERROR_MESSAGE);
 		}else{
-			menu = functions.menuo(menu_print, Singleton.language.getProperty("read_message"), Singleton.language.getProperty("read_title"));
+			menu = functions.menuo(menu_print, lenguage.getInstance().getProperty("read_message"), lenguage.getInstance().getProperty("read_title"));
 			switch (menu){
 			case 0:				
 					Singleton.useradmin.clear();
@@ -63,13 +64,13 @@ public class Functions_delete {
 	public static void delete_userregister () {
 		usern u1=null;
 		int location = -1;
-		String [] menu_print = { Singleton.language.getProperty("read_all"), Singleton.language.getProperty("read_search")};
+		String [] menu_print = { lenguage.getInstance().getProperty("read_all"), lenguage.getInstance().getProperty("read_search")};
 		int menu = 0;
 
 		if(Singleton.userregister.isEmpty()){
 			JOptionPane.showMessageDialog(null, "No hi han dades, per favor crea un usuari", "ERROR", JOptionPane.ERROR_MESSAGE);
 		}else{
-			menu = functions.menuo(menu_print, Singleton.language.getProperty("read_message"), Singleton.language.getProperty("read_title"));
+			menu = functions.menuo(menu_print, lenguage.getInstance().getProperty("read_message"), lenguage.getInstance().getProperty("read_title"));
 			switch (menu){
 			case 0:
 				Singleton.userregister.clear();

@@ -5,6 +5,8 @@ import java.io.Serializable;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 import Users.Classes.fecha;
+import Users.Classes.lenguage;
+import Users.Classes.setting;
 import Users.Main.menu4;
 import Users.Utils.format;
 @XStreamAlias("Client")
@@ -56,15 +58,15 @@ public String toString (String DNI) {
 }
 
 public String toString(){
-	String decimal= Singleton.config.getdecimal();
-	String date=Singleton.config.getffecha();
+
+	String date=setting.getInstance().getffecha();
 	String cad="";
-	cad = cad + ("\n"+Singleton.language.getProperty("tname")+this.getnom()+"\n");
+	cad = cad + ("\n"+lenguage.getInstance().getProperty("tname")+this.getnom()+"\n");
 	cad = cad + ("Dni: "+this.getdni()+"\n");
-	cad = cad + (Singleton.language.getProperty("tfnac")+this.getf_nac().toString(date)+"\n");
-	cad = cad + (Singleton.language.getProperty("tage")+this.getedad()+"\n");
-	cad = cad + (Singleton.language.getProperty("tn_comp")+this.getn_comp()+"\n");
-	cad = cad + (Singleton.language.getProperty("tdescuento")+format.por(this.getdes())+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tfnac")+this.getf_nac().toString(date)+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tage")+this.getedad()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tn_comp")+this.getn_comp()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tdescuento")+format.por(this.getdes())+"\n");
 	return cad;
 
 }

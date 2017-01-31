@@ -28,7 +28,7 @@ public class fnes_users4 {
 			dni = Singleton.DNI;
 			fnac = func_fech.fNAC();
 			edad = func_fech.vEDAD(fnac);
-			n_comp=functions.vint(Singleton.language.getProperty("shopp"), Singleton.language.getProperty("shopp2"));
+			n_comp=functions.vint(lenguage.getInstance().getProperty("shopp"), lenguage.getInstance().getProperty("shopp2"));
 			descuentos = func_plus.discount(n_comp);
 			
 			u = new usercl(nom, dni, fnac, edad,n_comp, descuentos);
@@ -133,7 +133,7 @@ public class fnes_users4 {
 	   ////////////////////// UPDATE CLIENT///////////////////
 		if (u instanceof usercl) {
 
-			String[] options = { Singleton.language.getProperty("name2"), "DNI", Singleton.language.getProperty("nac_fech"),Singleton.language.getProperty("shopp2"), Singleton.language.getProperty("return") };
+			String[] options = { lenguage.getInstance().getProperty("name2"), "DNI", lenguage.getInstance().getProperty("nac_fech"),lenguage.getInstance().getProperty("shopp2"), lenguage.getInstance().getProperty("return") };
 			int operator = 0;
 			String res = "";
 
@@ -152,7 +152,7 @@ public class fnes_users4 {
 					/* NOM */
 					res = fnes_v.vNOM();
 					u.setnom(res);
-					JOptionPane.showMessageDialog(null, Singleton.language.getProperty("changes") + u.getnom(),Singleton.language.getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes") + u.getnom(),lenguage.getInstance().getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 
@@ -161,7 +161,7 @@ public class fnes_users4 {
 					/* DNI */
 					res = fnes_v.vDNI();
 					u.setdni(res);
-					JOptionPane.showMessageDialog(null, Singleton.language.getProperty("changes")+ u.getdni(),Singleton.language.getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes")+ u.getdni(),lenguage.getInstance().getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 				
@@ -176,7 +176,7 @@ public class fnes_users4 {
 					((usu) u).setf_nac(fnac);
 					edad = func_fech.vEDAD(fnac);
 					((usu) u).setedad(edad);
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("changes") + ((usu) u).getf_nac() + "\n"+"Y la teua edad es: " + ((usu) u).getedad(),Singleton.language.getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("changes") + ((usu) u).getf_nac() + "\n"+"Y la teua edad es: " + ((usu) u).getedad(),lenguage.getInstance().getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 					
@@ -199,7 +199,7 @@ public class fnes_users4 {
 
 		} else if (u instanceof usern) {
 
-			String[] options = { Singleton.language.getProperty("name2"), "DNI", Singleton.language.getProperty("nac_fech"), Singleton.language.getProperty("ptos"), Singleton.language.getProperty("exit") };
+			String[] options = { lenguage.getInstance().getProperty("name2"), "DNI", lenguage.getInstance().getProperty("nac_fech"), lenguage.getInstance().getProperty("ptos"), lenguage.getInstance().getProperty("exit") };
 
 			int operator = 0;
 			String res = "";
@@ -221,7 +221,7 @@ public class fnes_users4 {
 					/* DNI */
 					res = fnes_v.vNOM();
 					u.setnom(res);
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("changes")+ u.getnom(),Singleton.language.getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("changes")+ u.getnom(),lenguage.getInstance().getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 
@@ -230,7 +230,7 @@ public class fnes_users4 {
 					/* NOM */
 					res = fnes_v.vDNI();
 					u.setdni(res);
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("changes")+ u.getdni(),Singleton.language.getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("changes")+ u.getdni(),lenguage.getInstance().getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 				case 2:
@@ -243,7 +243,7 @@ public class fnes_users4 {
 					((usu) u).setf_nac(fnac);
 					
 					((usu) u).setedad(edad);
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("changes") + ((usu) u).getf_nac() + "\n"+"Y la teua edad es: " + ((usu) u).getedad(),Singleton.language.getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("changes") + ((usu) u).getf_nac() + "\n"+"Y la teua edad es: " + ((usu) u).getedad(),lenguage.getInstance().getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 
@@ -266,26 +266,26 @@ public class fnes_users4 {
 		} else if (u instanceof userad) {
 			//////////////////////UPDATE ADMIN///////////////////
 
-			String[] options = {  Singleton.language.getProperty("name2"), "DNI", "SEXE", Singleton.language.getProperty("email2"), Singleton.language.getProperty("user2"), Singleton.language.getProperty("nac_fech"),
-					Singleton.language.getProperty("hiring_date2")};
+			String[] options = {  lenguage.getInstance().getProperty("name2"), "DNI", "SEXE", lenguage.getInstance().getProperty("email2"), lenguage.getInstance().getProperty("user2"), lenguage.getInstance().getProperty("nac_fech"),
+					lenguage.getInstance().getProperty("hiring_date2")};
 			String operator = "",res = "";
 		
 
 				operator = functions.menucombox(options, "Que vols cambiar", "Choose one");
 				
-				if(operator.equalsIgnoreCase(Singleton.language.getProperty("name2"))){
+				if(operator.equalsIgnoreCase(lenguage.getInstance().getProperty("name2"))){
 					operator="NOM";
 				}
-				if(operator.equalsIgnoreCase(Singleton.language.getProperty("email2"))){
+				if(operator.equalsIgnoreCase(lenguage.getInstance().getProperty("email2"))){
 					operator="EMAIL";
 				}
-				if(operator.equalsIgnoreCase(Singleton.language.getProperty("user2"))){
+				if(operator.equalsIgnoreCase(lenguage.getInstance().getProperty("user2"))){
 					operator="USERNAME";
 				}
-				if(operator.equalsIgnoreCase(Singleton.language.getProperty("nac_fech"))){
+				if(operator.equalsIgnoreCase(lenguage.getInstance().getProperty("nac_fech"))){
 					operator="FECHA DE NAIXIMENT";
 				}
-				if(operator.equalsIgnoreCase(Singleton.language.getProperty("hiring_date2"))){
+				if(operator.equalsIgnoreCase(lenguage.getInstance().getProperty("hiring_date2"))){
 					operator="FECHA DE CONTRATACIO";
 				}
 				
@@ -297,7 +297,7 @@ public class fnes_users4 {
 					/* NOM */
 					res = fnes_v.vNOM();
 					u.setnom(res);
-					JOptionPane.showMessageDialog(null, Singleton.language.getProperty("changes") + u.getnom(),Singleton.language.getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes") + u.getnom(),lenguage.getInstance().getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 
@@ -306,7 +306,7 @@ public class fnes_users4 {
 					/* DNI */
 					res = fnes_v.vDNI();
 					u.setdni(res);
-					JOptionPane.showMessageDialog(null, Singleton.language.getProperty("changes") + u.getdni(),Singleton.language.getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes") + u.getdni(),lenguage.getInstance().getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 
@@ -315,7 +315,7 @@ public class fnes_users4 {
 					/* SEXE */
 					res = fnes_v.vSEX();
 					((userad) u).setsex(res);
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("changes")+ ((userad) u).getsexo(), Singleton.language.getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("changes")+ ((userad) u).getsexo(), lenguage.getInstance().getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 
@@ -324,7 +324,7 @@ public class fnes_users4 {
 					/* EMAIL */
 					res = fnes_v.vEMAIL();
 					((userad) u).setemail(res);
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("changes")+ ((userad) u).getemail(), Singleton.language.getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("changes")+ ((userad) u).getemail(), lenguage.getInstance().getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 				case "USERNAME":
@@ -333,7 +333,7 @@ public class fnes_users4 {
 					String nom = "";
 					res = fnes_v.vUSERNAME(nom);
 					((userad) u).setusername(res);
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("changes")+((userad) u).getusername(),Singleton.language.getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("changes")+((userad) u).getusername(),lenguage.getInstance().getProperty("warning"),JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 				case "FECHA DE NAIXIMENT":
@@ -352,7 +352,7 @@ public class fnes_users4 {
 					((usu) u).setf_nac(fnac);
 					((usu) u).setedad(edad);
 					
-					JOptionPane.showMessageDialog(null, Singleton.language.getProperty("changes")+((usu) u).getf_nac() + "\n"+ "Y la teua edad es: " +((usu) u).getedad(), Singleton.language.getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes")+((usu) u).getf_nac() + "\n"+ "Y la teua edad es: " +((usu) u).getedad(), lenguage.getInstance().getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 				case "FECHA DE CONTRATACIO":
@@ -370,7 +370,7 @@ public class fnes_users4 {
 					salary=func_plus.salary(anto);
 					((userad)u).setsalary(salary);
 					
-					JOptionPane.showMessageDialog(null,Singleton.language.getProperty("changes") + ((userad) u).getfant()+((userad) u).getAntiguitat(),Singleton.language.getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("changes") + ((userad) u).getfant()+((userad) u).getAntiguitat(),lenguage.getInstance().getProperty("warning"), JOptionPane.INFORMATION_MESSAGE);
 
 					break;
 				

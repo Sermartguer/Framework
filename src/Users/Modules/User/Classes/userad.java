@@ -6,6 +6,8 @@ import java.text.ParseException;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 import Users.Classes.fecha;
+import Users.Classes.lenguage;
+import Users.Classes.setting;
 import Users.Main.menu4;
 import Users.Utils.format;
 public class userad extends usu implements Serializable{
@@ -85,7 +87,7 @@ public void setneto(double sou, double salary) {
 
 //Getters
 public String getsexo(){
-	String idioma=Singleton.language.getIdioma();
+	String idioma=lenguage.getInstance().getIdioma();
 	String sex=this.sexo;
 	if(idioma=="English"){
 		System.out.println("sex"+sex);
@@ -158,14 +160,14 @@ public String toString (String DNI) {
 	return cad;
 }
 public String toString(){
-	String coin=Singleton.config.getcoin();
-	String date=Singleton.config.getffecha();
-	System.out.println(Singleton.config.getffecha());
+	String coin=setting.getInstance().getcoin();
+	String date=setting.getInstance().getffecha();
+
 	System.out.println(this.getf_nac());
 	String cad="";
-	cad = cad + ("\n"+Singleton.language.getProperty("tname")+this.getnom()+"\n");
+	cad = cad + ("\n"+lenguage.getInstance().getProperty("tname")+this.getnom()+"\n");
 	cad = cad + ("DNI: "+this.getdni()+"\n");
-	cad = cad + (Singleton.language.getProperty("tfnac")+this.getf_nac().toString(date)+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tfnac")+this.getf_nac().toString(date)+"\n");
 	cad = cad + ("EDAD: "+this.getedad()+"\n");
 	cad = cad + ("SEXE: "+this.getsexo()+"\n");
 	cad = cad + ("EMAIL: "+this.getemail()+"\n");

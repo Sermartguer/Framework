@@ -6,6 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import Users.Classes.lenguage;
+import Users.Classes.setting;
 import Users.Main.menu4;
 import Users.Modules.User.Classes.Singleton;
 import Users.Modules.User.Classes.userad;
@@ -21,7 +22,7 @@ public class fnes_v {
 		boolean res=false;
 		String nom="", cad="";
 		do{
-			nom=functions.vString(Singleton.language.getProperty("name")+cad, "NOM");
+			nom=functions.vString(lenguage.getInstance().getProperty("name")+cad, "NOM");
 			cad="";
 			res=validate.NOM(nom);
 			if (res==false){
@@ -118,7 +119,7 @@ public static String vDNIauto(){
 		boolean res=false;
 		String dni="";
 		do{
-			dni=functions.vString(Singleton.language.getProperty("typedni")+cad, "DNI");
+			dni=functions.vString(lenguage.getInstance().getProperty("typedni")+cad, "DNI");
 			res=validate.DNI(dni);
 			 cad="";
 			 if(res==false){
@@ -178,16 +179,16 @@ public static String vDNIauto(){
 		String cad="";
 		boolean res=false;
 		String sex="";
-		String idioma=Singleton.language.getIdioma();
+		String idioma=lenguage.getInstance().getIdioma();
 		
 		do {
 			
-			sex=functions.vString(Singleton.language.getProperty("askv_01")+cad, Singleton.language.getProperty("askv_tittle_01"));
+			sex=functions.vString(lenguage.getInstance().getProperty("askv_01")+cad, lenguage.getInstance().getProperty("askv_tittle_01"));
 			res=validate.SEX(sex);
 			
 			if (res==false){
 				cad="";
-				cad=cad+"\n"+(Singleton.language.getProperty("errorv_01"));
+				cad=cad+"\n"+(lenguage.getInstance().getProperty("errorv_01"));
 			}
 			System.out.println("idioma"+idioma);
 			if(idioma=="English"){
@@ -227,14 +228,15 @@ public static String vDNIauto(){
 		String cad="";
 		boolean res=false;
 		String sex="";
-		String idioma=Singleton.language.getIdioma();
+		String idioma=lenguage.getInstance().getIdioma();
 		
 		do {
+			
 			if(idioma=="English"){
 			sex="M";
 			}else if(idioma=="Valencia"){
 			sex="H";
-			}else if(idioma=="Spanish"){
+			}else if(idioma.equals("Spanish")){
 			sex="H";
 			}
 			
@@ -243,9 +245,11 @@ public static String vDNIauto(){
 			
 			if (res==false){
 				cad="";
-				cad=cad+"\n"+(Singleton.language.getProperty("errorv_01"));
+				cad=cad+"\n"+(lenguage.getInstance().getProperty("errorv_01"));
 			}
 			System.out.println("idioma"+idioma);
+			System.out.println(res);
+			System.out.println(sex);
 			if(idioma=="English"){
 				System.out.println("sex"+sex);
 				if((sex.equals("M"))||(sex.equals("m"))){
@@ -265,7 +269,9 @@ public static String vDNIauto(){
 				}
 			}else if(idioma=="Spanish"){
 				if((sex.equals("H"))||(sex.equals("h"))){
+					System.out.println("Entre aci");
 					sex="Hombre";
+					res=true;
 				}else if((sex.equals("M"))||(sex.equals("m"))){
 					sex="Mujer";
 				}else if((sex.equals("O"))||(sex.equals("o"))){
@@ -298,7 +304,7 @@ public static String vDNIauto(){
 		int n_com=0;
 		String n_coms="";
 		do{
-			n_com=functions.vint(Singleton.language.getProperty("n_coments"), Singleton.language.getProperty("coments"));
+			n_com=functions.vint(lenguage.getInstance().getProperty("n_coments"), lenguage.getInstance().getProperty("coments"));
 			n_coms=""+n_com;
 			bo=validate.N_COM(n_coms);
 			
