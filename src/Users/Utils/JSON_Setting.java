@@ -14,7 +14,7 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
 
 import Users.Classes.setting;
-import Users.Modules.User.Classes.userad;
+import Users.Modules.User.Model.Classes.userad;
 
 public class JSON_Setting {
 	public static void savejson_config() {

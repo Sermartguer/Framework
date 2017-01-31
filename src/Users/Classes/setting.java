@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
-import Users.Modules.User.Classes.Singleton;
-import Users.Modules.User.Classes.userad;
-import Users.Modules.User.Classes.usercl;
-import Users.Modules.User.Classes.usern;
-import Users.Modules.User.Utils.CRUD.Functions_open_auto;
+import Users.Modules.User.Model.Classes.Singleton;
+import Users.Modules.User.Model.Classes.userad;
+import Users.Modules.User.Model.Classes.usercl;
+import Users.Modules.User.Model.Classes.usern;
+import Users.Modules.User.Model.Utils.CRUD.Functions_open_auto;
 
 public class setting {
 @XStreamAlias("language")

@@ -1,12 +1,12 @@
 package Users.Utils;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
-import java.text.NumberFormat;
+
 import java.text.ParseException;
-import java.util.Locale;
+
 
 import Users.Classes.setting;
-import Users.Modules.User.Classes.Singleton;
+
 
 public class format {
 	

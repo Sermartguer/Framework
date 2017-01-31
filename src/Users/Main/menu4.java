@@ -4,20 +4,20 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 import Users.Utils.*;
-import Users.Modules.User.Classes.Singleton;
-import Users.Modules.User.Classes.userad;
-import Users.Modules.User.Classes.usercl;
-import Users.Modules.User.Classes.usern;
-import Users.Modules.User.Utils.Admin.Utils_Files.Files_Settings;
-import Users.Modules.User.Utils.CRUD.Functions_create;
-import Users.Modules.User.Utils.CRUD.Functions_delete;
-import Users.Modules.User.Utils.CRUD.Functions_open_auto;
-import Users.Modules.User.Utils.CRUD.Functions_order;
-import Users.Modules.User.Utils.CRUD.Functions_read;
-import Users.Modules.User.Utils.CRUD.Functions_save_auto;
-import Users.Modules.User.Utils.CRUD.Functions_update;
-import Users.Modules.User.Utils.Client.Utils_Files_Client.Files_Settings_Client;
-import Users.Modules.User.Utils.Normal.Utils_Files_Normal.Files_Settings_Normal;
+import Users.Modules.User.Model.Classes.Singleton;
+import Users.Modules.User.Model.Classes.userad;
+import Users.Modules.User.Model.Classes.usercl;
+import Users.Modules.User.Model.Classes.usern;
+import Users.Modules.User.Model.Utils.Admin.Utils_Files.Files_Settings;
+import Users.Modules.User.Model.Utils.CRUD.Functions_create;
+import Users.Modules.User.Model.Utils.CRUD.Functions_delete;
+import Users.Modules.User.Model.Utils.CRUD.Functions_open_auto;
+import Users.Modules.User.Model.Utils.CRUD.Functions_order;
+import Users.Modules.User.Model.Utils.CRUD.Functions_read;
+import Users.Modules.User.Model.Utils.CRUD.Functions_save_auto;
+import Users.Modules.User.Model.Utils.CRUD.Functions_update;
+import Users.Modules.User.Model.Utils.Client.Utils_Files_Client.Files_Settings_Client;
+import Users.Modules.User.Model.Utils.Normal.Utils_Files_Normal.Files_Settings_Normal;
 import Users.Classes.*;
 
 public class menu4 {

@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 
 import Users.Classes.lenguage;
 import Users.Classes.setting;
-import Users.Modules.User.Classes.Singleton;
+import Users.Modules.User.Model.Classes.Singleton;
 
 
 public class validate {

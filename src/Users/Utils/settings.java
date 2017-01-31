@@ -11,7 +11,7 @@ import javax.swing.JRadioButton;
 
 import Users.Classes.lenguage;
 import Users.Classes.setting;
-import Users.Modules.User.Classes.Singleton;
+import Users.Modules.User.Model.Classes.Singleton;
 import Users.Utils.functions;
 
 public class settings {

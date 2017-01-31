@@ -2,7 +2,7 @@ package Users.Utils;
 import javax.swing.JOptionPane;
 
 import Users.Classes.lenguage;
-import Users.Modules.User.Classes.Singleton;
+import Users.Modules.User.Model.Classes.Singleton;
 
 public class functions {
 	
