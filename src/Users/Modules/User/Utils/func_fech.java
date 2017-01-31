@@ -19,7 +19,7 @@ public class func_fech {
 	// PIDE FECHA
 	public static fecha pedirfecha(int x, int y) {
 		// ATRIBUTS
-		String type=Singleton.config.getffecha();
+		String type=setting.getInstance().getffecha();
 		String tipo=" ("+type+")";
 		String s = "";
 		boolean correcto = false;
@@ -88,16 +88,16 @@ public class func_fech {
 			int year=Integer.parseInt(ArrayFecha [2]);
 			
 			
-			if(Singleton.config.getffecha()=="dd/mm/yyyy"){
+			if(setting.getInstance().getffecha().equals("dd/mm/yyyy")){
 				fecha=day+"/"+month+"/"+year;
 				pa="d/M/yyyy";
-			}else if(Singleton.config.getffecha()=="dd-mm-yyyy"){
+			}else if(setting.getInstance().getffecha().equals("dd-mm-yyyy")){
 				fecha=day+"-"+month+"-"+year;
 				pa="d-M-yyyy";
-			}else if(Singleton.config.getffecha()=="yyyy/mm/dd"){
+			}else if(setting.getInstance().getffecha().equals("yyyy/mm/dd")){
 				fecha=year+"/"+month+"/"+day;
 				pa="yyyy/M/d";
-			}else if(Singleton.config.getffecha()=="yyyy-mm-dd"){
+			}else if(setting.getInstance().getffecha().equals("yyyy-mm-dd")){
 				fecha=year+"-"+month+"-"+day;
 				pa="yyyy-M-d";
 			}		

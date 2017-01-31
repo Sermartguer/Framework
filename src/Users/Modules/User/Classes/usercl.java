@@ -18,8 +18,8 @@ private int descuentos=0;
 @XStreamAlias("n_compras")
 private int n_comp=0;
 
-public usercl (String nom, String dni,fecha f_nac, int edad, int n_comp,int descuentos){
-	super (nom, dni,f_nac,edad);
+public usercl (String nom, String dni,fecha f_nac, int edad,String email, int n_comp,int descuentos){
+	super (nom, dni,f_nac,edad,email);
 	this.n_comp=n_comp;
 	this.descuentos=descuentos;
 
@@ -65,6 +65,7 @@ public String toString(){
 	cad = cad + ("Dni: "+this.getdni()+"\n");
 	cad = cad + (lenguage.getInstance().getProperty("tfnac")+this.getf_nac().toString(date)+"\n");
 	cad = cad + (lenguage.getInstance().getProperty("tage")+this.getedad()+"\n");
+	cad = cad + ("Email: "+this.getemail()+"\n");
 	cad = cad + (lenguage.getInstance().getProperty("tn_comp")+this.getn_comp()+"\n");
 	cad = cad + (lenguage.getInstance().getProperty("tdescuento")+format.por(this.getdes())+"\n");
 	return cad;

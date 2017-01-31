@@ -2,6 +2,7 @@ package Users.Modules.User.Utils.CRUD;
 
 import javax.swing.JOptionPane;
 
+import Users.Classes.setting;
 import Users.Modules.User.Classes.Singleton;
 import Users.Modules.User.Classes.userad;
 import Users.Modules.User.Classes.usercl;
@@ -23,7 +24,7 @@ public class Functions_update {
 			location1 = fnes_find.find_admin(a1);
 			if (location1 != -1) {
 				a1 = Singleton.useradmin.get(location1);
-				fnes_users4.update_users(a1, Singleton.config.getffecha());
+				fnes_users4.update_users(a1, setting.getInstance().getffecha());
 				Singleton.useradmin.set(location1, a1);
 			}else {
 				JOptionPane.showMessageDialog(null,"L'usuari no existeix", "ERROR", JOptionPane.ERROR_MESSAGE);
@@ -44,7 +45,7 @@ public class Functions_update {
 			location1 = fnes_find.find_client(c1);
 			if (location1 != -1) {
 				c1 = Singleton.userclient.get(location1);
-				fnes_users4.update_users(c1, Singleton.config.getffecha());
+				fnes_users4.update_users(c1, setting.getInstance().getffecha());
 				Singleton.userclient.set(location1, c1);
 			}else {
 				JOptionPane.showMessageDialog(null, "L'usuari no existeix", "ERROR", JOptionPane.ERROR_MESSAGE);
@@ -64,7 +65,7 @@ public class Functions_update {
 			location1 = fnes_find.find_user(u1);
 			if (location1 != -1) {
 				u1 = Singleton.userregister.get(location1);
-				fnes_users4.update_users(u1, Singleton.config.getffecha());
+				fnes_users4.update_users(u1, setting.getInstance().getffecha());
 				Singleton.userregister.set(location1, u1);
 			}else {
 				JOptionPane.showMessageDialog(null, "L'usuari no existeix", "ERROR", JOptionPane.ERROR_MESSAGE);

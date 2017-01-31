@@ -13,13 +13,14 @@ private String dni="";
 private fecha f_nac;
 @XStreamAlias("edad")
 private int edad=0;
-
-public usu(String nom,String dni,fecha f_nac,int edad){
+@XStreamAlias("email")
+private String email="";
+public usu(String nom,String dni,fecha f_nac,int edad,String email){
 	this.nom=nom;
 	this.dni=dni;
 	this.f_nac=f_nac;
 	this.edad=edad;
-	
+	this.email=email;
 }
 public usu (){
 	
@@ -46,6 +47,9 @@ public void setf_nac(fecha setf_nac){
 public void setedad(int edad){
 	this.edad=edad;
 }
+public void setemail(String email){
+	this.email=email;
+}
 
 //getters
 public String getnom(){
@@ -60,7 +64,9 @@ public fecha getf_nac(){
 public int getedad(){
 	return this.edad;
 }
-
+public String getemail(){
+	return this.email;
+}
 public int compareTo(usu param) {//para ordenar los empleados por nombre
 	if(this.getdni().compareTo(param.getdni())>0)
 		return 1;

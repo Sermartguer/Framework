@@ -31,7 +31,11 @@ public class Functions_read {
 					break;
 				case 1:
 					location = -1;
-					a1 = fnes_users4.ask_adminDNI();
+					a1=fnes_find.IDadmin();
+					if(a1==null){
+						JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
+					}else{
+					//a1 = fnes_users4.ask_adminDNI();
 					location = fnes_find.find_admin(a1);
 					if (location != -1) {
 						a1 = Singleton.useradmin.get(location);
@@ -40,6 +44,7 @@ public class Functions_read {
 						JOptionPane.showMessageDialog(null, "", "",JOptionPane.INFORMATION_MESSAGE, new ImageIcon("C:/Users/Sergio/workspace/Users/src/Users/Ico/404.png"));
 					}
 					break;
+					}
 			}
 		}
 	}
@@ -63,7 +68,11 @@ public class Functions_read {
 					break;
 				case 1:
 					location = -1;
-					c1 = fnes_users4.ask_clientDNI();
+					c1=fnes_find.IDclient();
+					if (c1==null){
+						JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
+					}else{
+					//c1 = fnes_users4.ask_clientDNI();
 					location = fnes_find.find_client(c1);
 					if (location != -1) {
 						c1 = Singleton.userclient.get(location);
@@ -72,6 +81,7 @@ public class Functions_read {
 						JOptionPane.showMessageDialog(null, "", "",JOptionPane.INFORMATION_MESSAGE, new ImageIcon("C:/Users/Sergio/workspace/Users/src/Users/Ico/404.png"));
 					}
 					break;
+					}
 			}
 		}
 	}
@@ -95,7 +105,11 @@ public class Functions_read {
 					break;
 				case 1:
 					location = -1;
-					u1 = fnes_users4.ask_usernDNI();
+					u1=fnes_find.IDuserregister();
+					if (u1==null){
+						JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
+					}else{
+					//u1 = fnes_users4.ask_usernDNI();
 					location = fnes_find.find_user(u1);
 					if (location != -1) {
 						u1 = Singleton.userregister.get(location);
@@ -104,6 +118,7 @@ public class Functions_read {
 						JOptionPane.showMessageDialog(null, "", "",JOptionPane.INFORMATION_MESSAGE, new ImageIcon("C:/Users/Sergio/workspace/Users/src/Users/Ico/404.png"));
 					}
 					break;
+					}
 			}
 		}
 	}

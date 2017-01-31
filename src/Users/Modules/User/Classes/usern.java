@@ -16,8 +16,8 @@ private int n_com=0;
 	@XStreamAlias("karma")
 private String karma="";
 
-public usern (String nom, String dni, fecha f_nac, int edad,int n_com,String karma,int punts){
-	super (nom, dni,f_nac,edad);
+public usern (String nom, String dni, fecha f_nac, int edad,String email,int n_com,String karma,int punts){
+	super (nom, dni,f_nac,edad,email);
 	this.points=punts;
 	this.n_com=n_com;
 	this.karma=karma;
@@ -64,6 +64,7 @@ public String toString(){
 	cad = cad + ("\n" + "Dni: "+this.getdni());
 	cad = cad + ("\n" + lenguage.getInstance().getProperty("tfnac")+this.getf_nac().toString(date));
 	cad = cad + ("\n" + lenguage.getInstance().getProperty("tage")+this.getedad());
+	cad = cad + ("\n" + "Email: "+this.getemail());
 	cad = cad + ("\n" + lenguage.getInstance().getProperty("tn_com")+this.getn_com());
 	cad = cad + ("\n" + "Karma: "+this.getkarma());
 	cad = cad + ("\n" + lenguage.getInstance().getProperty("tpoints")+this.getpunts());

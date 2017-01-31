@@ -45,10 +45,17 @@ public class Functions_delete {
 		usercl c1=null;
 
 		int location = -1;
-		
+		int menu = 0;
+		String [] menu_print = { lenguage.getInstance().getProperty("read_all"), lenguage.getInstance().getProperty("read_search")};
 		if(Singleton.userclient.isEmpty()){
 			JOptionPane.showMessageDialog(null, "No hi han dades, per favor crea un usuari", "ERROR", JOptionPane.ERROR_MESSAGE);
 		}else{
+			menu = functions.menuo(menu_print, lenguage.getInstance().getProperty("read_message"), lenguage.getInstance().getProperty("read_title"));
+			switch (menu){
+			case 0:				
+					Singleton.userclient.clear();
+				break;
+			case 1:
 			location = -1;
 			c1 = fnes_users4.ask_clientDNI();
 			location = fnes_find.find_client(c1);
@@ -57,6 +64,8 @@ public class Functions_delete {
 				JOptionPane.showMessageDialog(null, "Borrat");
 			}else {
 				JOptionPane.showMessageDialog(null, "L'usuari no existeix", "ERROR", JOptionPane.ERROR_MESSAGE);
+			}
+			break;
 			}
 		}
 	}

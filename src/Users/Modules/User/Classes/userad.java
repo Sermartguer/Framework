@@ -14,8 +14,6 @@ public class userad extends usu implements Serializable{
 //Atributos
 @XStreamAlias("sexo")
 private String sexo="";
-@XStreamAlias("email")
-private String email="";
 @XStreamAlias("username")
 private String username="";
 private fecha fant;
@@ -32,10 +30,9 @@ private double salary=0;
 @XStreamAlias("neto")
 private double neto=0;
 //Metodes
-public userad (String nom, String dni, fecha f_nac, int edad, String sex, String email, String username,fecha fant, int antiguitat,double salary, String apto, String alta, double sou){
-	super (nom,dni,f_nac,edad);
+public userad (String nom, String dni, fecha f_nac, int edad,String email, String sex, String username,fecha fant, int antiguitat,double salary, String apto, String alta, double sou){
+	super (nom,dni,f_nac,edad,email);
 	this.sexo=sex;
-	this.email=email;
 	this.username=username;	
 	this.fant=fant;
 	this.antiguitat=antiguitat;
@@ -56,10 +53,7 @@ public void setsex(String sexo){
 	this.sexo=sexo;
 	
 }
-public void setemail(String email){
-	this.email=email;
-	
-}
+
 public void setusername(String username){
 	this.username=username;
 	
@@ -119,9 +113,6 @@ public String getsexo(){
 	return this.sexo;
 }
 
-public String getemail(){
-	return this.email;
-}
 
 public String getusername(){
 	return this.username;

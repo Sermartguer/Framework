@@ -21,8 +21,9 @@ public class fnes_users_dummies {
 			int ptos = 0;
 			fecha fnac = null;
 			int edad = 0;
+			String email="";
 			// Operacions
-			
+			email = fnes_v.vauto(1);
 			String nom = fnes_v.vauto(0);
 			String dni = fnes_v.vDNIauto();
 			fnac= new fecha("17/04/1998","dd/mm/yyyy");
@@ -30,7 +31,7 @@ public class fnes_users_dummies {
 			int n_comp=20;
 			int descuentos = 20;
 			
-			u = new usercl(nom, dni, fnac, edad,n_comp, descuentos);
+			u = new usercl(nom, dni, fnac, edad,email,n_comp, descuentos);
 		} else if (i == 1) {
 			////////////// NORMAL//////////////
 			
@@ -40,8 +41,10 @@ public class fnes_users_dummies {
 			fecha fnac = null;
 			String karma="";
 			int points=0;
+			String email="";
+
 			// Operacions
-			
+			email = fnes_v.vauto(1);
 			String nom = fnes_v.vauto(0);
 			String dni =fnes_v.vDNIauto();
 			fnac= new fecha("17/04/1998","dd/mm/yyyy");
@@ -50,7 +53,7 @@ public class fnes_users_dummies {
 			karma=func_plus.karma(n_com);
 			points=func_plus.points(karma);
 			
-			u = new usern(nom, dni, fnac, edad,n_com,karma,points);
+			u = new usern(nom, dni, fnac, edad,email,n_com,karma,points);
 
 		} else if (i == 2) {
 			////////////// ADMIN//////////////
@@ -79,7 +82,7 @@ public class fnes_users_dummies {
 			apto = func_fech.Apto(fnac, fant);
 			alta = func_fech.vALTA();
 			sou=500;
-			u = new userad(nom, dni, fnac, edad, sex, email, username, fant, antiguitat,salary, apto, alta,sou);
+			u = new userad(nom, dni, fnac, edad,email, sex, username, fant, antiguitat,salary, apto, alta,sou);
 			System.out.println("Objecte admin" + "\n" + u);
 
 

@@ -44,9 +44,9 @@ public class fecha implements Serializable{
 			
 			case "dd-mm-yyyy":
 				ArrayFecha = introducefecha.split("-");
-				this.day=Integer.parseInt(ArrayFecha [0]);
-				this.month=Integer.parseInt(ArrayFecha [1]);
-				this.year=Integer.parseInt(ArrayFecha [2]);
+				this.day=Integer.parseInt(ArrayFecha[0]);
+				this.month=Integer.parseInt(ArrayFecha[1]);
+				this.year=Integer.parseInt(ArrayFecha[2]);
 				this.fecha=day+"-"+month+"-"+year;
 				this.param="dd-mm-yyyy";
 				break;
