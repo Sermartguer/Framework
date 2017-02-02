@@ -129,15 +129,39 @@ public static String menucombox(String[] options, String message, String title){
 //Operations
 	Object opcion=JOptionPane.showInputDialog(null, message, title, JOptionPane.QUESTION_MESSAGE,null,  options,0);
 	try{
+		
 		cad=opcion.toString();
 	} catch (Exception e) {
 		cad="null";
 	
 	}
-	
+	System.out.println(opcion.toString());
 	return cad;
 }
 
+public static String menucomboxmenu(String[] options, String message, String title){
+/*En el main te que haber una variable 	String [ ] operaciones= {"suma","resta","producto","divisi�n", "hola"}; */
+//Variables
+	String cad=" ";
+	Object opcion=null;
+	String cadena=message;
+//Operations
+	do{
+		
+	opcion=JOptionPane.showInputDialog(null, cadena, title, JOptionPane.QUESTION_MESSAGE,null,  options,0);
+	cadena="";
+	try{
+		
+		cad=opcion.toString();
+	} catch (Exception e) {
+		cad="null";
+	
+	}
+	cadena=message+"\n"+"Per-favor elegeix uno";
+	//message=message+"\n"+"Per-favor elegeix uno";
+	}while(cad=="null");
+	return cad;
+}
 
 }
 

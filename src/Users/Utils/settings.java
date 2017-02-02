@@ -12,6 +12,7 @@ import javax.swing.JRadioButton;
 import Users.Classes.lenguage;
 import Users.Classes.setting;
 import Users.Modules.User.Model.Classes.Singleton;
+import Users.Modules.User.Model.Utils.Functions_theme;
 import Users.Utils.functions;
 
 public class settings {
@@ -99,7 +100,7 @@ public class settings {
 		int menu = 0;
 		String [] menu_decimal = { ".0", ".00", ".000" };
 		
-		menu = functions.menuo(menu_decimal, lenguage.getInstance().getProperty("choose_an_option"), lenguage.getInstance().getProperty("config"));
+		menu = functions.menuo(menu_decimal, "Tin en compte que si el conté algún zero en la part final"+"\n"+" arredonira al valor mes proxim"+"\n"+"Exemple: Elegixes tres decimals y el valor 13.250,"+"\n"+"el resultat final sera 13.25"+"\n"+lenguage.getInstance().getProperty("choose_an_option"), lenguage.getInstance().getProperty("config"));
 		
 		switch (menu) {
 			case 0:
@@ -199,6 +200,62 @@ public class settings {
 				return false;
 			}
 			return false;
+	}
+	public static void theme () {
+		String [] options = { "METAL", "GTK", "MOTIF", "NINBUS", "WINDOWS95", "WINDOWS", "MAC OS", "MAC OS X" };
+		int menu = 0;
+		
+		menu = functions.menuo(options, "Tema", "Tema" );
+		switch (menu){
+			case 0:// Metal - Predeterminado JAVA
+				setting.getInstance().settheme("METAL");
+				Functions_theme.theme();
+				break;
+	
+			case 1:// GTK
+				setting.getInstance().settheme("GTK");
+				Functions_theme.theme();
+				break;
+	
+			case 2:// Motif
+				setting.getInstance().settheme("MOTIF");
+				Functions_theme.theme();
+				break;
+	
+			case 3:// Nimbus - JAVA
+				setting.getInstance().settheme("NINBUS");
+				Functions_theme.theme();
+				break;	
+				
+			case 4:// WINDOWS 95
+				setting.getInstance().settheme("WINDOWS95");
+				Functions_theme.theme();
+				break;
+				
+			case 5:// WINDOWS
+				setting.getInstance().settheme("WINDOWS");
+				Functions_theme.theme();
+				break;
+				
+			case 6:// MAC OS
+				setting.getInstance().settheme("MAC OS");
+				//Functions_theme.theme();
+				break;
+				
+			case 7:// MAC OS X
+				setting.getInstance().settheme("MAC OS X");
+				//Functions_theme.theme();
+				break;
+		}
+	}
+	public static void defaultsetting(){
+		setting.getInstance().setcoin("euro");
+		setting.getInstance().setdecimal(".0");
+		setting.getInstance().setdummies(true);
+		setting.getInstance().setffecha("dd/mm/yyyy");
+		setting.getInstance().setfile("XML");
+		setting.getInstance().setlang("English");
+		setting.getInstance().settheme("METAL");
 	}
 	
 }

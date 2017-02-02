@@ -22,28 +22,14 @@ import Users.Classes.fecha;
 public class Main_Test {
 
 	public static void main(String[] args) {
-	
-		/*JFrame frame = new JFrame("ExETesT");
-	    frame.setVisible(true);
-	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    frame.setSize(400,350);
-	    JPanel panel = new JPanel ();
-	    frame.add(panel);
-	    JButton button = new JButton("Click me");
-	    panel.add(button);
-	    button.addActionListener(new Action());*/
+		double moneda=3.43242383;
+		moneda = moneda*1f;
+		DecimalFormatSymbols simbolos = new DecimalFormatSymbols();
+		simbolos.setDecimalSeparator('.');
+		DecimalFormat formateador = new DecimalFormat("####.####",simbolos);
 
-	
-
-	            String[] names = {"Abraham", "Adán", "Agapito", "Cristobal", "Alex", "Cristian", "Custodio", "David", "Danilo", "Dani"};
-	            String[] names2 = {"Ylos", "zzzzz", "sdsd", "OK"};
-	            String[] names3 = {"Hei", "ok", "jadd", "så drar vi", "det var det"};
-
-	            int random = (int) (Math.random()*names.length);
-	           //int random2 = (int) (Math.random()*names2.length);
-	           //int random3 = (int) (Math.random()*names3.length);
-
-	            System.out.println("Your clan name is: "  + names[random]);
+		// Esto sale en pantalla con punto decimal, es decir, 3.4324,
+		System.out.println (formateador.format (moneda));
 
 
 	        

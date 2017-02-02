@@ -39,7 +39,7 @@ public class Open_Admin {
 	      
         try {
             PATH = new java.io.File(".").getCanonicalPath()
-                    + "/src/Users/Modules/User/Utils/Admin/Files/Admin/json/admin.json";
+                    + "/src/Users/Modules/User/Model/Utils/Admin/Files/Admin/json/admin.json";
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -75,7 +75,7 @@ public class Open_Admin {
             Annotations.configureAliases(xstream, userad.class);
  
             PATH = new java.io.File(".").getCanonicalPath()
-                    + "/src/Users/Modules/User/Utils/Admin/Files/xml/admin.xml";
+                    + "/src/Users/Modules/User/Model/Utils/Admin/Files/xml/admin.xml";
             
             Singleton.useradmin = (ArrayList <userad>)xstream.fromXML(new FileReader(PATH));
             
@@ -89,7 +89,7 @@ public class Open_Admin {
         try {
             File file;
             PATH = new java.io.File(".").getCanonicalPath()
-                    + "/src/Users/Modules/User/Utils/Admin/Files/txt/admin.txt";
+                    + "/src/Users/Modules/User/Model/Utils/Admin/Files/txt/admin.txt";
             file = new File(PATH);
             
             FileInputStream FIS=new FileInputStream(file);

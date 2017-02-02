@@ -8,6 +8,7 @@ import Users.Modules.User.Model.Classes.Singleton;
 import Users.Modules.User.Model.Classes.userad;
 import Users.Modules.User.Model.Classes.usercl;
 import Users.Modules.User.Model.Classes.usern;
+import Users.Modules.User.Model.Utils.Functions_theme;
 import Users.Modules.User.Model.Utils.CRUD.Functions_open_auto;
 
 public class setting {
@@ -23,10 +24,11 @@ private String coin;
 private String file;
 @XStreamAlias("dummies")
 private boolean dummies;
+private String theme;
 @XStreamAlias("instance")
 private static setting instance;
 
-public setting (String language, String decimal, String formato_fecha, String coin,String file,boolean dummies){
+public setting (String language, String decimal, String formato_fecha, String coin,String file,boolean dummies,String theme){
 	super();
 	this.coin=coin;
 	this.language=language;
@@ -34,6 +36,7 @@ public setting (String language, String decimal, String formato_fecha, String co
 	this.formato_fecha=formato_fecha;
 	this.file=file;
 	this.dummies=dummies;
+	this.theme=theme;
 }
 public setting () {
 	this.coin = "euro";
@@ -42,17 +45,18 @@ public setting () {
 	this.formato_fecha = "dd/mm/yyyy";
 	this.file="XML";
 	this.dummies=true;
+	this.theme="METAL";
 }
 
 public static setting getInstance () {
 	if (instance == null){
 		instance = new setting ();
-		//Functions_theme.theme();
 		//Language_general.getInstance();
 		//Language_user.getInstance();
 		Singleton.useradmin = new ArrayList <userad> ();
 		Singleton.userclient = new ArrayList <usercl> ();
 		Singleton.userregister = new ArrayList <usern> ();
+		Functions_theme.theme();
 		Functions_open_auto.open();
 		lenguage.getInstance();
 		
@@ -82,6 +86,9 @@ public String getfile(){
 public boolean getdummies(){
 	return dummies;
 }
+public String gettheme(){
+	return theme;
+}
 //SETTERS
 public void setlang(String lang){
 	this.language=lang;
@@ -102,6 +109,10 @@ public void setfile(String file){
 public void setdummies(boolean dummies){
 	this.dummies=dummies;
 }
+public void settheme(String theme){
+	this.theme=theme;
+	Functions_theme.theme();
+}
 @Override
 public String toString(){
 	return "Settings: "+"\n"+
@@ -110,6 +121,7 @@ public String toString(){
 			"Formato fecha : "+this.formato_fecha+"\n"+
 			"Coin : "+this.coin+"\n"+
 			"File : "+this.file+"\n"+
-			"Dummies : "+this.dummies;
+			"Dummies : "+this.dummies+"\n"+
+			"Tema : "+this.theme;
 }
 }

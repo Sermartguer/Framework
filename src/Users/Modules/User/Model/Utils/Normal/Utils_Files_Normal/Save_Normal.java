@@ -40,7 +40,7 @@ public class Save_Normal {
 		          
 		         System.out.println("hola");
 		          PATH = new java.io.File(".").getCanonicalPath()
-		            		+ "/src/Users/Modules/User/Utils/Normal/Files_Normal/json/normal.json";
+		            		+ "/src/Users/Modules/User/Model/Utils/Normal/Files_Normal/json/normal.json";
 		          System.out.println("hola2");
 
 		                
@@ -74,7 +74,7 @@ public class Save_Normal {
 			
 	        try {
 	            PATH = new java.io.File(".").getCanonicalPath()
-	                    + "/src/Users/Modules/User/Utils/Normal/Files_Normal/xml/normal.xml";
+	                    + "/src/Users/Modules/User/Model/Utils/Normal/Files_Normal/xml/normal.xml";
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	        }
@@ -112,7 +112,7 @@ public class Save_Normal {
 	        
 	        try {
 	            PATH = new java.io.File(".").getCanonicalPath()
-	                    + "/src/Users/Modules/User/Utils/Normal/Files_Normal/txt/normal.txt";
+	                    + "/src/Users/Modules/User/Model/Utils/Normal/Files_Normal/txt/normal.txt";
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	        }

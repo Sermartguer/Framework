@@ -35,7 +35,7 @@ public class Open_Client {
 		          xstream.setMode(XStream.NO_REFERENCES);
 				  xstream.alias("Client", usercl.class);
 				  
-				  PATH = new java.io.File(".").getCanonicalPath()+ "/src/Users/Modules/User/Utils/Client/Client/json/client.json";
+				  PATH = new java.io.File(".").getCanonicalPath()+ "/src/Users/Modules/User/Model/Utils/Client/Client/json/client.json";
 		               
 		                Singleton.userclient.clear();
 		                
@@ -71,7 +71,7 @@ public class Open_Client {
             Annotations.configureAliases(xstream, usercl.class);
  
             PATH = new java.io.File(".").getCanonicalPath()
-                    + "/src/Users/Modules/User/Utils/Client/Files_Client/xml/client.xml";
+                    + "/src/Users/Modules/User/Model/Utils/Client/Files_Client/xml/client.xml";
             
             Singleton.userclient = (ArrayList <usercl>)xstream.fromXML(new FileReader(PATH));
             
@@ -84,7 +84,7 @@ public class Open_Client {
         try {
             File file;
             PATH = new java.io.File(".").getCanonicalPath()
-                    + "/src/Users/Modules/User/Utils/Client/Files_Client/txt/client.txt";
+                    + "/src/Users/Modules/User/Model/Utils/Client/Files_Client/txt/client.txt";
             file = new File(PATH);
             
             FileInputStream FIS=new FileInputStream(file);

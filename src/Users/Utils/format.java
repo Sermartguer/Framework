@@ -15,8 +15,11 @@ public class format {
 	public static String coins(double moneda) throws ParseException{
 		String co=setting.getInstance().getcoin();
 		String decimal=setting.getInstance().getdecimal();
-		System.out.println(moneda);
-		System.out.println(co);
+		String coinformat="";
+		double value=0.0000000;
+		String numbera = Double.toString(moneda);
+		String finalvalue = "";
+		
 		if (co.equals("dollar")){
 			moneda = moneda*1.0844f;
 		}else if(co.equals("libra")){
@@ -24,15 +27,24 @@ public class format {
 		}else if(co.equals("euro")){
 			moneda = moneda*1f;
 		}
+		System.out.println("Valor de la moneda :"+moneda);
+		/*DecimalFormatSymbols simbolos = new DecimalFormatSymbols();
+		simbolos.setDecimalSeparator('.');
+		DecimalFormat formateador = new DecimalFormat("####.####",simbolos);
+		// Esto sale en pantalla con punto decimal, es decir, 3.4324,
+		System.out.println (formateador.format (moneda));*/
 		
-		String coinformat="";
-		double value;
-		String numbera = Double.toString(moneda);
-		String finalvalue = "";
-		DecimalFormatSymbols symbols = DecimalFormatSymbols.getInstance();
+		
+		
+		
+		DecimalFormatSymbols symbols = new DecimalFormatSymbols();
 		symbols.setDecimalSeparator('.');
 		DecimalFormat nformat = new DecimalFormat(decimal, symbols);
+		System.out.println("Decimals: "+decimal);
+		System.out.println("Formateig "+nformat.format(moneda));
 		value=Double.valueOf(nformat.format(moneda));
+		
+		
 		numbera=nformat.format (moneda);
 		Double moned = nformat.parse( numbera ).doubleValue();		
 		

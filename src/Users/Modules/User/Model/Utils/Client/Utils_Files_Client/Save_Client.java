@@ -37,7 +37,7 @@ public class Save_Client {
 		     
 	        try {
 	            PATH = new java.io.File(".").getCanonicalPath()
-	                    + "/src/Users/Modules/User/Utils/Client/Files_Client/json/client.json";
+	                    + "/src/Users/Modules/User/Model/Utils/Client/Files_Client/json/client.json";
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	        }
@@ -69,7 +69,7 @@ public class Save_Client {
 			
 	        try {
 	            PATH = new java.io.File(".").getCanonicalPath()
-	                    + "/src/Users/Modules/User/Utils/Client/Files_Client/xml/client.xml";
+	                    + "/src/Users/Modules/User/Model/Utils/Client/Files_Client/xml/client.xml";
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	        }
@@ -107,7 +107,7 @@ public class Save_Client {
 	        
 	        try {
 	            PATH = new java.io.File(".").getCanonicalPath()
-	                    + "/src/Users/Modules/User/Utils/Client/Files_Client/txt/client.txt";
+	                    + "/src/Users/Modules/User/Model/Utils/Client/Files_Client/txt/client.txt";
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	        }

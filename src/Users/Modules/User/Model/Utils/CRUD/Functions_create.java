@@ -31,11 +31,12 @@ public class Functions_create {
 		} else {
 			
 			if (setting.getInstance().getdummies()==true){
-				BLL_dummies.makedummies_admin();
-							}else if (setting.getInstance().getdummies()==false){
+				a1=BLL_dummies.makedummies_admin();
+			}else if (setting.getInstance().getdummies()==false){
 				a1 = (userad) fnes_users4.create_users(2);
 			}
-			//Singleton.useradmin.add(a1);
+			Singleton.useradmin.add(a1);
+			System.out.println("Tamayo de el array "+Singleton.useradmin.size());
 		}
 		return a1;
 	}
@@ -51,8 +52,8 @@ public class Functions_create {
 			JOptionPane.showMessageDialog(null,  lenguage.getInstance().getProperty("error_create"),"ERROR", JOptionPane.ERROR_MESSAGE);
 		} else {
 			if (setting.getInstance().getdummies()==true){
-			c1 = (usercl) fnes_users_dummies.create_users(0);
-
+			//c1 = (usercl) fnes_users_dummies.create_users(0);
+			c1=BLL_dummies.makedummies_client();
 			}else if (setting.getInstance().getdummies()==false){
 			c1= (usercl) fnes_users4.create_users(0);
 			}
@@ -73,7 +74,8 @@ public class Functions_create {
 			JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("error_create"),"ERROR", JOptionPane.ERROR_MESSAGE);
 		} else {
 			if(setting.getInstance().getdummies()==true){
-				n1 = (usern) fnes_users_dummies.create_users(1);
+				n1=BLL_dummies.makedummies_userregister();
+				//n1 = (usern) fnes_users_dummies.create_users(1);
 			}else if (setting.getInstance().getdummies()==false){
 				n1 = (usern) fnes_users4.create_users(1);
 			}

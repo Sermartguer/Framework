@@ -34,7 +34,7 @@ public class Open_Normal {
 		          xstream.setMode(XStream.NO_REFERENCES);
 				  xstream.alias("Normal", usern.class);
 				  
-				  PATH = new java.io.File(".").getCanonicalPath()+ "/src/Users/Modules/User/Utils/Normal/Files_Normal/json/normal.json";
+				  PATH = new java.io.File(".").getCanonicalPath()+ "/src/Users/Modules/User/Model/Utils/Normal/Files_Normal/json/normal.json";
 		               
 		                Singleton.userregister.clear();
 		                
@@ -70,7 +70,7 @@ public class Open_Normal {
             Annotations.configureAliases(xstream, usern.class);
  
             PATH = new java.io.File(".").getCanonicalPath()
-                    + "/src/Users/Modules/User/Utils/Normal/Files_Normal/xml/normal.xml";
+                    + "/src/Users/Modules/User/Model/Utils/Normal/Files_Normal/xml/normal.xml";
             
             Singleton.userregister = (ArrayList <usern>)xstream.fromXML(new FileReader(PATH));
             
@@ -83,7 +83,7 @@ public class Open_Normal {
         try {
             File file;
             PATH = new java.io.File(".").getCanonicalPath()
-                    + "/src/Users/Modules/User/Utils/Normal/Files_Normal/txt/normal.txt";
+                    + "/src/Users/Modules/User/Model/Utils/Normal/Files_Normal/txt/normal.txt";
             file = new File(PATH);
             
             FileInputStream FIS=new FileInputStream(file);

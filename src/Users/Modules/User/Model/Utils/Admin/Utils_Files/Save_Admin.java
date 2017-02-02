@@ -40,7 +40,7 @@ public class Save_Admin {
 	     
         try {
             PATH = new java.io.File(".").getCanonicalPath()
-                    + "/src/Users/Modules/User/Utils/Admin/Files/json/admin.json";
+                    + "/src/Users/Modules/User/Model/Utils/Admin/Files/json/admin.json";
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -75,25 +75,28 @@ public class Save_Admin {
 		
         try {
             PATH = new java.io.File(".").getCanonicalPath()
-                    + "/src/Users/Modules/User/Utils/Admin/Files/xml/admin.xml";
+                    + "/src/Users/Modules/User/Model/Utils/Admin/Files/xml/admin.xml";
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+		System.out.println("Tamayo de el array "+Singleton.useradmin.size());
+		System.out.println("1");
         if (Singleton.useradmin.size() > 0) {
 	        try {
+	    		System.out.println("2");
 				OutputStream OS = new ByteArrayOutputStream();
 				OutputStreamWriter OSW = new OutputStreamWriter(OS);
 				XStream xstream = new XStream();
 				Annotations.configureAliases(xstream, userad.class);
-	
+				System.out.println("3");
 	            String header = "<?xml version=\"1.0\" encoding=\"" + ENCODING + "\"?>\n";
 	            xstream.toXML(Singleton.useradmin, OSW);
 	            StringBuffer xml = new StringBuffer();
 	            xml.append(header);
 	            xml.append(OS.toString());
-	            
+	            System.out.println("4");
 	            FileWriter fileXml = new FileWriter(PATH);
+	            System.out.println("5");
 	            fileXml.write(xml.toString());
 	            fileXml.close();
 	            OSW.close();
@@ -113,7 +116,7 @@ public class Save_Admin {
         
         try {
             PATH = new java.io.File(".").getCanonicalPath()
-                    + "/src/Users/Modules/User/Utils/Admin/Files/txt/admin.txt";
+                    + "/src/Users/Modules/User/Model/Utils/Admin/Files/txt/admin.txt";
         } catch (IOException e) {
             e.printStackTrace();
         }

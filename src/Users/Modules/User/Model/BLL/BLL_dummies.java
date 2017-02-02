@@ -8,6 +8,7 @@ import Users.Modules.User.Model.Classes.userad;
 import Users.Modules.User.Model.Classes.usercl;
 import Users.Modules.User.Model.Classes.usern;
 import Users.Modules.User.Model.Utils.func_fech;
+import Users.Modules.User.Model.Utils.func_plus;
 
 public class BLL_dummies {
 	public static String dni(int dni) {
@@ -77,7 +78,7 @@ public class BLL_dummies {
 	public static fecha datebirthday (){
 		String [] years = {"19", "20"};
 		int day=new Random().nextInt(10+1) + 10;
-		int month=new Random().nextInt(11+1);
+		int month=new Random().nextInt(11+1)+1;
 		int year3=new Random().nextInt(1998-1950)+1950;
 
 		//int day = (int) (Math.random() * (1 - 31) + 31);
@@ -107,7 +108,7 @@ public static String alta(){
 	public static fecha datecontract (){
 		String [] years = {"19", "20"};
 		int day=new Random().nextInt(10+1) + 10;
-		int month=new Random().nextInt(11+1);
+		int month=new Random().nextInt(11+1)+1;
 		int year3=new Random().nextInt(1998-1950)+1950;
 		//String year2 = years[position]+year3;
 		String fechas=day+"/"+month+"/"+year3;
@@ -135,7 +136,10 @@ return antiguitat;
 		return (float) Math.rint(shopping * 100) / 100;
 	}
 
-	
+	public static int n_comp(){
+		int n_comp=(int)(Math.random()*(50-1000)+1000);
+		return (int) Math.rint(n_comp*100)/100;
+	}
 
 	
 	public static int point (){
@@ -147,28 +151,38 @@ return antiguitat;
 	/* BUILDER
 	 * 
 	 */
-	public static void makedummies_admin () {
+	public static userad makedummies_admin () {
+		userad a1=null;
 		int cont=0;
 		do{
-			userad a1=null;
 			a1 = new userad (user(),DNI(),datebirthday(),age(datebirthday()),email(),"H", surname(),datecontract(),anti(datecontract(),datebirthday()), salary(),"Si",alta(), incentive());
-			Singleton.useradmin.add(a1);
+			//Singleton.useradmin.add(a1);
 			cont++;
-		}while(cont<2);
-		System.out.println(Singleton.useradmin.size());
+		}while(cont<1);
+		return a1;
 	}
 	
-	public static void makedummies_client () {
-		for (int i=0; i<5; i++) {
-			usercl c1 = new Client(user(),DNI(),datebirthday(),edad,email(), n_comp,descuentos);
-			Singleton.userclient.add(c1);
+	public static usercl makedummies_client () {
+		int cont=0;
+		usercl c1=null;
+		do{
+			c1 = new usercl(user(),DNI(),datebirthday(),age(datebirthday()),email(), n_comp(),point());
+			//Singleton.userclient.add(c1);
+			cont++;
+		}while(cont<1);
+		return c1;
 		}
-	}
 	
-	public static void makedummies_userregister () {
-		for (int i=0; i<5; i++) {
-			usern u1 = new User_register(user(),DNI(),datebirthday(),edad,email(),karma, points);
-			Singleton.userregister.add(u1);
-		}
+	
+	public static usern makedummies_userregister () {
+		int cont=0;
+		usern n1=null;
+		do{
+			
+			n1 = new usern(user(),DNI(),datebirthday(),age(datebirthday()),email(),n_comp(),func_plus.karma(n_comp()), point());
+			//Singleton.userregister.add(u1);
+		cont++;
+		}while(cont<1);
+		return n1; 
 	}
 }

@@ -66,7 +66,7 @@ public class JSON_Setting {
 	        setting.getInstance().setdecimal(config.getdecimal());
 	        setting.getInstance().setfile(config.getfile());
 	        setting.getInstance().setlang(config.getlang());
-	        //setting.getInstance().setTheme(config.getTheme());
+	        setting.getInstance().settheme(config.gettheme());
 	        
         } catch (Exception e) {
         	JOptionPane.showMessageDialog(null, "Error al obrir el JSON", "Error", JOptionPane.ERROR_MESSAGE);

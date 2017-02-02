@@ -171,7 +171,7 @@ public class menu4 {
 				break;
 			case 1:
 				do {
-					String[] opsettin = {lenguage.getInstance().getProperty("date"),lenguage.getInstance().getProperty("coin"),lenguage.getInstance().getProperty("decimals"),lenguage.getInstance().getProperty("lang"),"Dummies",lenguage.getInstance().getProperty("files"),lenguage.getInstance().getProperty("return") };
+					String[] opsettin = {lenguage.getInstance().getProperty("date"),lenguage.getInstance().getProperty("coin"),lenguage.getInstance().getProperty("decimals"),lenguage.getInstance().getProperty("lang"),"Dummies",lenguage.getInstance().getProperty("files"),"Theme","Default APP",lenguage.getInstance().getProperty("return") };
 					settin = functions.menuo(opsettin, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("config"));
 					switch (settin) {
 					case 0:
@@ -193,6 +193,12 @@ public class menu4 {
 						settings.file();
 						break;
 					case 6:
+						settings.theme();
+						break;
+					case 7:
+						settings.defaultsetting();
+						break;
+					case 8:
 						continu = true;
 						break;
 					}

@@ -77,7 +77,7 @@ public class fnes_find {
 		userad a1 = null;
 		String ID = "";
 		String [] admin = generate_vector_admin ();
-		String search =functions.menucombox( admin,"Elegeix un usuari","Usuari");
+		String search =functions.menucomboxmenu( admin,"Elegeix un usuari","Usuari");
 		if (search != ""){
 			for (int i = 0; i<9; i++) {
 				ID += search.charAt(i);
