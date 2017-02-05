@@ -127,7 +127,7 @@ public class settings {
 	public static void lang (){
 		String language="";
 		
-		String[] lan= {lenguage.getInstance().getProperty("english"),lenguage.getInstance().getProperty("spanish"),"Valencia","Italiano",lenguage.getInstance().getProperty("exit") };
+		String[] lan= {lenguage.getInstance().getProperty("english"),lenguage.getInstance().getProperty("spanish"),"Valencia","Italiano","Portuges",lenguage.getInstance().getProperty("exit") };
 		 int option= functions.menuo(lan, lenguage.getInstance().getProperty("choose_an_option"), lenguage.getInstance().getProperty("dateconf2"));
 			switch(option){
 			case 0:
@@ -159,6 +159,13 @@ public class settings {
 				JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes")+setting.getInstance().getlang(),"LANGUAGE",JOptionPane.INFORMATION_MESSAGE);
 				break;
 			case 4:
+				language="Portuges";
+				//lenguage.getInstance().setIdioma("Valencia");
+				//Singleton.config.setlang("Valencia");
+				setting.getInstance().setlang(language);
+				JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes")+setting.getInstance().getlang(),"LANGUAGE",JOptionPane.INFORMATION_MESSAGE);
+				break;
+			case 5:
 				break;
 			}
 

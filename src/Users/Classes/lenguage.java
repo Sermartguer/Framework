@@ -25,6 +25,9 @@ public lenguage (){
 	    case "Italiano":
 	        getProperties("lenguage_properties/italian.properties");
 	        break;
+	    case "Portuges":
+	        getProperties("lenguage_properties/portuges.properties");
+	        break;
 	    default:
 	        getProperties("lenguage_properties/english.properties");
 	    }
@@ -49,6 +52,9 @@ public void setIdioma(String idioma) {
         break;
     case "Italiano":
         getProperties("lenguage_properties/italian.properties");
+        break;
+    case "Portuges":
+        getProperties("lenguage_properties/portuges.properties");
         break;
     default:
         getProperties("lenguage_properties/english.properties");
