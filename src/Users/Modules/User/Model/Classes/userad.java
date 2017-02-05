@@ -156,31 +156,31 @@ public String toString(){
 
 	System.out.println(this.getf_nac());
 	String cad="";
-	cad = cad + ("\n"+lenguage.getInstance().getProperty("tname")+this.getnom()+"\n");
+	cad = cad + ("\n"+lenguage.getInstance().getProperty("tname")+" "+this.getnom()+"\n");
 	cad = cad + ("DNI: "+this.getdni()+"\n");
-	cad = cad + (lenguage.getInstance().getProperty("tfnac")+this.getf_nac().toString(date)+"\n");
-	cad = cad + ("EDAD: "+this.getedad()+"\n");
-	cad = cad + ("SEXE: "+this.getsexo()+"\n");
-	cad = cad + ("EMAIL: "+this.getemail()+"\n");
-	cad = cad + ("USERNAME: "+this.getusername()+"\n");
-	cad = cad + ("FECHA DE CONTRATACIO: "+this.getfant().toString(date)+"\n");
-	cad = cad + ("ANTIGUITAT: "+this.getAntiguitat()+"\n");
-	cad = cad + ("APTO PARA EL TRABAJO: "+this.getapto()+"\n");
-	cad = cad + ("FECHA DE ALTA: "+this.getalta()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tfnac")+""+this.getf_nac().toString(date)+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tage")+" "+this.getedad()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tsex")+" "+this.getsexo()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("temail")+" "+this.getemail()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tusername")+" "+this.getusername()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tfco")+this.getfant().toString(date)+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tcontra")+this.getAntiguitat()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tapto")+this.getapto()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tfalta")+this.getalta()+"\n");
 	try {
-		cad = cad + ("SALARI BRUTO: "+format.coins(this.getsou())+"\n");
+		cad = cad + (lenguage.getInstance().getProperty("tsalariob")+format.coins(this.getsou())+"\n");
 	} catch (ParseException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 	try {
-		cad = cad + ("BONIFICACIO SALARI: "+format.coins(this.getsalary())+"\n");
+		cad = cad + (lenguage.getInstance().getProperty("tplussal")+format.coins(this.getsalary())+"\n");
 	} catch (ParseException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 	try {
-		cad = cad + ("SALARY NETO: "+format.coins(this.getneto()));
+		cad = cad + (lenguage.getInstance().getProperty("salarry")+format.coins(this.getneto()));
 	} catch (ParseException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

@@ -127,7 +127,7 @@ public class settings {
 	public static void lang (){
 		String language="";
 		
-		String[] lan= {lenguage.getInstance().getProperty("english"),lenguage.getInstance().getProperty("spanish"),"Valencia",lenguage.getInstance().getProperty("exit") };
+		String[] lan= {lenguage.getInstance().getProperty("english"),lenguage.getInstance().getProperty("spanish"),"Valencia","Italiano",lenguage.getInstance().getProperty("exit") };
 		 int option= functions.menuo(lan, lenguage.getInstance().getProperty("choose_an_option"), lenguage.getInstance().getProperty("dateconf2"));
 			switch(option){
 			case 0:
@@ -135,23 +135,30 @@ public class settings {
 				//lenguage.getInstance().setIdioma("English");
 				//Singleton.config.setlang("English");
 				setting.getInstance().setlang(language);
-				//JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes")+Singleton.config.getlang(),"LANGUAGE",JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes")+setting.getInstance().getlang(),"LANGUAGE",JOptionPane.INFORMATION_MESSAGE);
 				break;
 			case 1:
 				language="Spanish";
 				//lenguage.getInstance().setIdioma("Spanish");
 				//Singleton.config.setlang("Spanish");
 				setting.getInstance().setlang(language);
-				//JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes")+Singleton.config.getlang(),"LANGUAGE",JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes")+setting.getInstance().getlang(),"LANGUAGE",JOptionPane.INFORMATION_MESSAGE);
 				break;
 			case 2:
 				language="Valencia";
 				//lenguage.getInstance().setIdioma("Valencia");
 				//Singleton.config.setlang("Valencia");
 				setting.getInstance().setlang(language);
-				//JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes")+Singleton.config.getlang(),"LANGUAGE",JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes")+setting.getInstance().getlang(),"LANGUAGE",JOptionPane.INFORMATION_MESSAGE);
 				break;
 			case 3:
+				language="Italiano";
+				//lenguage.getInstance().setIdioma("Valencia");
+				//Singleton.config.setlang("Valencia");
+				setting.getInstance().setlang(language);
+				JOptionPane.showMessageDialog(null, lenguage.getInstance().getProperty("changes")+setting.getInstance().getlang(),"LANGUAGE",JOptionPane.INFORMATION_MESSAGE);
+				break;
+			case 4:
 				break;
 			}
 

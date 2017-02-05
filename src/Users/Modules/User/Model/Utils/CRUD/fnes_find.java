@@ -91,7 +91,7 @@ public class fnes_find {
 		usercl c1 = null;
 		String ID = "";
 		String [] client = generate_vector_client ();
-		String search = functions.menucombox(client,"Elegeix un usuari","Usuari");
+		String search = functions.menucomboxmenu(client,"Elegeix un usuari","Usuari");
 		if (search != ""){
 			for (int i = 0; i<9; i++) {
 				ID += search.charAt(i);
@@ -105,7 +105,7 @@ public class fnes_find {
 		usern u1 = null;
 		String ID = "";
 		String [] userregister = generate_vector_userregister ();
-		String search = functions.menucombox(userregister,"Elegeix un usuari","Usuari");
+		String search = functions.menucomboxmenu(userregister,"Elegeix un usuari","Usuari");
 		if (search != ""){
 			for (int i = 0; i<9; i++) {
 				ID += search.charAt(i);

@@ -62,6 +62,7 @@ public class Functions_read {
 			switch (menu){
 				case 0:
 					for (int i = 0; i <Singleton.userclient.size();i++){
+						System.out.println("Numero de posicion: "+i);
 						String cad = "";
 						cad = cad + (Singleton.userclient.get(i).toString());
 						JOptionPane.showMessageDialog(null, cad);
@@ -75,7 +76,8 @@ public class Functions_read {
 					}else{
 					//c1 = fnes_users4.ask_clientDNI();
 					location = fnes_find.find_client(c1);
-					if (location != -1) {
+					System.out.println("Numero que has elegido :"+location);
+					if (location > -1) {
 						c1 = Singleton.userclient.get(location);
 						JOptionPane.showMessageDialog(null, c1.toString());
 					}else {

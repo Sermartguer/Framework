@@ -2,6 +2,7 @@ package Users.Modules.User.Model.Utils.Admin.Utils_Files;
 
 import javax.swing.JOptionPane;
 
+import Users.Classes.setting;
 import Users.Modules.User.Model.Classes.Singleton;
 
 public class Files_Settings {
@@ -16,7 +17,7 @@ public static void save_auto_admin(){
 	Save_Admin.savetxt_admin();
 }
 public static void open_ondemmand_admin(){
-	String file=Singleton.config.getfile();
+	String file=setting.getInstance().getfile();
 	if (file.equals("XML")){
 		Singleton.useradmin=Open_Admin.obri_xml();
 	}else if(file.equals("TXT")){
@@ -27,7 +28,7 @@ public static void open_ondemmand_admin(){
 	}
 }
 public static void save_ondemand_admin(){
-	String file=Singleton.config.getfile();
+	String file=setting.getInstance().getfile();
 	System.out.println(file);
 	if (file.equals("XML")){
 		Save_Admin.savexml_admin_ondemmand();	

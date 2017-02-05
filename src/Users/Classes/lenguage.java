@@ -11,19 +11,24 @@ private static lenguage instance;
 public lenguage (){
 	idioma=setting.getInstance().getlang();
 	//this.idioma=idioma;
-    switch(idioma){
-    case "English":
-        getProperties("english.properties");
-        break;
-    case "Spanish":
-        getProperties("spanish.properties");
-        break;
-    case "Valencia":
-        getProperties("valencia.properties");
-        break;
-    default:
-        getProperties("english.properties");
-    }
+	
+		switch(idioma){
+	    case "English":
+	        getProperties("lenguage_properties/english.properties");
+	        break;
+	    case "Spanish":
+	        getProperties("lenguage_properties/spanish.properties");
+	        break;
+	    case "Valencia":
+	        getProperties("lenguage_properties/valencia.properties");
+	        break;
+	    case "Italiano":
+	        getProperties("lenguage_properties/italian.properties");
+	        break;
+	    default:
+	        getProperties("lenguage_properties/english.properties");
+	    }
+    
 }
 public String getIdioma() {
 	return idioma;
@@ -31,18 +36,22 @@ public String getIdioma() {
 
 public void setIdioma(String idioma) {
 	this.idioma = idioma;
+	
 	switch(idioma){
     case "English":
-        getProperties("english.properties");
+        getProperties("lenguage_properties/english.properties");
         break;
     case "Spanish":
-        getProperties("spanish.properties");
+        getProperties("lenguage_properties/spanish.properties");
         break;
     case "Valencia":
-        getProperties("valencia.properties");
+        getProperties("lenguage_properties/valencia.properties");
+        break;
+    case "Italiano":
+        getProperties("lenguage_properties/italian.properties");
         break;
     default:
-        getProperties("english.properties");
+        getProperties("lenguage_properties/english.properties");
 	}
 }
 public static lenguage getInstance () {

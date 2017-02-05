@@ -189,30 +189,40 @@ public static String vDNIauto(){
 				cad=cad+"\n"+(lenguage.getInstance().getProperty("errorv_01"));
 			}
 			System.out.println("idioma"+idioma);
-			if(idioma=="English"){
-				System.out.println("sex"+sex);
+			System.out.println("sex"+sex);
+			if(idioma.equals("English")){
 				if((sex.equals("M"))||(sex.equals("m"))){
 					sex="Man";
+					res=true;
 				}else if((sex.equals("W"))||(sex.equals("w"))){
 					sex="Woman";
+					res=true;
 				}else if((sex.equals("O"))||(sex.equals("o"))){
 					sex="Other";
+					res=true;
 				}
-			}else if(idioma=="Valencia"){
+			}else if(idioma.equals("Valencia")){
 				if((sex.equals("H"))||(sex.equals("h"))){
 					sex="Home";
+					res=true;
 				}else if((sex.equals("D"))||(sex.equals("d"))){
 					sex="Dona";
+					res=true;
 				}else if((sex.equals("A"))||(sex.equals("a"))){
 					sex="Altre";
+					res=true;
 				}
-			}else if(idioma=="Spanish"){
+			}else if(idioma.equals("Spanish")){
 				if((sex.equals("H"))||(sex.equals("h"))){
+					System.out.println("Entre aci");
 					sex="Hombre";
+					res=true;
 				}else if((sex.equals("M"))||(sex.equals("m"))){
 					sex="Mujer";
+					res=true;
 				}else if((sex.equals("O"))||(sex.equals("o"))){
 					sex="Otro";
+					res=true;
 				}
 				
 			}
@@ -230,9 +240,9 @@ public static String vDNIauto(){
 		
 		do {
 			
-			if(idioma=="English"){
+			if(idioma.equals("English")){
 			sex="M";
-			}else if(idioma=="Valencia"){
+			}else if(idioma.equals("Valencia")){
 			sex="H";
 			}else if(idioma.equals("Spanish")){
 			sex="H";
@@ -248,32 +258,39 @@ public static String vDNIauto(){
 			System.out.println("idioma"+idioma);
 			System.out.println(res);
 			System.out.println(sex);
-			if(idioma=="English"){
-				System.out.println("sex"+sex);
+			if(idioma.equals("English")){
 				if((sex.equals("M"))||(sex.equals("m"))){
 					sex="Man";
+					res=true;
 				}else if((sex.equals("W"))||(sex.equals("w"))){
 					sex="Woman";
+					res=true;
 				}else if((sex.equals("O"))||(sex.equals("o"))){
 					sex="Other";
+					res=true;
 				}
-			}else if(idioma=="Valencia"){
+			}else if(idioma.equals("Valencia")){
 				if((sex.equals("H"))||(sex.equals("h"))){
 					sex="Home";
+					res=true;
 				}else if((sex.equals("D"))||(sex.equals("d"))){
 					sex="Dona";
+					res=true;
 				}else if((sex.equals("A"))||(sex.equals("a"))){
 					sex="Altre";
+					res=true;
 				}
-			}else if(idioma=="Spanish"){
+			}else if(idioma.equals("Spanish")){
 				if((sex.equals("H"))||(sex.equals("h"))){
 					System.out.println("Entre aci");
 					sex="Hombre";
 					res=true;
 				}else if((sex.equals("M"))||(sex.equals("m"))){
 					sex="Mujer";
+					res=true;
 				}else if((sex.equals("O"))||(sex.equals("o"))){
 					sex="Otro";
+					res=true;
 				}
 				
 			}

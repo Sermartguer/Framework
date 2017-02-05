@@ -28,7 +28,8 @@ public class Functions_delete {
 				break;
 			case 1:
 			location = -1;
-			a1 = fnes_users4.ask_adminDNI();
+			a1=fnes_find.IDadmin();
+			//a1 = fnes_users4.ask_adminDNI();
 			location = fnes_find.find_admin(a1);
 			if (location != -1) {
 				Singleton.useradmin.remove(location);
@@ -57,7 +58,8 @@ public class Functions_delete {
 				break;
 			case 1:
 			location = -1;
-			c1 = fnes_users4.ask_clientDNI();
+			c1=fnes_find.IDclient();
+			//c1 = fnes_users4.ask_clientDNI();
 			location = fnes_find.find_client(c1);
 			if (location != -1) {
 				Singleton.userclient.remove(location);
@@ -86,7 +88,8 @@ public class Functions_delete {
 				break;
 			case 1:
 			location = -1;
-			u1 = fnes_users4.ask_usernDNI();
+			u1=fnes_find.IDuserregister();
+			//u1 = fnes_users4.ask_usernDNI();
 			location = fnes_find.find_user(u1);
 			if (location != -1) {
 				Singleton.userregister.remove(location);

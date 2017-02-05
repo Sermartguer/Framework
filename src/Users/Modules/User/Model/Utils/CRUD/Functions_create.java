@@ -31,7 +31,7 @@ public class Functions_create {
 		} else {
 			
 			if (setting.getInstance().getdummies()==true){
-				a1=BLL_dummies.makedummies_admin();
+				a1 = BLL_dummies.makedummies_admin();
 			}else if (setting.getInstance().getdummies()==false){
 				a1 = (userad) fnes_users4.create_users(2);
 			}
@@ -58,7 +58,6 @@ public class Functions_create {
 			c1= (usercl) fnes_users4.create_users(0);
 			}
 			Singleton.userclient.add(c1);
-			System.out.println(Singleton.userclient);
 		}
 		return c1;
 	}

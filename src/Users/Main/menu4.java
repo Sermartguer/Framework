@@ -25,7 +25,6 @@ public class menu4 {
 	public static void main(String[] args) {
 		// Variables
 		int operator = 0, ops = 0, operator_users = 0,settin=0;
-		//String coin = "euro", date = "dd/mm/yyyy", decimal = ".0", file = "XML";
 		boolean continu = false;
 		// Operations
 		setting.getInstance();
@@ -35,7 +34,7 @@ public class menu4 {
 			String[] options_users = {lenguage.getInstance().getProperty("client"),lenguage.getInstance().getProperty("normal"),lenguage.getInstance().getProperty("admin"),lenguage.getInstance().getProperty("return")};
 			String[] options = {lenguage.getInstance().getProperty("userm"),lenguage.getInstance().getProperty("config"),lenguage.getInstance().getProperty("exit")};
 			String[] op = { lenguage.getInstance().getProperty("create"),lenguage.getInstance().getProperty("print_data"),lenguage.getInstance().getProperty("change_data"),lenguage.getInstance().getProperty("delete"),lenguage.getInstance().getProperty("order"),
-					"Open", "Save", lenguage.getInstance().getProperty("exit") };
+					lenguage.getInstance().getProperty("open"),lenguage.getInstance().getProperty("save"), lenguage.getInstance().getProperty("exit") };
 			operator = functions.menuo(options, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("userm"));
 			if (operator == -1) {
 				System.exit(0);
@@ -73,9 +72,11 @@ public class menu4 {
 							case 4:
 								Functions_order.change_orderclient();
 								break;
+							// OBRIR
 							case 5:
 								Files_Settings_Client.open_ondemmand_client();
 								break;
+							// GUARDAR
 							case 6:
 								Files_Settings_Client.save_ondemand_client();
 								break;
@@ -112,9 +113,11 @@ public class menu4 {
 							case 4:
 								Functions_order.change_orderuser();
 								break;
+							// OBRIR
 							case 5:
 								Files_Settings_Normal.open_ondemmand_normal();
 								break;
+							// GUARDAR
 							case 6:
 								Files_Settings_Normal.save_ondemand_normal();
 								break;
@@ -171,7 +174,7 @@ public class menu4 {
 				break;
 			case 1:
 				do {
-					String[] opsettin = {lenguage.getInstance().getProperty("date"),lenguage.getInstance().getProperty("coin"),lenguage.getInstance().getProperty("decimals"),lenguage.getInstance().getProperty("lang"),"Dummies",lenguage.getInstance().getProperty("files"),"Theme","Default APP",lenguage.getInstance().getProperty("return") };
+					String[] opsettin = {lenguage.getInstance().getProperty("date"),lenguage.getInstance().getProperty("coin"),lenguage.getInstance().getProperty("decimals"),lenguage.getInstance().getProperty("lang"),"Dummies",lenguage.getInstance().getProperty("files"),lenguage.getInstance().getProperty("theme"),lenguage.getInstance().getProperty("defapp"),lenguage.getInstance().getProperty("return") };
 					settin = functions.menuo(opsettin, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("config"));
 					switch (settin) {
 					case 0:

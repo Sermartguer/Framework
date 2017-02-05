@@ -61,13 +61,13 @@ public String toString(){
 
 	String date=setting.getInstance().getffecha();
 	String cad="";
-	cad = cad + ("\n"+lenguage.getInstance().getProperty("tname")+this.getnom()+"\n");
-	cad = cad + ("Dni: "+this.getdni()+"\n");
-	cad = cad + (lenguage.getInstance().getProperty("tfnac")+this.getf_nac().toString(date)+"\n");
-	cad = cad + (lenguage.getInstance().getProperty("tage")+this.getedad()+"\n");
-	cad = cad + ("Email: "+this.getemail()+"\n");
-	cad = cad + (lenguage.getInstance().getProperty("tn_comp")+this.getn_comp()+"\n");
-	cad = cad + (lenguage.getInstance().getProperty("tdescuento")+format.por(this.getdes())+"\n");
+	cad = cad + ("\n"+lenguage.getInstance().getProperty("tname")+""+this.getnom()+"\n");
+	cad = cad + ("Dni: "+""+this.getdni()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tfnac")+""+this.getf_nac().toString(date)+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tage")+""+this.getedad()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("temail")+""+this.getemail()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tn_comp")+""+this.getn_comp()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tdescuento")+""+format.por(this.getdes())+"\n");
 	return cad;
 
 }

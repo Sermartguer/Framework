@@ -7,35 +7,59 @@ import Users.Modules.User.Model.Classes.Singleton;
 import Users.Modules.User.Model.Classes.userad;
 import Users.Modules.User.Model.Classes.usercl;
 import Users.Modules.User.Model.Classes.usern;
+import Users.Modules.User.Model.Utils.fnes_v;
 import Users.Modules.User.Model.Utils.func_fech;
 import Users.Modules.User.Model.Utils.func_plus;
+import Users.Modules.User.Model.Utils.CRUD.fnes_find;
+import Users.Modules.User.Model.dummies.fnes_users_dummies;
+import Users.Utils.validate;
 
 public class BLL_dummies {
-	public static String dni(int dni) {
+	/*public static String dni(int dni) {
 		String NIF_STRING_ASOCIATION = "TRWAGMYFPDXBNJZSQVHLCKE";
         return String.valueOf(dni) + NIF_STRING_ASOCIATION.charAt(dni % 23);
-    }
+    }*/
 	
 	public static String DNI (){
-		String cad = "";
-        long time = new java.util.GregorianCalendar().getTimeInMillis();
-        Random random = new Random(time);
-        while (cad.length() < 8) {
-            char c = (char) random.nextInt(255);
-            if ((c >= '0' && c <= '9')) {
-                cad += c;
-            }
-        }
-        int numberdni = Integer.parseInt(cad);
-        return dni(numberdni);
+		String dniauto="";
+		String numeros="";
+		String letra="";
+		boolean res=false;
+		userad a1=null;
+		boolean correct=false;
+		int location=0;
+		
+		do{
+			
+		Random rnd = new Random(); 
+		rnd.setSeed(System.currentTimeMillis()); 
+		int al6 = 10000000 + rnd.nextInt(90000000); 
+		String letras = "TRWAGMYFPDXBNJZSQVHLCKE"; 
+		int index = al6 - (Math.abs(al6/23)*23);
+		numeros=numeros+al6;
+		letra=letra+letras.charAt(index);
+		dniauto=numeros+letra;
+		res=validate.DNI(dniauto);
+		a1 = fnes_users_dummies.ask_adminDNI_dummies(dniauto);
+		if (Singleton.useradmin==null){
+			System.out.println("Esta buit");
+		}else{
+		location = fnes_find.find_admin(a1);
+		}
+		if (location != 1){
+			correct=true;
+		}
+
+		}while((res==false)||(correct==false));
+		return dniauto;
 	}
 	
 	public static String user (){
 		String user = "";
-		String[] users = {"vicent", "walter", "joan", "maria", "daniel", "josep", "sara", "pepa", "felipe",
-	            "jaume", "sergio", "paco", "emilio", "nando", "alfons", "eduard", "atalia", "veronica", "fina",
-	            "pepe", "oscar", "lorelay", "jim", "lola", "laia", "ismael", "jordi", "ramon", "javier", "nuria",
-	            "elena", "beltran", "pablo", "juanjo"};
+		String[] users = {"vicent", "walter", "joan", "daniel", "josep", "felipe",
+	            "jaume", "sergio", "paco", "emilio", "nando", "alfons", "eduard", 
+	            "pepe", "oscar", "lorelay", "jim", "ismael", "jordi", "ramon", "javier",
+	            "beltran", "pablo", "juanjo"};
 		
 		int position = (int) (Math.random() * 222) % 10;
 		return user = users[position];
@@ -44,10 +68,10 @@ public class BLL_dummies {
 
 	public static String name (){
 		String name = "";
-		String[] names = {"vicent", "walter", "joan", "maria", "daniel", "josep", "sara", "pepa", "felipe",
-	            "jaume", "sergio", "paco", "emilio", "nando", "alfons", "eduard", "atalia", "veronica", "fina",
-	            "pepe", "oscar", "lorelay", "jim", "lola", "laia", "ismael", "jordi", "ramon", "javier", "nuria",
-	            "elena", "beltran", "pablo", "juanjo"};
+		String[] names = {"vicent", "walter", "joan", "daniel", "josep", "felipe",
+	            "jaume", "sergio", "paco", "emilio", "nando", "alfons", "eduard", 
+	            "pepe", "oscar", "lorelay", "jim", "ismael", "jordi", "ramon", "javier",
+	            "beltran", "pablo", "juanjo"};
 		
 		int position = (int) (Math.random() * 222) % 10;
 		return name = names[position];
@@ -55,10 +79,10 @@ public class BLL_dummies {
 	
 	public static String surname (){
 		String surname = "";
-		String [] surnames = {"alfonso", "aliaga", "bas", "bataller", "boluda", "conesa", "camarena", "cucart", "doria",
-					"ferrero", "garcia", "figuera", "tormo", "montagud", "gramage", "ubeda", "revert", "cordoba", "sempere",
-					"martinez", "lopez", "albuixech", "torro", "belda", "mateu", "ribera", "satorres", "rubio", "cifuentes",
-					"frances", "gomez", "mico", "ferrandiz", "casanova"};
+		String [] surnames = {"vicent", "walter", "joan", "daniel", "josep", "felipe",
+	            "jaume", "sergio", "paco", "emilio", "nando", "alfons", "eduard", 
+	            "pepe", "oscar", "lorelay", "jim", "ismael", "jordi", "ramon", "javier",
+	            "beltran", "pablo", "juanjo"};
 		
 		int position = (int) (Math.random() * 222) % 10;
 		return surname = surnames[position];
@@ -66,20 +90,27 @@ public class BLL_dummies {
 	
 	public static String email (){
 		String email = "";
-		String[] emails = {"vicent", "walter", "joan", "maria", "daniel", "josep", "sara", "pepa", "felipe",
-	            "jaume", "sergio", "paco", "emilio", "nando", "alfons", "eduard", "atalia", "veronica", "fina",
-	            "pepe", "oscar", "lorelay", "jim", "lola", "laia", "ismael", "jordi", "ramon", "javier", "nuria",
-	            "elena", "beltran", "pablo", "juanjo"};
+		String[] emails = {"vicent", "walter", "joan", "daniel", "josep", "felipe",
+	            "jaume", "sergio", "paco", "emilio", "nando", "alfons", "eduard", 
+	            "pepe", "oscar", "lorelay", "jim", "ismael", "jordi", "ramon", "javier",
+	            "beltran", "pablo", "juanjo"};
 		
 		int position = (int) (Math.random() * 222) % 10;
 		return email = emails[position]+"@gmail.com";
 	}
 	
 	public static fecha datebirthday (){
-		String [] years = {"19", "20"};
+		
+		String [] years = {"1980", "1981","1982","1983","1983","1984","1985","1986","1987","1988","1989","1990"};
+		 int puevayear = (int) Math.floor(Math.random()*6+1);
+		 System.out.println("Numero aleatorio"+puevayear);
+		//int puevayear=(int)(Math.random()*222)%10;
+		String email = years[puevayear];
+		System.out.println("Posicion del array "+email);
+		int year4 = Integer.parseInt(email);
 		int day=new Random().nextInt(10+1) + 10;
 		int month=new Random().nextInt(11+1)+1;
-		int year3=new Random().nextInt(1998-1950)+1950;
+		//int year3=new Random().nextInt(1980-1950)+1950;
 
 		//int day = (int) (Math.random() * (1 - 31) + 31);
 		//int month = (int) (Math.random() * (1 - 12) + 12);
@@ -87,11 +118,12 @@ public class BLL_dummies {
 		//int position = (int) (Math.random() * 222) % 2;
 		//String year2 = years[position]+year3;
 		//int year = Integer.parseInt(year3);
-		String fechas=day+"/"+month+"/"+year3;
-		
+		String fechas=day+"/"+month+"/"+year4;
+		System.out.println("FECHA TOTAL :"+fechas);
 		return new fecha (fechas, "dd/mm/yyyy");
 		
 	}
+	
 	public static int age(fecha datebirth){
 		int edad = func_fech.vEDAD(datebirth);
 		return edad;
@@ -109,7 +141,7 @@ public static String alta(){
 		String [] years = {"19", "20"};
 		int day=new Random().nextInt(10+1) + 10;
 		int month=new Random().nextInt(11+1)+1;
-		int year3=new Random().nextInt(1998-1950)+1950;
+		int year3=new Random().nextInt(2016-1999)+1999;
 		//String year2 = years[position]+year3;
 		String fechas=day+"/"+month+"/"+year3;
 		
@@ -151,11 +183,17 @@ return antiguitat;
 	/* BUILDER
 	 * 
 	 */
+
+	
 	public static userad makedummies_admin () {
+		fecha datebirthday=BLL_dummies.datebirthday();
+		int age=func_fech.vEDAD(datebirthday);
+		fecha datecontract=BLL_dummies.datecontract();
+		int anti=func_fech.vANTIGUITAT(datecontract, datebirthday);
 		userad a1=null;
 		int cont=0;
 		do{
-			a1 = new userad (user(),DNI(),datebirthday(),age(datebirthday()),email(),"H", surname(),datecontract(),anti(datecontract(),datebirthday()), salary(),"Si",alta(), incentive());
+			a1 = new userad (user(),DNI(),datebirthday,age,email(),fnes_v.vSEXdummies(), surname(),datecontract,anti, salary(),"Si",alta(), incentive());
 			//Singleton.useradmin.add(a1);
 			cont++;
 		}while(cont<1);
@@ -163,10 +201,13 @@ return antiguitat;
 	}
 	
 	public static usercl makedummies_client () {
+		fecha datebirthday=BLL_dummies.datebirthday();
+		int age=func_fech.vEDAD(datebirthday);
+		
 		int cont=0;
 		usercl c1=null;
 		do{
-			c1 = new usercl(user(),DNI(),datebirthday(),age(datebirthday()),email(), n_comp(),point());
+			c1 = new usercl(user(),DNI(),datebirthday,age,email(), n_comp(),point());
 			//Singleton.userclient.add(c1);
 			cont++;
 		}while(cont<1);
@@ -175,11 +216,13 @@ return antiguitat;
 	
 	
 	public static usern makedummies_userregister () {
+		fecha datebirthday=BLL_dummies.datebirthday();
+		int age=func_fech.vEDAD(datebirthday);
 		int cont=0;
 		usern n1=null;
 		do{
 			
-			n1 = new usern(user(),DNI(),datebirthday(),age(datebirthday()),email(),n_comp(),func_plus.karma(n_comp()), point());
+			n1 = new usern(user(),DNI(),datebirthday,age,email(),n_comp(),func_plus.karma(n_comp()), point());
 			//Singleton.userregister.add(u1);
 		cont++;
 		}while(cont<1);

@@ -63,7 +63,7 @@
                         <minusSign>-</minusSign>
                         <monetarySeparator>,</monetarySeparator>
                         <patternSeparator>;</patternSeparator>
-                        <perMill>‰</perMill>
+                        <perMill>�</perMill>
                         <percent>%</percent>
                         <serialVersionOnStream>3</serialVersionOnStream>
                         <zeroDigit>0</zeroDigit>

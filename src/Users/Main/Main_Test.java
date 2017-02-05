@@ -22,16 +22,8 @@ import Users.Classes.fecha;
 public class Main_Test {
 
 	public static void main(String[] args) {
-		double moneda=3.43242383;
-		moneda = moneda*1f;
-		DecimalFormatSymbols simbolos = new DecimalFormatSymbols();
-		simbolos.setDecimalSeparator('.');
-		DecimalFormat formateador = new DecimalFormat("####.####",simbolos);
-
-		// Esto sale en pantalla con punto decimal, es decir, 3.4324,
-		System.out.println (formateador.format (moneda));
-
-
+		 int random = (int) Math.floor(Math.random()*6+1);
+		System.out.println(random);
 	        
 	    }
 		

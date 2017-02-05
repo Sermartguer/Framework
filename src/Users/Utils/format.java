@@ -1,10 +1,8 @@
 package Users.Utils;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
-
 import java.text.ParseException;
-
-
+import Users.Classes.lenguage;
 import Users.Classes.setting;
 
 
@@ -28,15 +26,6 @@ public class format {
 			moneda = moneda*1f;
 		}
 		System.out.println("Valor de la moneda :"+moneda);
-		/*DecimalFormatSymbols simbolos = new DecimalFormatSymbols();
-		simbolos.setDecimalSeparator('.');
-		DecimalFormat formateador = new DecimalFormat("####.####",simbolos);
-		// Esto sale en pantalla con punto decimal, es decir, 3.4324,
-		System.out.println (formateador.format (moneda));*/
-		
-		
-		
-		
 		DecimalFormatSymbols symbols = new DecimalFormatSymbols();
 		symbols.setDecimalSeparator('.');
 		DecimalFormat nformat = new DecimalFormat(decimal, symbols);
@@ -63,7 +52,7 @@ public class format {
 		}
 		if(co.equals("euro")){
 			System.out.println("entre aci");
-			coinformat="€";
+			coinformat=lenguage.getInstance().getProperty("euro");
 			finalvalue=Double.toString(moned);
 			finalvalue=finalvalue+coinformat;
 			return finalvalue;

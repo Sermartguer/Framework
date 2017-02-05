@@ -21,7 +21,7 @@ public class Functions_order {
 		if(Singleton.useradmin.isEmpty()){
 			JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
 		}else{
-			menu = functions.menucombox( options,lenguage.getInstance().getProperty("ask_01"), lenguage.getInstance().getProperty("ask_title01"));
+			menu = functions.menucomboxmenu( options,lenguage.getInstance().getProperty("ask_01"), lenguage.getInstance().getProperty("ask_title01"));
 			order = menu.charAt(0);
 			switch (order) {
 				case 'A':
@@ -48,7 +48,7 @@ public class Functions_order {
 		if(Singleton.userclient.isEmpty()){
 			JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
 		}else{
-			menu = functions.menucombox( options,lenguage.getInstance().getProperty("ask_01"), lenguage.getInstance().getProperty("ask_title01"));
+			menu = functions.menucomboxmenu( options,lenguage.getInstance().getProperty("ask_01"), lenguage.getInstance().getProperty("ask_title01"));
 			order = menu.charAt(0);
 			switch (order) {
 				case 'A':
@@ -79,7 +79,7 @@ public class Functions_order {
 		if(Singleton.userregister.isEmpty()){
 			JOptionPane.showMessageDialog(null,lenguage.getInstance().getProperty("error_01"), "ERROR", JOptionPane.ERROR_MESSAGE);
 		}else{
-			menu = functions.menucombox( options,lenguage.getInstance().getProperty("ask_01"), lenguage.getInstance().getProperty("ask_title01"));
+			menu = functions.menucomboxmenu( options,lenguage.getInstance().getProperty("ask_01"), lenguage.getInstance().getProperty("ask_title01"));
 			order = menu.charAt(0);
 			switch (order) {
 				case 'A':
