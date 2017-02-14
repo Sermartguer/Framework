@@ -34,6 +34,30 @@ La opción "Read All" accede a el ArrayList donde se muestran todos los usuarios
 **Search One**
 
 En la opción "Search One" muestra en un combobox todos los usuarios, donde el usuario deberá elegir uno.
+
+**Manual**
+
+En la opción "Manual" el usuario introduce un DNI y se muestra el usuario que ha seleccionado
+
+##Update
+
+La opción update nos permite actualizar los datos de un usuario, se muestra un combobox donde elegiremos que usuario queremos actualizar, posteriormente saldra un menú donde el usuario elige que parametro necesita actualizar.
+
+##Delete
+
+La opción "Delete" nos ofrece la opción de eliminar un usuario, en esta opción se muestran dos opciones de las quales podemos seleccionar "Delete All" que nos elimina todos los usuarios y "Search" donde nos saldrá la opción de elegir en un combobox que usuario queremos eliminar
+
+##Order
+
+El parametro "Order" nos permite ordenar todos los usuarios por: DNI, Nombre, Fecha de nacimiento, Años
+
+##Open
+
+La opción "Open" da la opción de abrir un fitxero con el formato que se ha indicado en el "setting".
+
+##Save
+
+La opción "Save" permite guardar la lista de todos los usuarios en un fixero, el formato del cual se ha establecido en "settings"
 ##Settings
 El menu settings contiene la configuración de el formato fecha, formato de la moneda, numero de decimales, idioma, dummies, el formato file (de donde se cogera el formato del fixero que posteriomente se abrira o guardara en OnDemmand), el Tema.
 
