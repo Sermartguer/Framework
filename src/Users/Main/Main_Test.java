@@ -14,19 +14,16 @@ import java.util.Scanner;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import Users.Classes.fecha;
 public class Main_Test {
+	JCheckBox checkbox = new JCheckBox("Enable logging");	    }                                          
 
-	public static void main(String[] args) {
-		 int random = (int) Math.floor(Math.random()*6+1);
-		System.out.println(random);
-	        
-	    }
 		
 	
-}
+
 

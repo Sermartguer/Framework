@@ -10,6 +10,7 @@ import Users.Classes.fecha;
 import Users.Classes.lenguage;
 import Users.Classes.setting;
 import Users.Modules.User.Model.Classes.Singleton;
+import Users.Modules.User.Model.Classes.userad;
 import Users.Modules.User.Model.Classes.usu;
 import Users.Utils.functions;
 import Users.Utils.validate;
@@ -334,7 +335,25 @@ public class func_fech {
 
 		return co;
 	}
-
+public static String toStringalta(String alta){
+	String[] ArrayFecha=null;
+	ArrayFecha = alta.split("/");
+	int day=Integer.parseInt(ArrayFecha [0]);
+	int month=Integer.parseInt(ArrayFecha [1]);
+	int year=Integer.parseInt(ArrayFecha [2]);
+	
+	if(setting.getInstance().getffecha().equals("dd/mm/yyyy")){
+		alta=day+"/"+month+"/"+year;
+	}else if(setting.getInstance().getffecha().equals("dd-mm-yyyy")){
+		alta=day+"-"+month+"-"+year;
+	}else if(setting.getInstance().getffecha().equals("yyyy/mm/dd")){
+		alta=year+"/"+month+"/"+day;
+	}else if(setting.getInstance().getffecha().equals("yyyy-mm-dd")){
+		alta=year+"-"+month+"-"+day;
+	}		
+	
+	return alta;
+}
 	public static String PideStringFecha2(int tipo) {
 		String sf = "";
 

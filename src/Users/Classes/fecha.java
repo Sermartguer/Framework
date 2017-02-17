@@ -343,18 +343,18 @@ public class fecha implements Serializable{
 	System.out.println("formater"+this.param);
 	
 	if(param.equals("dd/mm/yyyy"))
-		fecha=this.day+"/"+this.month+"/"+this.year;
+		fecha=String.format("%02d",this.day)+"/"+String.format("%02d",this.month)+"/"+this.year;
 		
 	if(param.equals("dd-mm-yyyy")){
-		fecha=this.day+"-"+this.month+"-"+this.year;
+		fecha=String.format("%02d",this.day)+"-"+String.format("%02d",this.month)+"-"+this.year;
 		
 	}
     if(param.equals("yyyy/mm/dd")){
-		fecha=this.year+"/"+this.month+"/"+this.day;
+		fecha=this.year+"/"+String.format("%02d",this.month)+"/"+String.format("%02d",this.day);
 		
 	}
     if(param.equals("yyyy-mm-dd")){
-		fecha=this.year+"-"+this.month+"-"+this.day;
+		fecha=this.year+"-"+String.format("%02d",this.month)+"-"+String.format("%02d",this.day);
 		
 	}
 	

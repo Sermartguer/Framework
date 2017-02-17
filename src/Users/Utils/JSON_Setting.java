@@ -64,6 +64,7 @@ public class JSON_Setting {
 	        setting.getInstance().setcoin(config.getcoin());
 	        setting.getInstance().setffecha(config.getffecha());
 	        setting.getInstance().setdecimal(config.getdecimal());
+	        setting.getInstance().setdummies(config.getdummies());
 	        setting.getInstance().setfile(config.getfile());
 	        setting.getInstance().setlang(config.getlang());
 	        setting.getInstance().settheme(config.gettheme());

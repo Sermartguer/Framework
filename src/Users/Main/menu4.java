@@ -1,56 +1,36 @@
 package Users.Main;
-
-import java.util.ArrayList;
-
 import javax.swing.JOptionPane;
 import Users.Utils.*;
-import Users.Modules.User.Model.Classes.Singleton;
-import Users.Modules.User.Model.Classes.userad;
-import Users.Modules.User.Model.Classes.usercl;
-import Users.Modules.User.Model.Classes.usern;
-import Users.Modules.User.Model.Utils.Admin.Utils_Files.Files_Settings;
-import Users.Modules.User.Model.Utils.CRUD.Functions_create;
-import Users.Modules.User.Model.Utils.CRUD.Functions_delete;
-import Users.Modules.User.Model.Utils.CRUD.Functions_open_auto;
-import Users.Modules.User.Model.Utils.CRUD.Functions_order;
-import Users.Modules.User.Model.Utils.CRUD.Functions_read;
-import Users.Modules.User.Model.Utils.CRUD.Functions_save_auto;
-import Users.Modules.User.Model.Utils.CRUD.Functions_update;
-import Users.Modules.User.Model.Utils.Client.Utils_Files_Client.Files_Settings_Client;
-import Users.Modules.User.Model.Utils.Normal.Utils_Files_Normal.Files_Settings_Normal;
+import Users.Modules.User.Model.BLL.BLL_users.Files_Users.Admin.Utils_Files.*;
+import Users.Modules.User.Model.BLL.BLL_users.Files_Users.Client.Utils_Files_Client.*;
+import Users.Modules.User.Model.BLL.BLL_users.Files_Users.Normal.Utils_Files_Normal.*;
+import Users.Modules.User.Model.BLL.BLL_users.CRUD.*;
 import Users.Classes.*;
-
 public class menu4 {
-
 	public static void main(String[] args) {
 		// Variables
 		int operator = 0, ops = 0, operator_users = 0,settin=0;
 		boolean continu = false;
 		// Operations
-		setting.getInstance();
-		
-		
+		setting.getInstance();		
 		do {
 			String[] options_users = {lenguage.getInstance().getProperty("client"),lenguage.getInstance().getProperty("normal"),lenguage.getInstance().getProperty("admin"),lenguage.getInstance().getProperty("return")};
 			String[] options = {lenguage.getInstance().getProperty("userm"),lenguage.getInstance().getProperty("config"),lenguage.getInstance().getProperty("exit")};
 			String[] op = { lenguage.getInstance().getProperty("create"),lenguage.getInstance().getProperty("print_data"),lenguage.getInstance().getProperty("change_data"),lenguage.getInstance().getProperty("delete"),lenguage.getInstance().getProperty("order"),
 					lenguage.getInstance().getProperty("open"),lenguage.getInstance().getProperty("save"), lenguage.getInstance().getProperty("exit") };
 			operator = functions.menuo(options, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("userm"));
-			if (operator == -1) {
-				System.exit(0);
-			}
+			if (operator == -1) {operator=2;}
 			switch (operator) {
 			case 0:
 				do {
 					operator_users = functions.menuo(options_users, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("userm"));
+					if (operator_users==-1){operator_users=3;}
 					switch (operator_users) {
 					case 0:
 						do {
 							//////////////////////// CLIENT	////////////////////////
 							ops = functions.menuo(op, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("client"));
-							if (ops == -1) {
-								System.exit(0);
-							}
+							if (ops == -1) {ops=7;}
 							switch (ops) {
 							// CREAR
 							case 0:
@@ -89,9 +69,7 @@ public class menu4 {
 						//////////////////////// NORMAL//////////////////////////
 						do {
 							ops = functions.menuo(op, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("normal"));
-							if (ops == -1) {
-								System.exit(0);
-							}
+							if (ops == -1) {ops=7;}
 							switch (ops) {
 							// CREAR
 							case 0:
@@ -130,9 +108,7 @@ public class menu4 {
 						////////////////////////	ADMIN	////////////////////////
 						do {
 							ops = functions.menuo(op, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("admin"));
-							if (ops == -1) {
-								System.exit(0);
-							}
+							if (ops == -1) {ops=7;}
 							switch (ops) {
 							// CREAR
 							case 0:
@@ -176,6 +152,7 @@ public class menu4 {
 				do {
 					String[] opsettin = {lenguage.getInstance().getProperty("date"),lenguage.getInstance().getProperty("coin"),lenguage.getInstance().getProperty("decimals"),lenguage.getInstance().getProperty("lang"),"Dummies",lenguage.getInstance().getProperty("files"),lenguage.getInstance().getProperty("theme"),lenguage.getInstance().getProperty("defapp"),lenguage.getInstance().getProperty("return") };
 					settin = functions.menuo(opsettin, lenguage.getInstance().getProperty("choose_an_option"),lenguage.getInstance().getProperty("config"));
+					if (settin==-1){settin=8;}
 					switch (settin) {
 					case 0:
 						settings.settingfecha();

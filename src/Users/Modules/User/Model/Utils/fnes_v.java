@@ -10,8 +10,8 @@ import Users.Classes.setting;
 import Users.Main.menu4;
 import Users.Modules.User.Model.Classes.Singleton;
 import Users.Modules.User.Model.Classes.userad;
-import Users.Modules.User.Model.Utils.CRUD.fnes_find;
-import Users.Modules.User.Model.dummies.fnes_users_dummies;
+import Users.Modules.User.Model.BLL.BLL_dummies.fnes_users_dummies;
+import Users.Modules.User.Model.BLL.BLL_users.CRUD.*;
 import Users.Utils.*;
 
 public class fnes_v {
@@ -26,7 +26,7 @@ public class fnes_v {
 			cad="";
 			res=validate.NOM(nom);
 			if (res==false){
-				cad=cad+("\n"+"Error no has introduit un nom valid");
+				cad=cad+("\n"+lenguage.getInstance().getProperty("Error_nom_fv"));
 			}
 		}while (res==false);
 		return nom;
@@ -34,7 +34,7 @@ public class fnes_v {
 	public static String vauto(int opcio){
 		String nom="";
 		if (opcio==0){
-		 String[] names = {"Abraham", "Ad�n", "Agapito", "Cristobal", "Alex", "Cristian", "Custodio", "David", "Danilo", "Dani"};
+		 String[] names = {"Abraham", "Adán", "Agapito", "Cristobal", "Alex", "Cristian", "Custodio", "David", "Danilo", "Dani"};
 		 int random = (int) (Math.random()*names.length);
 	         nom=names[random];
 	         return nom;
@@ -58,12 +58,12 @@ public class fnes_v {
 		String username="";
 		boolean boo=false;
 		do{
-			username=functions.vString("Dame el USERNAME (MIN:4-MAX:15)", "USERNAME");
+			username=functions.vString(lenguage.getInstance().getProperty("user2"), "USERNAME");
 			do{
 				Pattern pattern=Pattern.compile(nom);
 		        Matcher matcher = pattern.matcher(username);
 				if(matcher.matches()){
-					username=functions.vString("Dame el USERNAME (MIN:4-MAX:15)", "USERNAME");
+					username=functions.vString(lenguage.getInstance().getProperty("user2"), "USERNAME");
 						
 				}else{
 				boo=true;
@@ -147,7 +147,7 @@ public static String vDNIauto(){
 		boolean res=false;
 		String email="";
 		do{
-			email=functions.vString("Dame el EMAIL"+cad, "EMAIL");
+			email=functions.vString(lenguage.getInstance().getProperty("email")+cad, "EMAIL");
 			res=validate.EMAIL(email);
 			if (res==false){
 				cad=cad+("\n"+"Error no has introduit un email valid");
@@ -155,20 +155,6 @@ public static String vDNIauto(){
 		}while (res==false);
 		return email;
 	}
-	public static String vTLF(){
-		String cad="";
-		boolean res=false;
-		String tlf="";
-		do{
-			tlf=functions.vString("Dame el TLF"+cad, "TLF");
-			res=validate.TLF(tlf);
-			if (res==false){
-				cad=cad+("\n"+"Error no has introduit un telefono valid");
-			}
-		}while (res==false);
-		return tlf;
-	}
-	
 	
 	
 	////////////////SEXE///////////////////
@@ -224,63 +210,7 @@ public static String vDNIauto(){
 					sex="Otro";
 					res=true;
 				}
-				
-			}
-			
-			
-		}while (res==false);
-		System.out.println("sex"+sex);
-		return sex;
-	}
-	public static String vSEXdummies(){
-		String cad="";
-		boolean res=false;
-		String sex="";
-		String idioma=lenguage.getInstance().getIdioma();
-		
-		do {
-			
-			if(idioma.equals("English")){
-			sex="M";
-			}else if(idioma.equals("Valencia")){
-			sex="H";
-			}else if(idioma.equals("Spanish")){
-			sex="H";
-			}
-			
-			
-			res=validate.SEX(sex);
-			
-			if (res==false){
-				cad="";
-				cad=cad+"\n"+(lenguage.getInstance().getProperty("errorv_01"));
-			}
-			System.out.println("idioma"+idioma);
-			System.out.println(res);
-			System.out.println(sex);
-			if(idioma.equals("English")){
-				if((sex.equals("M"))||(sex.equals("m"))){
-					sex="Man";
-					res=true;
-				}else if((sex.equals("W"))||(sex.equals("w"))){
-					sex="Woman";
-					res=true;
-				}else if((sex.equals("O"))||(sex.equals("o"))){
-					sex="Other";
-					res=true;
-				}
-			}else if(idioma.equals("Valencia")){
-				if((sex.equals("H"))||(sex.equals("h"))){
-					sex="Home";
-					res=true;
-				}else if((sex.equals("D"))||(sex.equals("d"))){
-					sex="Dona";
-					res=true;
-				}else if((sex.equals("A"))||(sex.equals("a"))){
-					sex="Altre";
-					res=true;
-				}
-			}else if(idioma.equals("Spanish")){
+			}else if(idioma.equals("Italiano")){
 				if((sex.equals("H"))||(sex.equals("h"))){
 					System.out.println("Entre aci");
 					sex="Hombre";
@@ -292,14 +222,128 @@ public static String vDNIauto(){
 					sex="Otro";
 					res=true;
 				}
-				
+		}else if(idioma.equals("Portuges")){
+			if((sex.equals("H"))||(sex.equals("h"))){
+				sex="Hombre";
+				res=true;
+			}else if((sex.equals("M"))||(sex.equals("m"))){
+				sex="Mujer";
+				res=true;
+			}else if((sex.equals("O"))||(sex.equals("o"))){
+				sex="Otro";
+				res=true;
 			}
+		
+	}
 			
 			
 		}while (res==false);
 		System.out.println("sex"+sex);
 		return sex;
 	}
+	public static String vSEXdummies(String sex){
+		String cad="";
+		boolean res=false;
+		String idioma=lenguage.getInstance().getIdioma();
+		
+		
+			System.out.println("idioma"+idioma);
+			System.out.println(res);
+			System.out.println(sex);
+			if(idioma.equals("English")){
+				if((sex.equals("M"))||(sex.equals("m"))){
+					return sex="Man";
+				}else if((sex.equals("W"))||(sex.equals("w"))){
+					return sex="Woman";
+				}else if((sex.equals("O"))||(sex.equals("o"))){
+					return sex="Other";
+				}
+			}else if(idioma.equals("Valencia")){
+				if((sex.equals("H"))||(sex.equals("h"))){
+					return sex="Home";
+				}else if((sex.equals("D"))||(sex.equals("d"))){
+					return sex="Dona";
+				}else if((sex.equals("A"))||(sex.equals("a"))){
+					return sex="Altre";
+				}
+			}else if(idioma.equals("Spanish")){
+				if((sex.equals("H"))||(sex.equals("h"))){
+					System.out.println("Entre aci");
+					return sex="Hombre";
+				}else if((sex.equals("M"))||(sex.equals("m"))){
+					return sex="Mujer";
+				}else if((sex.equals("O"))||(sex.equals("o"))){
+					return sex="Otro";
+				}
+				}else if(idioma.equals("Italiano")){
+					if((sex.equals("H"))||(sex.equals("h"))){
+						System.out.println("Entre aci");
+						return sex="Hombre";
+					}else if((sex.equals("M"))||(sex.equals("m"))){
+						return sex="Mujer";
+					}else if((sex.equals("O"))||(sex.equals("o"))){
+						return sex="Otro";
+					}
+			}else if(idioma.equals("Portuges")){
+				if((sex.equals("H"))||(sex.equals("h"))){
+					return sex="Hombre";
+				}else if((sex.equals("M"))||(sex.equals("m"))){
+					return sex="Mujer";
+				}else if((sex.equals("O"))||(sex.equals("o"))){
+					return sex="Otro";
+				}
+		}
+		System.out.println("sex"+sex);
+		return sex;
+	}
+	
+	
+public static String genero(String sex){
+	String idioma=lenguage.getInstance().getIdioma();
+	if(idioma.equals("English")){
+		System.out.println("sex"+sex);
+		if(((sex.equals("Man")))||((sex.equals("Hombre")))||((sex.equals("Home")))){
+			return sex="Man";
+		}else if(((sex.equals("Woman")))||((sex.equals("Mujer")))||((sex.equals("Dona")))){
+			return sex="Woman";
+		}else if(((sex.equals("Other")))||((sex.equals("Otra")))||((sex.equals("Altre")))){
+			return sex="Other";
+		}
+	}else if(idioma.equals("Valencia")){
+		if(((sex.equals("Man")))||((sex.equals("Hombre")))||((sex.equals("Home")))){
+			return sex="Home";
+		}else if(((sex.equals("Woman")))||((sex.equals("Mujer")))||((sex.equals("Dona")))){
+			return sex="Dona";
+		}else if(((sex.equals("Other")))||((sex.equals("Otra")))||((sex.equals("Altre")))){
+			return sex="Altre";
+		}
+	}else if(idioma.equals("Spanish")){
+		if(((sex.equals("Man")))||((sex.equals("Hombre")))||((sex.equals("Home")))){
+			return sex="Hombre";
+		}else if(((sex.equals("Woman")))||((sex.equals("Mujer")))||((sex.equals("Dona")))){
+			return sex="Mujer";
+		}else if(((sex.equals("Other")))||((sex.equals("Otra")))||((sex.equals("Altre")))){
+			return sex="Otro";
+		}
+		}else if(idioma.equals("Italiano")){
+			if(((sex.equals("Man")))||((sex.equals("Hombre")))||((sex.equals("Home")))){
+				return sex="Hombre";
+			}else if(((sex.equals("Woman")))||((sex.equals("Mujer")))||((sex.equals("Dona")))){
+				return sex="Mujer";
+			}else if(((sex.equals("Other")))||((sex.equals("Otra")))||((sex.equals("Altre")))){
+				return sex="Otro";
+			}
+			}else if(idioma.equals("Portuges")){
+				if(((sex.equals("Man")))||((sex.equals("Hombre")))||((sex.equals("Home")))){
+					return sex="Hombre";
+				}else if(((sex.equals("Woman")))||((sex.equals("Mujer")))||((sex.equals("Dona")))){
+					return sex="Mujer";
+				}else if(((sex.equals("Other")))||((sex.equals("Otra")))||((sex.equals("Altre")))){
+					return sex="Otro";
+				}
+				}
+	return "";
+}
 	public static String vCP(){
 		String cad="";
 		boolean res=false;

@@ -60,14 +60,14 @@ public String toString(){
 	String date=setting.getInstance().getffecha();
 
 	String cad="";
-	cad = cad + ("\n" + lenguage.getInstance().getProperty("tname")+""+this.getnom());
+	cad = cad + ("\n" + lenguage.getInstance().getProperty("tname")+" "+this.getnom());
 	cad = cad + ("\n" + "Dni: "+this.getdni());
-	cad = cad + ("\n" + lenguage.getInstance().getProperty("tfnac")+""+this.getf_nac().toString(date));
-	cad = cad + ("\n" + lenguage.getInstance().getProperty("tage")+""+this.getedad());
-	cad = cad + ("\n" + lenguage.getInstance().getProperty("temail")+""+this.getemail());
-	cad = cad + ("\n" + lenguage.getInstance().getProperty("tn_com")+""+this.getn_com());
+	cad = cad + ("\n" + lenguage.getInstance().getProperty("tfnac")+" "+this.getf_nac().toString(date));
+	cad = cad + ("\n" + lenguage.getInstance().getProperty("tage")+" "+this.getedad());
+	cad = cad + ("\n" + lenguage.getInstance().getProperty("temail")+" "+this.getemail());
+	cad = cad + ("\n" + lenguage.getInstance().getProperty("tn_com")+" "+this.getn_com());
 	cad = cad + ("\n" + "Karma: "+this.getkarma());
-	cad = cad + ("\n" + lenguage.getInstance().getProperty("tpoints")+""+this.getpunts());
+	cad = cad + ("\n" + lenguage.getInstance().getProperty("tpoints")+" "+this.getpunts());
 
 
 	return cad;

@@ -36,11 +36,11 @@ public static int discount (int n_comp){
 	return 0;
 }
 public static String karma(int karma){
-	if ((karma>0)&&(karma<=20)){
+	if ((karma>0)&&(karma<=300)){
 		return "Bronze";
-	}else if((karma>21)&&(karma<=40)){
+	}else if((karma>301)&&(karma<=700)){
 		return "Silver";
-	}else if ((karma>41)&&(karma<=1000)){
+	}else if ((karma>701)&&(karma<=1000)){
 		return "Gold";
 	}
 	return null;

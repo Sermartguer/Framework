@@ -8,8 +8,8 @@ import Users.Modules.User.Model.Classes.Singleton;
 import Users.Modules.User.Model.Classes.userad;
 import Users.Modules.User.Model.Classes.usercl;
 import Users.Modules.User.Model.Classes.usern;
-import Users.Modules.User.Model.Utils.Functions_theme;
-import Users.Modules.User.Model.Utils.CRUD.Functions_open_auto;
+import Users.Utils.*;
+import Users.Modules.User.Model.BLL.BLL_users.CRUD.Functions_open_auto;
 
 public class setting {
 @XStreamAlias("language")

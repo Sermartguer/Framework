@@ -9,6 +9,8 @@ import Users.Classes.fecha;
 import Users.Classes.lenguage;
 import Users.Classes.setting;
 import Users.Main.menu4;
+import Users.Modules.User.Model.Utils.fnes_v;
+import Users.Modules.User.Model.Utils.func_fech;
 import Users.Utils.format;
 public class userad extends usu implements Serializable{
 //Atributos
@@ -81,35 +83,8 @@ public void setneto(double sou, double salary) {
 
 //Getters
 public String getsexo(){
-	String idioma=lenguage.getInstance().getIdioma();
-	String sex=this.sexo;
-	if(idioma=="English"){
-		System.out.println("sex"+sex);
-		if(((sex.equals("Man")))||((sex.equals("Hombre")))||((sex.equals("Home")))){
-			sex="Man";
-		}else if(((sex.equals("Woman")))||((sex.equals("Mujer")))||((sex.equals("Dona")))){
-			sex="Woman";
-		}else if(((sex.equals("Other")))||((sex.equals("Otra")))||((sex.equals("Altre")))){
-			sex="Other";
-		}
-	}else if(idioma=="Valencia"){
-		if(((sex.equals("Man")))||((sex.equals("Hombre")))||((sex.equals("Home")))){
-			sex="Home";
-		}else if(((sex.equals("Woman")))||((sex.equals("Mujer")))||((sex.equals("Dona")))){
-			sex="Dona";
-		}else if(((sex.equals("Other")))||((sex.equals("Otra")))||((sex.equals("Altre")))){
-			sex="Altre";
-		}
-	}else if(idioma=="Spanish"){
-		if(((sex.equals("Man")))||((sex.equals("Hombre")))||((sex.equals("Home")))){
-			sex="Hombre";
-		}else if(((sex.equals("Woman")))||((sex.equals("Mujer")))||((sex.equals("Dona")))){
-			sex="Mujer";
-		}else if(((sex.equals("Other")))||((sex.equals("Otra")))||((sex.equals("Altre")))){
-			sex="Otro";
-		}
-		}
-	this.sexo=sex;
+	String genero=fnes_v.genero(this.sexo);
+	this.sexo=genero;
 	return this.sexo;
 }
 
@@ -158,29 +133,29 @@ public String toString(){
 	String cad="";
 	cad = cad + ("\n"+lenguage.getInstance().getProperty("tname")+" "+this.getnom()+"\n");
 	cad = cad + ("DNI: "+this.getdni()+"\n");
-	cad = cad + (lenguage.getInstance().getProperty("tfnac")+""+this.getf_nac().toString(date)+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tfnac")+" "+this.getf_nac().toString(date)+"\n");
 	cad = cad + (lenguage.getInstance().getProperty("tage")+" "+this.getedad()+"\n");
 	cad = cad + (lenguage.getInstance().getProperty("tsex")+" "+this.getsexo()+"\n");
 	cad = cad + (lenguage.getInstance().getProperty("temail")+" "+this.getemail()+"\n");
 	cad = cad + (lenguage.getInstance().getProperty("tusername")+" "+this.getusername()+"\n");
-	cad = cad + (lenguage.getInstance().getProperty("tfco")+this.getfant().toString(date)+"\n");
-	cad = cad + (lenguage.getInstance().getProperty("tcontra")+this.getAntiguitat()+"\n");
-	cad = cad + (lenguage.getInstance().getProperty("tapto")+this.getapto()+"\n");
-	cad = cad + (lenguage.getInstance().getProperty("tfalta")+this.getalta()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tfco")+" "+this.getfant().toString(date)+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tcontra")+" "+this.getAntiguitat()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tapto")+" "+this.getapto()+"\n");
+	cad = cad + (lenguage.getInstance().getProperty("tfalta")+" "+func_fech.toStringalta(this.getalta())+"\n");
 	try {
-		cad = cad + (lenguage.getInstance().getProperty("tsalariob")+format.coins(this.getsou())+"\n");
+		cad = cad + (lenguage.getInstance().getProperty("tsalariob")+" "+format.coins(this.getsou())+"\n");
 	} catch (ParseException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 	try {
-		cad = cad + (lenguage.getInstance().getProperty("tplussal")+format.coins(this.getsalary())+"\n");
+		cad = cad + (lenguage.getInstance().getProperty("tplussal")+" "+format.coins(this.getsalary())+"\n");
 	} catch (ParseException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
 	try {
-		cad = cad + (lenguage.getInstance().getProperty("salarry")+format.coins(this.getneto()));
+		cad = cad + (lenguage.getInstance().getProperty("salarry")+" "+format.coins(this.getneto()));
 	} catch (ParseException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
